@@ -1,0 +1,27 @@
+* Added css
+* Added changelogs
+* Added archives
+* Changed the background to be an image
+* Changed the background color behind the image to be rgb(20 16 16) instead of rgb(54,57,63)
+* Gave everything rounded corners
+* Changed the design of the buttons
+	Gave them a shadow
+	Gave them a new anamation
+	Set the current page to be a diffrent button instead of just text
+* Put the version number on the bottom right of the homepage
+* Set the version number to be fixed on the bottom right, not be in a static position 
+* Set the button links to be local file links ("url(aboutme)" not "http://yoshomay.rf.gd/aboutme")
+* Updated the link on http://yoshomay.rf.gd/samyo to include Samyo's new website url
+* Gave my pfp on the homepage a black border
+* Made all links white at all times with an underline
+* Changed About Me to say "I also want to learn c and or c# sometime."
+* Made Yosho's ref sheet the correct aspect ratio (1:2.4) instead of 1:2 so it's no longer squished
+* Added a background to the "Free base made by imagineStarlights on Deviant Art" text on My Fursona
+* Changed text on My Links from "My 2nd Channel" to "My shitpost channel"
+* Made the "Index" text bold
+* Expanded the About Me page
+* Changed ":eyes:" to the "eyes" emoji on the My Fursona page
+* Changed the layout of My Fursona
+* Changed the text on the Unlisted Videos page from "But yeah I have a working pc now, though it sucks lol." to "But yeah I have a working pc now." since my new pc doesn't suck
+* Moved the audio player on the About Me page to be lower and not toutching the text
+* Changed the color of the audio player if using firefox

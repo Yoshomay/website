@@ -1,0 +1,3 @@
+* Added Samyo in a field and Isometric library to /art
+* Updated the anvil picture in /art
+* rewrote the homepage

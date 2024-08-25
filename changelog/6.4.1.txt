@@ -1,0 +1,3 @@
+* Made most images in /myfursona have low res thumbnails
+* Made Chompy a link in /myfursona
+* Made the ref in /myfursona a link

@@ -1,0 +1,5 @@
+* Changed the background
+* Added 9-13 snowy on /myfursona
+* Updated the grid on /myfursona to be more responsive and prevent overlap
+* Made the grid on /myfursona always have 2 collums of art on mobile
+* Made the grid on /myfursona on chromium look more like it does on Firefox

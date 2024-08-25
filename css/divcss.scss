@@ -1,0 +1,98 @@
+.version {
+  //pc
+@media screen and (min-width: 1013px) {
+  position: fixed;
+  border-radius: 8px;
+  right: 1%;
+  font-size: 15px;
+  padding: 5px;
+  color: white;
+  opacity: 30%;
+
+  &:hover {opacity: 1; cursor: pointer; transition: opacity 150ms ease-in;}
+  &:active {cursor: not-allowed;}}
+}
+
+.aboutme {
+  padding: 15px;
+
+  @media screen and (min-width: 610px) {max-width: 600px;}
+}
+
+
+
+@supports not (-moz-animation: none) {
+  .myLinksContainer {background: none; backdrop-filter: blur(0px);
+  .myLinks {background-color: rgba(0, 0, 0, 0.1);}
+}}
+
+//  art gird
+.artGridContainer {
+  @media screen and (max-width: 480px) {
+    @supports not (-moz-animation: none) {grid-template-columns: 49% 40%;}
+    width: 430px;
+    grid-template-columns: 49% 49%;
+    display: grid;
+    grid-gap: 1em;}
+
+  @media screen and (min-width: 481px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 14px 0px 0 10px;
+    width: calc(100vw - 80px);
+    grid-gap: 1em;
+    margin: 0 auto;
+}}
+
+.col {
+      align-self: start;
+      margin: 0px 0 20px 0;
+      @media screen and (max-width: 480px) {
+      width: 180px;
+      padding: 1px;
+      img{width: 150px;}}
+    }
+
+  @supports not (-moz-animation: none) {  //  chomium
+    .artGridContainer {
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3px);
+        border: rgba(0, 0, 0, 0.2) solid 3px;
+        grid-gap: 2em;
+        
+    .col {background-color: rgba(0, 0, 0, 0.01);
+          border: solid rgba(0, 0, 0, 0.1) 1px;}
+          backdrop-filter: blur(0px);
+          filter: drop-shadow(1px 1px 4px black);
+    }}
+    
+.popupBG {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+
+  @supports not (-moz-animation: none) {  //chromium
+    background-color: rgba(0, 0, 0, 0.2);}
+}
+
+.popup {
+  display: none;
+  background: none;
+  border: none;
+  filter: drop-shadow(0 0 0 black);
+  cursor: defualt;
+  backdrop-filter: blur(0px);
+  z-index: 5;
+
+  .artGridContainer {
+    background: rgba(0,0,0,0.6);
+    z-index: 6;
+  .col {background: rgba(0,0,0,0.7); }}
+}

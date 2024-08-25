@@ -1,0 +1,10 @@
+* Fixed the redirect on /samyo to go to https://samyofox.ninja/yosho not yoshomay.rf.gd/samyofox.ninja/yoshomay
+* Made the box on My Links and 404 smaller
+* Changed the tab icon on /samyo from the website's icon to Samyo's pfp
+* Tried to add adaptive scaling on everything
+* Scaled my pfp to 400px x 400px instead of 406x406 to make scaling with % easier
+
+*Made some changes to the code to make it more clean
+	Made all the div's into one .css file instead of a .css file for every page
+	Set the background image in the css not html
+	Set the version number on the homepage to be a div not a footer

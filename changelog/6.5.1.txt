@@ -1,0 +1,4 @@
+* Added ytthumb on /art
+* Added the dates of all the renders on /art
+* Renamed the previous version (6.4.3) to 6.5
+* Changed the video for doughnut on /art

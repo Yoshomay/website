@@ -1,0 +1,14 @@
+* Fixed "Disocrd" on /contacts
+* Added a box when hovering over some stuff on /homepage, /aboutme, and /myfursona
+* Added my 2nd channel to /mylinks
+* Changed "My 2nd Channel" to "My Shitpost Channel"
+* Added /gallery
+* Added /dp
+* Added @TheTazFooc on Twitter on /mylinks
+* Made the rounded corners on /gallery bigger
+* Changed the index to be mesured in pixels not % of the screen so it looks right on small devices like mobile
+* Set it where images align to the center on mobile
+* Made the homepage link go to http://yoshomay.rf.gd not /index so when you click it the url says yoshomay.rf.gd
+
+Changes to the code
+	* Removed the <u> around the links in /mylinks because I forogt to a while ago lol

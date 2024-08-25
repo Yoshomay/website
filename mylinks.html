@@ -1,0 +1,78 @@
+<html><head><title>My Links</title>
+		<link rel="icon" href="images/oldpfp.png">
+		<link rel="stylesheet" href="css/divcss.css">
+		<link rel="stylesheet" href="css/theme.css">
+		<meta name="viewport"
+		content="width=device-width,
+		initial-scale=1.0">
+		<meta charset="UTF-8"></head><body>
+
+	<div class="links"><b>Links</b><br><br>
+		<a href="index.html"><button class="button">Homepage</button></a>
+		<a href="myfursona.html"><button class="button">My Fursona</button></a>
+		<a href="art.html"><button class="button">Art</button></a>
+		<button class="button0">My Links</button>
+		<a href="unlistedvideos.html"><button class="button">Unlisted Videos</button></a>
+		<a href="others.html"><button class="button">Others</button></a>
+	</div><br><br>
+
+					
+					<div>-- My Links --</div><br><br>
+					<!--   pc   -->
+					<div class="myLinksContainer" id="containerPC">
+
+						<div class="myLinks" style="width: 190px;">-- YouTube --<br>
+							<a href="https://www.youtube.com/channel/UCwdFRPrlre_1QLDyJo2b86A" target="_blank">My main channel</a><br>
+							<a href="https://www.youtube.com/channel/UCKmor1imLCQ8Avsjd2rFzaw" target="_blank">My 2nd Channel</a><br>
+							<a href="https://www.youtube.com/channel/UCEM8Al3ALFzuzy0fI4ZOndQ/" target="_blank">My channel for low effort stuff</a></div><br>
+							
+							
+							<div class="myLinks" style="width:190px;">-- Twitter --<br>
+							My Twitter: <a href="https://www.twitter.com/yoshomay" target="_blank">@Yoshomay</a><br><br>
+							My alt account <a href="https://www.twitter.com/yoshosona" target="_blank">@YoshomayAlt</a></div><br>
+				
+			
+							<div class="myLinks" style="width: 200px;">-- Contacts --<br>
+								Discord: <u>@Yoshomay</u></a><br>
+								My Telegram: <a href="https://t.me/yoshomay" target="_blank">@Yoshomay</a></div>
+					</div>
+						
+					
+			
+					<!--   mobile   -->
+					<div id="containerMobile">
+						<div class="myLinks"><span style="line-height: 230%;">
+							-- YouTube --<br>
+							<a href="https://www.youtube.com/channel/UCwdFRPrlre_1QLDyJo2b86A" target="_blank">My main channel</a><br>
+							<a href="https://www.youtube.com/channel/UCKmor1imLCQ8Avsjd2rFzaw" target="_blank">My 2nd Channel</a><br>
+							<a href="https://www.youtube.com/channel/UCEM8Al3ALFzuzy0fI4ZOndQ/" target="_blank">My channel for low effort stuff</a></span></div><br>
+							
+							
+							<div class="myLinks">
+								-- Twitter --<br><span style="line-height: 230%;">
+							My Twitter: <a href="https://www.twitter.com/yoshomay" target="_blank">@Yoshomay</a><br>
+							My alt account <a href="https://www.twitter.com/yoshosona" target="_blank">@YoshomayAlt</a></span></div><br>
+							
+							<div class="myLinks"><span style="line-height: 230%;">
+								-- Contacts --<br>
+								Discord: <u>@Yoshomay</u></a><br>
+								My Telegram: <a href="https://t.me/yoshomay" target="_blank">@Yoshomay</a></div></span></div>
+
+								
+					
+	
+		<script>
+			console.log(window.innerWidth);
+			if (window.innerWidth > 480) { // pc
+				var containerMobile = document.getElementById("containerMobile");
+				containerMobile.style.visibility="hidden"; containerMobile.style.width="1px"; containerMobile.style.height="1px";}
+			
+			else if (window.innerWidth <= 480) { // mobile
+				var containerPC = document.getElementById("containerPC");
+				containerPC.style.visibility="hidden"; containerPC.style.width="1px"; containerPC.style.height="1px";}
+			
+			else { // else (failsafe)
+				var containerPC = document.getElementById("containerPC");
+				containerPC.style.visibility="hidden"; containerPC.style.width="1px"; containerPC.style.height="1px";}
+		</script>
+</body></html>

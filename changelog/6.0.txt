@@ -1,0 +1,52 @@
+//  General
+* Changed the theme (theme switcher will be added later)
+* Removed the /audio/ folder
+* Fixed many spelling mistakes
+* Made the css files in a folder
+
+// Index
+* Migrated /aboutme to /index
+* Added "taken" to the About Me section
+* Removed the HHG remix
+* Changed Zorin OS Lite to Zorin OS
+* Rewrote the About Me section
+* Added hover popup when hovering over "Hello, this is Yoshomay"
+* Put the version number on the top right
+* Made the version number fade
+* Made the version number a div
+* Made the version number a max width of 1013px to avoid overlap
+* Made art by falke closer to my pfp
+
+
+// My Fursona
+* Removed the dynamic layout
+* Migrated /gallery into /myfursona
+* Changed it to say I've been a furry for 2 years
+* Added me5 and me6
+* Added YoshoGen
+* Made the falke video have a border
+* Removed /gallery.css and made it all internal css
+* Made all art have a width of 250px and every div containing art be 300px
+* Made imp change views when clicked
+* Made worm's art have a white background
+
+// My Links
+* Line height on mobile got changed to 150%
+* My Discord server only embeds on pc
+* Removed the @TheTazFooc Twitter Account
+* Clicking on my Discord username copies it to the clipboard
+* Put my Discord server above my Telegram on mobile
+* On pc it now says "My {blank}: {blank}" Instead of just "My {blank}"
+* On pc the divs are places side by side
+
+//  Other
+* Made the width of dive a little more coherent
+* Cleaned out divcss.css by putting most stuff as internal css
+* Made the redirect to the HHG remix on /showcase to an embed
+* Removed the link to /audio/ on /others
+* Made the video embeds on /showcase 450px width max
+* Added /images/yosho/ folder to /others
+* Removed /images/yosho/smooth.mp4
+* Redesigned /dp a bit
+* Added thanks for 300 subs to /unlistedvideos
+* Added alt's to all images (minus /myfursona)

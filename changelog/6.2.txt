@@ -1,0 +1,10 @@
+* Changed the background for the default theme
+* Added /art (page), /models (folder) and /images/renders/ with it
+* Changed the text under the nudes button in /others
+* Added snow2 to /myfursona
+* Updated Worm's links from his Twitter to his Instagram
+* Made button0 have the "not-allowed" cursor when active
+* Removed /showcase
+* Fixed the link on /404
+* Added the text saying I'm bigender on /index
+* Added unnamed on /myfursona

@@ -1,0 +1,3 @@
+* Fixed multaple issues on /nudes
+* Made the video on /showcase *smaller* on mobile. 
+* Rearranged the css a bit

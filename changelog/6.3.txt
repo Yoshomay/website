@@ -1,0 +1,10 @@
+* Added interior 1 to /art
+* Updated anvil on /art 
+* Specified which render engine I used in /art
+* Updated the description of me holding Worm in /art
+* Updated the description of Yosho on /myfursona
+* Fixed a lot of issues with /mylinks
+* Rewrote the About Me on /index
+* Readded /showcase as a hidden folder
+* Added /images/yosho/impScaled.png
+* Removed /samyo

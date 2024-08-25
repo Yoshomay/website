@@ -1,0 +1,16 @@
+* Added dynamic scaling so if your screen isn't 1360x768 pixels it should look right
+* Changed "Index" to "Links"
+* Reverted the layout of /myfursona so it looks good on diffrent sized screens
+* Removed /contacts
+* Added the discord widget to /mylinks
+* Reorganized /mylinks
+* Added /sc/
+* Added the 1-up remake to /unlistedvideos
+* Made many of the rounded corners 3px
+
+Made changes to the code
+	* Reorganized the css a bit
+	* Made the buttons use <a> not <button onclickdocument.location="">
+	* Made all the id's into classes
+	* Declined the charset for all the pages
+	* Reorganized the html for all the pages
