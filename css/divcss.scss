@@ -55,16 +55,8 @@
 
   @supports not (-moz-animation: none) {  //  chomium
     .artGridContainer {
-        background-color: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3px);
-        border: rgba(0, 0, 0, 0.2) solid 3px;
-        grid-gap: 2em;
-        
-    .col {background-color: rgba(0, 0, 0, 0.01);
-          border: solid rgba(0, 0, 0, 0.1) 1px;}
-          backdrop-filter: blur(0px);
-          filter: drop-shadow(1px 1px 4px black);
-    }}
+        grid-gap: 2em;}
+      .col {background-color: rgba(0,0,0,0);}}
     
 .popupBG {
   display: none;
