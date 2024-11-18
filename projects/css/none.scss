@@ -1,0 +1,26 @@
+.links {max-width: 402px;}
+
+
+div {
+    margin: 0 auto;
+    text-align: center;
+    text-align: center;
+    width: fit-content;} 
+
+button {
+    cursor: pointer;
+    margin: 5px auto;
+}
+
+.button0, #noneButton {background-color:darkgray; border-radius: 5px;
+    &:active {cursor: not-allowed;}}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#actualSettingsIcon {content:url(../images/settingsLight.png)}
+
+#bgByDefault {display: none;}

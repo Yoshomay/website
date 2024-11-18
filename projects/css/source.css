@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(20, 22, 26);
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../images/backgrounds/source.webp);
+}
+
+.links {
+  max-width: 330px;
+}
+
+div {
+  margin: 0 auto;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(119, 119, 120, 0.75);
+}
+
+a {
+  color: white;
+  text-decoration-style: underline;
+}
+
+button {
+  text-align: left;
+  background-color: rgb(119, 119, 120);
+  cursor: pointer;
+  margin: 5px auto;
+  width: 100px;
+  color: rgb(204, 204, 204);
+  padding: 3px;
+  outline: none;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(186, 186, 186) rgb(66, 66, 66) rgb(66, 66, 66) rgb(186, 186, 186);
+}
+
+.button0, #sourceButton {
+  color: black;
+  display: inline-block;
+  background-color: rgb(255, 156, 0);
+  background-clip: content-box;
+}
+.button0:active, #sourceButton:active {
+  cursor: not-allowed;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.col {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgray;
+}
+
+video {
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.artGridContainer {
+  background-color: 62, 65, 68;
+}
+
+#bgByDefault {
+  display: none;
+}
+
+#themeSettings {
+  background-color: transparent;
+  left: 20px;
+  top: 25%;
+  font-weight: bold;
+  font-size: 14;
+}
+#themeSettings button {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  margin: 2px;
+  font-weight: bold;
+  font-size: 14;
+}
+#themeSettings button:hover {
+  color: rgb(201, 201, 201);
+}
+#themeSettings .button0 {
+  color: white;
+}/*# sourceMappingURL=source.css.map */

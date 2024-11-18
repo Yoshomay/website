@@ -1,0 +1,56 @@
+.settingsIcon {
+    top: 2%;
+    left: 1%;
+    position: absolute;
+    padding: 4px;
+    z-index: 10;
+  }
+  
+  .themeSettings {
+    width: 300px;
+    padding: 3px;
+  
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+  
+    hr {display: none;}
+  
+  @media screen and (min-width: 800px) {  //  pc
+    width: 150px;
+    position: absolute;
+    top: 1%;
+    left: 1%;}
+  
+  }
+  
+  @supports not (-moz-animation: none) {
+    .myLinksContainer {background: none; backdrop-filter: blur(0px);
+    .myLinks {background-color: rgba(0, 0, 0, 0.1);}
+  }}
+
+  .links {max-width: 402px; text-shadow: 5px 2px 4px black;
+    background-color: rgba(0,0,0,0.4);}
+
+    //          pages
+    //  calc
+
+.calcButton {width: 50px;}
+
+#questions {
+  width: 400px;
+
+  @media screen and (max-width: 480px) {
+    width: 85%;
+  }
+}
+
+#textGoesHere {
+  @media screen and (min-width: 481px) {
+    max-width: 480;
+  }
+  
+  @media screen and (max-width: 480px) {
+    width: 85%;
+  }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+body {
+    background-image: url(../images/dirtBg.webp); 
+    background-repeat: repeat;
+    background-size: 60%;
+
+    //font-family: "Press Start 2P", system-ui;
+    //font-size: small;
+
+    font-family: "VT323", monospace;
+    font-size: large;
+    button {
+        font-family: "VT323", monospace;
+        font-size: large;}
+    }
+
+
+
+.links {max-width: 402px;}
+.version {color:black}
+
+
+div {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    text-align: center;
+    width: fit-content;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+    } 
+
+a {color:white; text-decoration-style: underline;}
+
+button {
+    font-family: "Mojangles", sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 0;
+    outline: none;
+    border: solid #aaaaaa 1px;
+    background-image: url(../images/minecraftButtonBg.png);
+
+&:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+&:hover {
+    background-image: url(../images/minecraftButtonBgHover.png);
+    color: rgb(255, 255, 160);}
+
+&:active {cursor: not-allowed;}
+}
+
+.button0, #simpleLightButton {background-color:darkgray;}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#themeSettingsCloseButton {background: none;}
+#actualSettingsIcon {content:url(../images/settingsLight.png)}
+video {border-radius: 10px;}
+iframe {border-radius: 10px;}
+
+#bgByDefault {display: none;}
+#themeSettingsCloseButton {background-color: gray;}

@@ -1,0 +1,87 @@
+<!DOCTYPE html><head><title>Projects</title>
+    <link rel="icon" href="images/oldpfp.png">
+    <link rel="stylesheet" href="css/theme.css" id="themeLink">
+    <link rel="stylesheet" href="css/divcssProjects.css">
+    <meta name="darkreader-lock">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>
+    
+
+<div class="links">
+     
+    <b>Links</b>
+    <br><br>
+    <a href="index.html"><button>Homepage</button></a>
+    <a href="calculator.html"><button>Calculator</button></a>
+    <button class="button0">DB Quiz</button>
+    <a href="inputs.html"><button>Inputs</button></a>
+    <a href="../index.html"><button>Back</button></a>
+    </div>
+    
+    <br><span id="themeMenuGoesHere1"></span>
+    <span id="settingsIconGoesHere1"></span>
+
+
+    <span id="titleScreen">
+    <div>
+        This is a JavaScript port of a Dragon Ball quiz I made in <a target="_blank" href="https://github.com/Yoshomay/batch-stuff/blob/main/dbQuiz.bat">batch scripting</a>. 
+    </div><br><br>
+
+    <div >
+        Dragon Ball quiz by Yoshomay. There are 10 questions in total.<br>
+
+        <button onclick="gameStart();">Start Game</button>
+    </div></span>
+
+    <!--  questions  -->
+    <div id="questions" style="display: none; position: relative;"><br>
+        <span id="score" style="text-align: left; position: absolute ; top: 10px; left: 10px;">Score: Error</span>
+        <span id="exitButton" style="position: absolute; right: 10px; top: 10px;">
+            <button onclick="triggerEndScreen();">Give up</button></span>
+        <span id="lastQuestion"></span><br>
+
+        
+        <span id="question">Question: Error</span><br><br>
+        <button onclick="quizButtonPressed(1);" id="button1" style="min-width: 50px;">1</button>
+        <button onclick="quizButtonPressed(2);" id="button2" style="min-width: 50px;">2</button><br>
+        <button onclick="quizButtonPressed(3);" id="button3" style="min-width: 50px;">3</button>
+        <button onclick="quizButtonPressed(4);" id="button4" style="min-width: 50px;">4</button>
+
+    </div>
+
+ <!--  end screen  -->
+    <div id="endScreen" style="display: none;">
+        <span id="finalScore">Error</span><br><br>
+        <button onclick="gameStart();">Try again</button><br>
+        <button onclick="seeAnswers();">See the answers</button><br>
+        <a href="https://yoshomay.epizy.com/stuffforvideos/how_may_i_take_your_order.png" target="_blank"><button>Talk to customer support</button></a><br>
+        <button onclick="triggerTitleScreen();">Go to the Title Screen</button>
+    </div>
+
+    <!--  answers  -->
+    <span id="answers" style="display: none;">
+        <div>Question  1, Who is Vegeta's brother?: Tarble</div><br>
+        <div>Question  2, Who voiced Goku in the Ocean dub?: Peter Kelamis</div><br>
+        <div>Question  3, When did the first Dragon Ball Fortnite colab release?: Chapter 3 season 3</div><br>
+        <div>Question  4, What was the theme song used in the orignal English Dragon Ball Z dub?: Rock the Dragon</div><br>
+        <div>Question  5, How many times *in the main cannon timeline* has Krillin died?: 3</div><br>
+        <div>Question  6, What universe is Giren from?: 7</div><br>
+        <div>Question  7, Who is the angel of universe 6?: Vados</div><br>
+        <div>Question  8, Who has not died in the *main cannon timeline*? (excluding Super Buu): Gohan</div><br>
+        <div>Question  9, What movie came right after Bio Broley?: Fusion Reborn</div><br>
+        <div>Question  10, 'Dragon Ball Minus' is from what manga?: Jaco the Galactic Patrolman</div><br>
+
+        <div><button onclick="triggerEndScreen();">Go back</button></div>
+    </span>
+
+
+
+
+    <script src="theme.js"></script>
+    <script src="DBQuiz.js"></script>
+    
+    <br><br><br>
+    
+    </body>
+    </html>
+    

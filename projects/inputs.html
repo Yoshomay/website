@@ -1,0 +1,76 @@
+<!DOCTYPE html><head><title>Projects</title>
+    <link rel="icon" href="images/oldpfp.png">
+    <link rel="stylesheet" href="css/theme.css" id="themeLink">
+    <link rel="stylesheet" href="css/divcssProjects.css">
+    <meta name="darkreader-lock">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>
+    
+
+<div class="links">
+
+    <a href="index.html"><button>Homepage</button></a>
+    <a href="calculator.html"><button>Calculator</button></a>
+    <a href="DBQuiz.html"><button>DB Quiz</button></a>
+    <button class="button0">Inputs</button>
+    <a href="../index.html"><button>Back</button></a>
+</div>
+
+    
+<br><span id="themeMenuGoesHere1"></span>
+<span id="settingsIconGoesHere1"></span>
+
+
+<div style="max-width: 300px;">Input text in the box below.</div><br><br>
+
+<div id="textGoesHere" style="max-width: 85%; word-break: break-all;">
+</div><br>
+
+<div style="width: fit-content;">
+    <input type="tex" style="border-radius: 6px;" id="textBox">
+    <button onclick="pressedButton('button');">Confirm</button>
+    <button onclick="pressedButton('clear')">Clear</button>
+</div>
+
+
+
+
+<script src="theme.js"></script>
+    
+
+
+
+<script>
+
+function pressedButton(input) {
+    let text = document.getElementById('textBox').value;
+    document.getElementById('textBox').value = "";
+    if (input == 'clear') {document.getElementById('textBox').value = ""; text = ""; }
+    document.getElementById('textGoesHere').innerHTML = text;
+
+}
+</script>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<div style="max-width: 300px;">Click the button below to upload a picture.</div><br><br>
+
+<div id="imgDiv"><img id="imageDiv" style="max-width: 400px; display: none;;"></div><br>
+
+
+<div><input type="file" accept=".png, .jpg, .jpeg, .webp, .gif" id="inputButton"></div>
+
+
+<script>
+const inputButton = document.getElementById('inputButton');
+inputButton.addEventListener('change', function() {uploadButton();})
+    
+    function uploadButton() {
+    const uploadedFile = inputButton.files[0];
+    const fileURL = URL.createObjectURL(uploadedFile);
+    document.getElementById('imageDiv').src = fileURL;}
+</script>
+
+</body>
+</html>

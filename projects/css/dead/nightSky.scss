@@ -1,0 +1,69 @@
+body {
+    background-image: url("../images/background3.png");
+    background-attachment: fixed;
+    background-size: cover;
+    @media screen and (max-width: 480px) {background-position: 35%;}}
+
+
+.links {max-width: 400px; padding: 4px; text-shadow: 5px 2px 4px black;
+        background-color: rgba(0,0,0,0.4);}
+p {color:white; text-align: center;}
+
+div {
+    background-color: rgba(0,0,0,0.4);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+	filter: drop-shadow(1px 1px 2px black);
+    padding: 5px;
+    width: fit-content;
+}
+
+a {color:white; text-decoration-style: underline;}
+
+button {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    cursor: pointer;
+    //box-shadow: 0 4px gray;
+    margin: 5px auto;
+    color: lightgray;
+    padding: 3px;
+    outline: none;
+    border: solid black 0px;
+
+    transition: background-color 150ms ease-out;
+    transition: padding 200ms ease-out;
+    transition: color 150ms ease-out;
+    transition: font-weight 150ms ease-out;
+
+&:hover {
+    transition: background-color 150ms ease-in;
+    transition: padding 200ms ease-in;
+    transition: color 100ms ease-in;
+    transition: font-weight 150ms ease-in;
+        
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    }
+
+&:active {cursor: not-allowed;}
+}
+
+.button0, #nightSkyButton {background-color:rgba(255, 255, 255, 0.1);}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.col {background-color: rgba(0, 0, 0, 0.1);}
+.mylinks {background-color: rgba(0, 0, 0, 0.1);}
+
+#bgByDefault {display: none;}
