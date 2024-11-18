@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/background4.png");
+    background-image: url("../images/backgrounds/matterhornDB.webp");
     background-attachment: fixed;
     background-size: cover;
 @media screen and (max-width: 480px) {background-position: 35%;}}
@@ -47,10 +47,10 @@ button {
     font-weight: bold;
     }
 
-&:active {cursor: not-allowed;}
+
 }
 
-.button0 {background-color:rgba(255, 255, 255, 0.1);}
+.button0, #defaultButton {background-color:rgba(255, 255, 255, 0.1); &:active {cursor: not-allowed;}}
 
 img {
     display: block;
@@ -61,23 +61,12 @@ img {
 
 video {border-radius: 10px;}
 iframe {border-radius: 10px;}
+.ref {border-style: solid; border-color: black;}
+#settingsIcon {padding: 5px;
+               img {margin: 0;}}
 
-.settingsIcon {top: 2%; left: 1%; height: 20px; width: 20px; cursor:pointer; position: absolute; 
-    position: fixed;
-
-  &:hover {animation: spin 500ms ease-in-out;}}
-  @keyframes spin {100% {transform: rotate(180deg);}}
-
-
-.settings {
-    position: fixed;
-    left: 1%;
-    top: 7%;
-    width: auto;
-    padding: 0 5px;
-    z-index: 1000;
-    visibility: hidden;
-}
+#bgByDefault {display: block;}
+#themeSettingsCloseButton {background-color: rgba(255, 255, 255, 0.05)}
 
 
 //                                      ;;.

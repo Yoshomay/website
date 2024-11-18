@@ -1,0 +1,65 @@
+body {
+    background-image: url("../images/backgrounds/palmBeach.webp");
+    background-attachment: fixed;
+    background-size: cover;
+@media screen and (max-width: 480px) {background-position: 35%;}}
+
+
+.links {max-width: 402px; text-shadow: 5px 2px 4px black;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+
+div {
+    margin: 0 auto;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    width: fit-content;
+
+    backdrop-filter: blur(6px);
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+
+    @supports not (-moz-animation: none) {   //chromium (ew)
+    background-color: rgba(0,0,0,0.25);}
+    } 
+
+a {color:white; text-decoration-style: underline;}
+
+button {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px auto;
+    color: lightgray;
+    padding: 3px;
+    outline: none;
+    border: solid black 0px;
+
+&:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    }
+}
+
+.button0, #palmBeachButton {background-color:rgba(255, 255, 255, 0.1); 
+                    &:active {cursor: not-allowed;}}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+video {border-radius: 10px;}
+iframe {border-radius: 10px;}
+
+#bgByDefault {display: none;}
+#themeSettingsCloseButton {background-color: rgba(255, 255, 255, 0.05)}

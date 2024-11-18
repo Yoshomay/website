@@ -1,6 +1,7 @@
 body {
-  background-image: url("../images/background.png");
+  background-image: url("../images/backgrounds/legacy.webp");
   background-repeat: repeat;
+  color: white;
 }
 
 a {
@@ -8,17 +9,14 @@ a {
   text-decoration-style: underline;
 }
 
-audio {
-  border-radius: 10px;
-}
-
 div {
   background-color: rgb(24, 26, 27);
   margin: 0 auto;
   border-radius: 7px;
-  border: solid black 4px;
-  filter: drop-shadow(1px 1px 2px black);
   padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
 }
 
 p {
@@ -30,6 +28,7 @@ p {
   max-width: 390px;
   padding: 4px;
   text-shadow: 5px 2px 4px black;
+  text-align: center;
 }
 
 button {
@@ -40,8 +39,8 @@ button {
   color: white;
   border-radius: 4px;
   box-shadow: 0 4px gray;
-  margin: 5px auto;
   text-shadow: 1px 1px 4px black;
+  margin: 5px auto;
 }
 @media screen and (min-width: 481px) {
   button:hover {
@@ -61,53 +60,17 @@ button {
   }
 }
 
-.button0 {
+.button0, #legacyButton {
   background-color: rgb(75, 75, 75);
   border-color: white;
-  border-radius: 4px;
 }
 @media screen and (min-width: 481px) {
-  .button0 {
+  .button0, #legacyButton {
     text-shadow: 1px 1px 4px black;
   }
-  .button0:hover {
+  .button0:hover, #legacyButton:hover {
     box-shadow: 0 4px white;
     font-weight: bold;
-  }
-}
-.button0:active {
-  transform: translateY(0);
-}
-@media screen and (max-width: 480px) {
-  .button0 {
-    padding: 4px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px black;
-  }
-}
-
-.themeButton1 {
-  background-color: rgb(75, 75, 75);
-  border-color: white;
-  border-radius: 4px;
-}
-@media screen and (min-width: 481px) {
-  .themeButton1 {
-    text-shadow: 1px 1px 4px black;
-  }
-  .themeButton1:hover {
-    box-shadow: 0 4px white;
-    font-weight: bold;
-  }
-}
-.themeButton1:active {
-  transform: translateY(0);
-}
-@media screen and (max-width: 480px) {
-  .themeButton1 {
-    padding: 4px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px black;
   }
 }
 
@@ -119,33 +82,28 @@ img {
   border-radius: 10px;
 }
 
-.settingsIcon {
-  top: 2%;
-  left: 1%;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-  position: absolute;
-  position: fixed;
+.col {
   border: none;
 }
-.settingsIcon:hover {
-  animation: spin 500ms ease-in-out;
+.col img {
+  border: none;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(180deg);
-  }
+.artGridContainer {
+  border: none;
 }
-.settings {
-  position: fixed;
-  left: 1%;
-  top: 7%;
-  width: auto;
-  padding: 0 5px;
-  z-index: 1000;
-  visibility: hidden;
+
+.settingsIcon {
+  padding: 2px;
+}
+.settingsIcon img {
+  background: none;
+  border: none;
+}
+
+.themeSettings {
+  text-align: center;
+  align-items: center;
 }
 
 p::-moz-selection {
@@ -166,4 +124,8 @@ p::-o-selection {
 p::selection {
   background: gray;
   color: white;
+}
+
+#bgByDefault {
+  display: none;
 }/*# sourceMappingURL=legacy.css.map */

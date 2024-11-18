@@ -1,0 +1,14 @@
+* added themes (MatterhornDB, Palm Beach, Simple Light, Simple Dark, Alpenglow, Old Reddit, Twitter, Youtube, Source, and readed Legacy)
+* added themes.js
+* updated all backgrounds to be webp's
+
+* Made all the /myfursona art pieces be added in by a js function inside of myFursona.js
+* added myFursona.js
+* adjusted the css grid on /myfursona to fit 1 art piece per row on mobile
+* added /projects (/projects will not be tracked in the changelog or contribute to the main site's version number)
+
+* added snowreal16 to /myfursona
+* added sticker to /myfursona
+* added V1RTUALTRAPP4 to /myfursona 
+* added V1RTUALTRAPP5 to /myfursona 
+
