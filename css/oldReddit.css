@@ -69,12 +69,12 @@ img {
 
 .artGridContainer {
   border: none;
-  background-color: white;
+  background-color: e2dbd2;
 }
 
 .col {
   background-color: white;
-  border: none;
+  border: solid #336699 1px;
   padding: 1px;
 }
 

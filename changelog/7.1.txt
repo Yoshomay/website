@@ -1,0 +1,12 @@
+* Added snow28
+* Added Samyo popup in /art
+* Added Isometric Bedroom in /art
+* Added Isometric Bedroom popup in /art
+* Reordered renders in /art to be in the correct order
+* Added campsite gmod map to /art
+* Added jueves de racismo to /art
+* Added credits to renders that require credits in /art
+* Added /credits/
+* Added my bluesky to /mylinks
+* Made themes work on /404
+* Fixed lots of bugs with the grid in /myfursona and /art

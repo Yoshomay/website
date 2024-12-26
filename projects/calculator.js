@@ -7,6 +7,7 @@ function pressedCalcButton(input) {
 try {
 
     if ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ' + ', ' - ', ' * ', ' / ',].includes(input) || input == '.' || input == '(' || input == ')') {
+        if (input == '(') {input = '*('};
         if ([' + ', ' - ', ' * ', ' / ',].includes(input) && currentCalc == "") {currentCalc = 0;}
         if (input == '.' && currentCalc == "") {currentCalc = 0;}
         currentCalc = String(currentCalc) + String(input);}

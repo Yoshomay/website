@@ -18,6 +18,7 @@ colCreator(stickersDiv, 'images/yosho/sticker.png', 'images/yosho/lowres/sticker
     <a href="https://t.me/addstickers/yoshomay" target="_blank">Telegram ych stickerpack</a> by PulexArt 
     <a href="https://www.pulexart.com/store/p80/Pride_Stickers_2023.html" target="_blank">(1)</a> 
     <a href="https://www.pulexart.com/store/p97/Pride_Stickers_2024.html" target="_blank">(2)</a>
+    <a href="https://www.pulexart.com/store/p26/australian-shepherd.html" target="_blank">(3)</a>
     `);
 
 
@@ -209,6 +210,11 @@ colCreator(snow26Div, 'images/yosho/snow26.png', 'images/yosho/lowres/snow26_low
 const snow27Div = document.getElementById('snow27');
 colCreator(snow27Div, 'images/yosho/snow27.png', 'images/yosho/lowres/snow27_lowres.webp',`
     Redraw of a previous piece again
+    `);
+
+const snow28Div = document.getElementById('snow28');
+colCreator(snow28Div, 'images/yosho/snow28.png', 'images/yosho/lowres/snow28_lowres.webp',`
+    Redraw of the christmas piece
     `);
 
 
