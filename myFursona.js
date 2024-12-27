@@ -239,11 +239,15 @@ colCreator(v1rtualtrapp4Div, 'images/yosho/V1RTUALTRAPP4.png', 'images/yosho/low
     Commision by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a> #4
     `);
 
-const v1rtualtrapp5Div = document.getElementById('v1rtualtrapp5');
-colCreator(v1rtualtrapp5Div, 'images/yosho/V1RTUALTRAPP5.png', 'images/yosho/lowres/V1RTUALTRAPP5_lowres.webp',`
-    Commision by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a> #5 paid by snowy again lol
+const v1rtualtrapp5Div = document.getElementById('nyxie');
+colCreator(v1rtualtrapp5Div, 'images/yosho/nyxie.png', 'images/yosho/lowres/nyxie_lowres.webp',`
+    Ych by <a href="https://www.etsy.com/listing/1778678177/sweet-treat-ych" target="_blank">Nyxie</a> paid by snowy again lol.
     `); 
 
+const hanutedharvestDiv = document.getElementById('hanutedharvest');
+colCreator(hanutedharvestDiv, 'images/yosho/HanutedHarvest.png', 'images/yosho/lowres/HanutedHarvest_lowres.webp',`
+    Cuddle commision by  <a href="https://www.etsy.com/shop/HanutedHarvest" target="_blank">HanutedHarvest</a> paid by snowy.
+    `); 
 
 const kyatDiv = document.getElementById('kyat');
 colCreator(kyat, 'images/yosho/kyat.png', 'images/yosho/lowres/kyat_lowres.webp',`
