@@ -59,12 +59,12 @@ pre {
   font-family: inherit;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 341px) {
   .ref img {
     width: 400px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 340px) {
   .ref img {
     width: 85%;
   }
