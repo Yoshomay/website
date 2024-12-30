@@ -1,0 +1,47 @@
+div {
+    padding: 2px;
+    margin: 0 auto;
+    background-color:rgb(24, 26, 27);
+}
+
+.start { border-radius: 2px; max-width:200px;}
+.end { border-radius: 2px; max-width: 240px;}
+
+.pfp1 {border-radius: 10px; max-width: 250px;}
+.pfp2 {border-radius: 6px; max-width: 300px;}
+.ref1 {border-radius: 10px; max-width: 400px;}
+.ref2 {border-radius: 6px; max-width: 430px;}
+.centari1-1 {border-radius: 10px; max-width: 250px;}
+.centari1-2 {border-radius: 6px; max-width: 270px;}
+.centari2-1 {border-radius: 10px; max-width: 380px;}
+.centari2-2 {border-radius: 6px; max-width: 220px;}
+.jin1 {border-radius: 10px; max-width: 250px;}
+.jin2 {border-radius: 6px; max-width: 290px;}
+.sin1 {border-radius: 10px; max-width: 250px;}
+.sin2 {border-radius: 6px; max-width: 220px;}
+.fbatcat1 {border-radius: 10px; max-width: 250px;}
+.fbatcat2 {border-radius: 6px; max-width: 220px;}
+.jcdl1 {border-radius: 10px; max-width: 290px;}
+.jcdl2 {border-radius: 6px; max-width: 200px;}
+.vird1 {border-radius: 10px; max-width: 290px;}
+.vird2 {border-radius: 6px; max-width: 270px;}
+.centari3-1 {border-radius: 10px; max-width: 200px;}
+.centari3-2 {border-radius: 6px; max-width: 240px;}
+.sori1 {border-radius: 10px; max-width: 290px;}
+.sori2 {border-radius: 6px; max-width: 270px;}
+.me1-1 {border-radius: 10px; max-width: 215px;}
+.me1-2 {border-radius: 6px; max-width: 270px;}
+.me2-1 {border-radius: 10px; max-width: 260px;}
+.me2-2 {border-radius: 6px; max-width: 270px;}
+.me3-1 {border-radius: 10px; max-width: 260px;}
+.me3-2 {border-radius: 6px; max-width: 270px;}
+.me4-1 {border-radius: 10px; max-width: 260px;}
+.me4-2 {border-radius: 6px; max-width: 100px;}
+.noah1 {border-radius: 10px; max-width: 380px;}
+.noah2 {border-radius: 6px; max-width: 270px;}
+.wyvro1 {border-radius: 10px; max-width: 300px;}
+.wyvro2 {border-radius: 6px; max-width: 210px;}
+.fluffyworks1 {border-radius: 10px; max-width: 350px;}
+.fluffyworks2 {border-radius: 10px; max-width: 350px;}
+.frigid1 {border-radius: 10px; max-width: 380px;}
+.frigid2 {border-radius: 6px; max-width: 350px;}

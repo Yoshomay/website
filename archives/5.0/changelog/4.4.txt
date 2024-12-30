@@ -1,0 +1,19 @@
+* Made the Centari link on /index open in a new tab
+* Added the link to the reuploads on /unlistedvideos
+* Seperated the 1 div on /unlistedvideos to be 2 divs
+* Added Deeskort and The Super Mario World hidden 1-ups to /unlistedvideos
+* Changed the text from "...not my 2nd channel" to "...not my shitpost channel"
+* Made the background image repeat, so if you have a big screen idk if it changed or not
+* Fixed the divs on /myfursona being on top of each other
+* Made the version number on /index to be 30% opacity until you hover over it, where it'll go to 100%
+* Made the Homepage button in the index go to http://yoshomay.rf.gd not /index
+* Added the background color to "Art by @CentariTehKitty on Twitter" on /index
+* Added a linebreak in /unlistedvideos for my video on protogens
+* Added the custom highlight menu
+* Added my pronouns to /aboutme
+
+Changes made to the code
+* Removed the <font> in /index
+* Reorganized /index
+* Removed the <u> around the links on /unlistedvideos because why are they there lol
+* Removed the height on the divs that had height set

@@ -1,0 +1,11 @@
+* Made the version number only show up on pc
+* Got rid of the active animation for the buttons on mobile
+* Made the text on the buttons bold when being hovered over on pc
+* Removed the duplicate "help no ideas" in /unlistedvideos
+* Renamed /myromhacks to showcase
+* Added the pong clone to /showcase
+* Made the Links 10px smaller so the bolded text doesn't force buttons down
+
+Made some changes to the code 
+	* Put the internal css in /gallery into a new file /gallery.css
+	* Made the background color and margin for divs in main.css to apply to all divs

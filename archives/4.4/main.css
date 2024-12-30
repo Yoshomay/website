@@ -1,0 +1,86 @@
+body {
+	background-image: url('images/background.png');
+	background-repeat: repeat;
+	background-color: rgb(20, 16, 16,);
+}
+
+p {
+	color:white;
+	text-align: center;
+}
+
+
+#index {
+	/*height: 22%;
+	width: 35%;*/
+	width: 450px;
+	height: 130px;
+	
+	background-color:rgb(24, 26, 27);
+	padding: 1px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+/* buttons */
+
+.button {
+	cursor: pointer;
+	outline: 3px;
+	border-color: gray;
+	color: white;
+	background-color:rgb(34, 36, 28);
+	border-radius: 4px;
+	box-shadow: 0 4px gray;
+}
+
+.button:hover {
+	border-color: white;
+	box-shadow: 0 4px white;
+}
+
+.button:active {
+	transform: translateY(4px);
+}
+
+.button0 {
+	outline: 3px;
+	color: white;
+	border-color: white;
+	background-color: rgb(75, 75, 75);
+	border-radius: 4px;
+	box-shadow: 0 4px gray;
+}
+
+.button0:hover {
+	box-shadow: 0 4px white;
+}
+
+/* /buttons */
+
+a {
+	color:white;
+	text-decoration-style: underline;
+}
+
+audio {
+    background-color: rgb(9.4, 10.2, 10.6);
+    border-radius: 10px;
+}
+
+img {
+	border:6px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+  }
+
+p:-moz-selection {
+	background: gray;
+    color: white;
+}
+p:selection {
+	background: gray;
+    color: white;
+}

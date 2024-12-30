@@ -1,0 +1,16 @@
+* Changed it to say I've been a furry for 2 years on /gallery
+* Migrated /aboutme to /index
+* Added "taken" to the About Me section
+* Put the version on the top right
+* Added text shadows to the buttons
+* Removed the HHG remix in /aboutme /index whatever
+* Made the redirect to the HHG remix on /showcase to an embed
+* Removed the /audio/ folder
+* Removed the link to /audio/ on /others
+* Changed Zorin OS Lite on /index to Zorin OS
+* Rewrote the About Me section
+* Added hover popup when hovering over "Hello, this is Yoshomay" on /index
+* Made the pong video div on /showcase 450px wide
+* Made the video embeds on /showcase 450px width max
+* Added /images/yosho/ folder to /others
+* Removed /images/yosho/smooth.mp4

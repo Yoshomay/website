@@ -1,0 +1,47 @@
+@media screen and (min-width: 1013px) {
+  .version {
+    position: absolute;
+    border-radius: 8px;
+    top: 1%;
+    right: 1%;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    opacity: 30%;
+    transition: opacity 150ms ease-out;
+  }
+  .version:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease-in;
+  }
+  .version:active {
+    cursor: not-allowed;
+  }
+  .version::before {
+    content: "Yoshomay Version 6.1, February 2nd";
+  }
+}
+.myLinks {
+  padding: 10px;
+  width: 300px;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 481px) {
+  .myLinks {
+    line-height: 135%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .myLinks {
+    line-height: 150%;
+  }
+}
+.myLinksPC {
+  display: grid;
+  grid-template-columns: 18.55% 25% 25%;
+  grid-gap: 50px;
+  background: none;
+  border: none;
+}/*# sourceMappingURL=divcss.css.map */

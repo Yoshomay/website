@@ -1,0 +1,23 @@
+* updated the everything i use section of /index
+
+* updated yosho's ref sheet on /myfursona to his new one
+* added snow23 to /myfursona
+* added snow24 to /myfursona
+* added snow25 to /myfursona
+* added snow26 to /myfursona
+* added snow27 to to /myfursona
+* added V1RTUALTRAPP1 to /myfursona
+* added V1RTUALTRAPP2 to /myfursona
+* added V1RTUALTRAPP3 to /myfursona
+* added sin3 to /myfursona
+* added better renders for imp1-1 and imp1-2 on /myfursona
+* added imp2 imp2-1 and imp2-2 on /myfursona
+
+* made the container of the gmod maps section of /art smaller
+* removed /dp
+* removed /nudes
+* added my github to /mylinks
+
+* made the theme on chromium look correct to how it looks on firefox
+* removed the bold fade in on hover for the buttons
+* fixed some links not opening in new tabs

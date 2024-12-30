@@ -1,0 +1,264 @@
+body {background-image: url("background.png");}
+
+#firsthello {
+    color:white;
+    background-color: gray;
+    font-size: large;
+    text-align: center;
+}
+
+.secondhello {
+	color:red;
+	background-color: green;
+	font-size: large;
+	text-align: justify;
+}
+
+#italic {
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.lower {
+	font-variant: small-caps;
+}
+
+span.baseline {
+    vertical-align: baseline;
+}
+span.sub {
+    vertical-align: sub;
+}
+span.super {
+    vertical-align: super;
+}
+span.pixel {
+    vertical-align: -10px;
+}
+
+.main {
+	align-items: center;
+	height: 60px; width: 250px;
+    background-color: rgb(24, 26, 27);
+    display: inline-table;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.overline {
+    text-decoration: overline;
+    text-align: center;
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+
+.blink {
+    text-indent: 50px;
+    text-decoration: blink;
+    text-align: center;
+    color: white;
+}
+
+.shadow{
+    color:white;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px black;
+    text-align: center;
+}
+
+.-spacing {
+    letter-spacing: -3px;
+    color: white;
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+} 
+
+.border {
+    border-style: outset;
+    padding: 10px;
+    background-color: white;
+    width: 250px;
+    border-width: 10px;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    text-decoration: uppercase;
+}
+
+.homepage {
+    border-style: outset;
+    padding: 5px;
+    background-color: white;
+    width: 84px;
+    border-width: 3px;
+    box-shadow: 10px;
+}
+
+button:active {
+    transform: translateY(4px);
+    color: black;
+}
+
+.aboutme {
+    border-style: outset;
+    padding: 5px;
+    background-color: rgb(24, 25, 27);
+    width: 80px;
+    border-width: 3px;
+    color: white;
+}
+
+.myfursona {
+    border-style: outset;
+    padding: 5px;
+    background-color: white;
+    width: 90px;
+    border-width: 3px;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.list {
+    color: white;
+    list-style-type: circle;
+}
+
+/* Css comment hehe */
+
+.textshadow {
+    text-shadow: 10px red, 20px white;
+}
+
+p::-moz-selection {
+    background: #8bc34a;
+    color: #fff;
+}
+p::selection {
+    background: #8bc34a;
+    color: #fff;
+}
+
+/*p::before {
+    content:url("http://yoshomay.rf.gd/images/oldpfp.png");
+}*/
+
+.gradient {
+        /*float: left;*/
+        width: 300px;
+        margin: 4px auto;
+        color: #FFF;  
+        background: linear-gradient(lime, rgb(207, 207, 2));
+        text-align: center;
+        padding: 5px;
+}
+
+.pfpopac {
+    opacity: .30;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 7px;
+}
+
+.pfpopac:hover {
+    opacity: 1;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.transition {
+    width: 50px;
+    height: 150px;
+    background: lime;
+    transition: width .5s;
+    -webkit-transition: width .5s;
+    padding: 2px;
+    margin: 0 auto;
+}
+.transition:hover {
+    height: auto;
+    width: 250px;
+    /*white-space: nowrap;*/
+}
+
+.scaledup {
+    background-color: black;
+    padding: 2px;
+    border-style: solid;
+    border-color: gray;
+    margin: 0 auto;
+    width: 200px;
+    transform:scale(2, 2);
+    text-align: center;
+}
+
+.notscaled {
+    background-color: black;
+    padding: 2px;
+    border-style: solid;
+    border-color: gray;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.animation {
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    height: 50px;
+    width: 0px;
+    background-color:red;
+    /*-webkit-animation-name: colorchange;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 2s;*/
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+    transform: scale(2);
+    margin: 0 auto;
+    text-align: center;
+    animation-direction: alternate;
+}
+@keyframes colorchange {
+    from { width: 30px; /*color: red;*/ }
+    to { width: 100px; /*color: white;*/ }
+}
+@-webkit-keyframes colorchange {
+    from { width: 0px; }
+    to { width: 100px; }
+}

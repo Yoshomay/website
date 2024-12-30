@@ -1,0 +1,14 @@
+p {text-align: center;}
+
+button {
+    background-color:rgb(34, 36, 28);
+    cursor: pointer;
+    outline: 3px;
+    border-color: gray;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px gray;
+    margin: 5px auto;
+        @media screen and (min-width: 481px) {
+        &:hover {border-color: white; box-shadow: 0 4px white; font-weight: bold;}
+        &:active {transform: translateY(4px);}}}

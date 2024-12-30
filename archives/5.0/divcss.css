@@ -1,0 +1,176 @@
+.pfpdiv {
+  padding: 5px;
+  max-width: 200px;
+  font-size: 12;
+  border-radius: 7px;
+}
+
+.hello0 {
+  padding: 10px;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 481px) {
+  .version {
+    position: absolute;
+    border-radius: 8px;
+    top: 1%;
+    right: 1%;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    opacity: 30%;
+  }
+  .version::before {
+    content: "Yoshomay Version 5.3, November xth";
+  }
+  .version:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .version:active {
+    cursor: not-allowed;
+  }
+}
+.helloindex {
+  padding: 5px;
+  width: 200px;
+  font-size: 18;
+  border-radius: 7px;
+}
+
+.artbycentari {
+  background-color: rgb(34, 36, 28);
+  padding: 1px;
+  border-radius: 7px;
+}
+
+.aboutmediv {
+  max-width: 150px;
+  padding: 4px;
+  margin: 10px auto;
+}
+
+.aboutmediv2 {
+  max-width: 600px;
+  padding: 15px;
+}
+
+@media screen and (min-width: 481px) {
+  .ref {
+    border-style: solid;
+    border-color: black;
+    width: 400px;
+  }
+  .refdiv {
+    padding: 3px;
+    width: 480px;
+    position: absolute;
+    left: 106px;
+    top: 170px;
+  }
+  .imaginediv {
+    padding: 7px;
+    width: 380px;
+    position: absolute;
+    left: 159px;
+    bottom: 120px;
+  }
+  .mysonadiv {
+    padding: 5px;
+    position: absolute;
+    max-width: 550px;
+    top: 170px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ref {
+    border-style: solid;
+    border-color: black;
+    height: 125px;
+    width: 275px;
+  }
+  .refdiv {
+    padding: 5px;
+    max-width: 320px;
+  }
+  .imaginediv {
+    padding: 6px;
+    max-width: 360px;
+  }
+  .mysonadiv {
+    padding: 5px;
+    max-width: 700px;
+  }
+}
+.unlistedvideos1 {
+  padding: 5px;
+  max-width: 430px;
+}
+
+.unlistedvideos2 {
+  padding: 15px;
+  max-width: 600px;
+}
+
+.myromhacks1 {
+  padding: 7px;
+  max-width: 450px;
+}
+
+.myromhacks2 {
+  padding: 10px;
+  max-width: 450px;
+}
+
+.pong {
+  padding: 7px;
+  max-width: 450px;
+}
+
+.mylinks {
+  padding: 10px;
+  max-width: 300px;
+  line-height: 135%;
+}
+
+.samyotop {
+  padding: 15px;
+  max-width: 300px;
+}
+
+.samyobottom {
+  padding: 15px;
+  max-width: 300px;
+}
+
+.four04top {
+  max-width: 200px;
+  padding: 10px;
+}
+
+.four04bottom {
+  padding: 5px;
+  max-width: 300px;
+}
+
+.face {
+  padding: 5px;
+  max-width: 500px;
+}
+
+.hello {
+  padding: 10px;
+  max-width: 100px;
+}
+
+.others1 {
+  padding: 10px;
+  max-width: 110px;
+}
+
+.others2 {
+  padding: 10px;
+  max-width: 400px;
+}/*# sourceMappingURL=divcss.css.map */

@@ -1,0 +1,182 @@
+/* Index */
+
+#pfpdiv {
+	background-color:rgb(24, 26, 27);
+	padding: 5px;
+	width: 200px;
+	margin: 0 auto;
+	font-size: 12;
+	border-radius: 7px;
+}
+
+versiondiv {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 1%;
+  right: 1%;
+  width: 250px;
+  font-size: 15px;
+
+  background-color:rgb(24, 26, 27);
+  padding: 3px;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  opacity: 30%
+}
+
+versiondiv:hover {
+	opacity: 100%;
+	cursor: pointer;
+}
+
+#hello {
+  background-color:rgb(24, 26, 27);
+  padding: 5px;
+  width: 220px;
+  margin: 0 auto;
+  border-radius: 7px;
+  font-size: 18;
+}
+
+.artbycentari {
+	background-color:rgb(34, 36, 28);
+	padding:1px;
+	border-radius: 5px;
+}
+
+/* About me */
+
+#aboutmediv {
+	background-color: rgb(24, 26, 27);
+	width: 150px;
+	padding: 1px;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+#aboutmediv2 {
+	background-color: rgb(24, 26, 27);
+	width: 600px;
+	padding: 15px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+/* My fursona */
+
+#ref {
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	width: 442px;
+}
+
+#refdiv {
+	background-color: rgb(24, 26, 27);
+	padding: 3px;
+	width: 480px;
+	border-radius: 7px;
+	position: absolute;
+	left: 8%;
+	top: 25.7%;
+}
+
+#imaginediv {
+	background-color: rgb(24, 26, 27);
+	padding: 7px;
+	width: 380px;
+	border-radius: 7px;
+	position: absolute;
+	margin: 0 auto;
+	left: 12%;
+	bottom: 27%;
+}
+
+#mysonadiv {
+	background-color: rgb(24, 26, 27);
+	padding: 5px;
+	position: absolute;
+	margin: 0 auto;
+	top: 28.09%;
+	right: 5%;
+	border-radius: 7px;
+}
+
+#unlistedvideos1 {
+	background-color:rgb(24, 26, 27);
+	padding: 5px;
+	width: 430px;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+#unlistedvideos2 {
+	background-color:rgb(24, 26, 27);
+	padding: 5px;
+	width: 600px;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+#myromhacks1 {
+	background-color:rgb(24, 26, 27);
+	padding:5px;
+	width:750px;
+	margin: 0 auto;
+	border-radius: 7px
+}
+
+#myromhacks2 {
+	background-color:rgb(24, 26, 27);
+	padding:10px;
+	width:450px;
+	margin:0 auto;
+	border-radius: 7px
+}
+
+/* samyo */
+
+#samyotop {
+	background-color: rgb(24, 26, 27);
+	padding: 15px;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+#samyobottom {
+	background-color: rgb(24, 26, 27);
+	padding: 15px;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+/* 404 */
+
+#four04top {
+	background-color: rgb(24, 26, 27);
+	width: 200px; 
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+#four04bottom {
+	background-color: rgb(24, 26, 27);
+	padding: 5px;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+/* contacts */
+
+#contacts {
+	background-color:rgb(24, 26, 27);
+	padding:1px;
+	width:500px;
+	margin:-7 auto;
+	border-radius: 10px;
+}y

@@ -1,0 +1,10 @@
+Updated /nudes to be more than a redirect😳
+Updated /contacts and /mylinks to have my new discord name
+Added my Telegram to /contacts and /mylinks
+
+Changes made to the code
+	Made the div on /contacts to be in /divcss.css instead of the html file
+	Made the css files into / not /css/
+	Made /test go to "tests/" not "http://yoshomay.rf.gd/tests/"
+	Updated the background color of /nudes and /test to be rgb(20, 16, 16) not rgb(24, 26, 27)
+	Added the .html file extention to all the pages

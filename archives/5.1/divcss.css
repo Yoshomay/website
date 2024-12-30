@@ -1,0 +1,224 @@
+/* Index */
+
+.pfpdiv {
+	padding: 5px;
+	max-width: 200px;
+	font-size: 12;
+	border-radius: 7px;
+}
+
+@media screen and (min-width:481px) {
+.version {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  font-size: 15px;
+  padding: 5px;
+  color: white;
+  border-radius: 7px;
+  opacity: 30%}
+
+.version::before {
+	content: "Yoshomay Version 5.1 June 28th";
+}
+
+.version:hover {
+	opacity: 1;
+	cursor: pointer;}
+.version:active {
+	cursor:not-allowed;}
+.version::-moz-selection {
+	background:rgb(24, 26, 27);
+    color: white;}
+.version::-webkit-selection {
+	background:rgb(24, 26, 27);
+    color: white;}}
+@media screen and (max-width: 480px) {}
+
+.hello {
+  padding: 5px;
+  width: 200px;
+  border-radius: 7px;
+  font-size: 18;
+}
+
+.artbycentari {
+	background-color:rgb(34, 36, 28);
+	padding:1px;
+	border-radius: 7px;
+}
+
+/* About me */
+
+.aboutmediv {
+	background-color: rgb(24, 26, 27);
+	max-width: 150px;
+	padding: 4px;
+	margin: 10px auto;
+	border-radius: 7px;
+}
+
+.aboutmediv2 {
+	background-color: rgb(24, 26, 27);
+	max-width: 600px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+/* My fursona */
+@media screen and (min-width: 481px) {
+.ref {
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	width: 400px;
+}
+
+.refdiv {
+	background-color: rgb(24, 26, 27);
+	padding: 3px;
+	width: 480px;
+	border-radius: 7px;
+	position: absolute;
+	left: 106px;
+	top: 170px;
+}
+
+.imaginediv {
+	background-color: rgb(24, 26, 27);
+	padding: 7px;
+	width: 380px;
+	border-radius: 7px;
+	position: absolute;
+	left: 159px;
+	bottom: 140px;
+}
+
+.mysonadiv {
+	background-color: rgb(24, 26, 27);
+	padding: 5px;
+	position: absolute;
+	max-width: 550px;
+	top: 170px;
+	right: 30px;
+	border-radius: 7px;
+}}
+
+@media screen and (max-width: 480px) {
+	.ref {
+		border-style: solid;
+		border-color: black;
+		border-radius: 7px;
+		height: 125px;
+		width: 275px;}
+	.refdiv {
+		background-color: rgb(24, 26, 27);
+		padding: 5px;
+		max-width: 320px;
+		border-radius: 7px;}
+	.imaginediv {
+		background-color: rgb(24, 26, 27);
+		padding: 6px;
+		max-width: 360px;
+		border-radius: 8px;}
+	.mysonadiv {
+		background-color: rgb(24, 26, 27);
+		padding: 5px;
+		border-radius: 7px;
+		max-width: 700px;}}
+
+/* Unlisted videos */
+
+.unlistedvideos1 {
+	padding: 5px;
+	max-width: 430px;
+	border-radius: 7px;
+}
+
+.unlistedvideos2 {
+	padding: 15px;
+	max-width: 600px;
+	border-radius: 7px;
+}
+
+/*Showcase */
+
+.myromhacks1 {
+	padding: 7px;
+	max-width: 450px;
+	border-radius: 7px;
+}
+
+.myromhacks2 {
+	padding: 10px;
+	max-width: 450px;
+	border-radius: 7px
+}
+
+.pong {
+	padding: 7px;
+	border-radius: 7px;
+	max-width: 600px;
+}
+
+/* My Links */
+
+	.mylinks {
+		background-color: rgb(24, 26, 27);
+		padding: 10px;
+		max-width: 300px;
+		border-radius: 7px;
+		line-height: 135%;}
+		
+/* Hidden Pages */
+
+.samyotop {
+	background-color: rgb(24, 26, 27);
+	padding: 15px;
+	max-width: 300px;
+	border-radius: 7px;
+}
+
+.samyobottom {
+	background-color: rgb(24, 26, 27);
+	padding: 15px;
+	max-width: 300px;
+	border-radius: 7px;
+}
+
+.four04top {
+	background-color: rgb(24, 26, 27);
+	max-width: 200px; 
+	padding: 10px;
+	border-radius: 7px;
+}
+
+.four04bottom {
+	background-color: rgb(24, 26, 27);
+	padding: 5px;
+	max-width: 300px;
+	border-radius: 7px;
+}
+
+.face {
+	padding: 5px;
+	max-width:500px;
+	border-radius: 7px;
+}
+
+.hello {
+	padding:10px;
+	max-width:400px;
+	border-radius: 7px
+}
+
+.fl {
+	height:15px;
+	width:15px;
+}
+
+.nudes2 {
+	/*height: 180px;*/
+	max-width: 320px;
+	background-color: black;
+}

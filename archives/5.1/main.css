@@ -1,0 +1,83 @@
+body {
+	background-image: url('images/background.png');
+	background-repeat: repeat;}
+	a {color:white; text-decoration-style: underline;}
+	audio {border-radius: 10px;}
+	
+p {color:white;text-align: center;}
+@media screen and (min-width:481px){
+div {background-color:rgb(24, 26, 27); margin: 0 auto;}}
+@media screen and (max-width:480px){
+	div {background-color:rgb(24, 26, 27); margin: 0 auto;}}
+
+	.links {
+	max-width: 390px;
+	padding: 4px;
+	border-radius: 7px;
+	text-shadow: 5px 2px 4px black;
+}
+
+/* buttons */
+@media screen and (min-width: 481px) {
+.button {
+	background-color:rgb(34, 36, 28);
+	cursor: pointer;
+	outline: 3px;
+	border-color: gray;
+	color: white;
+	border-radius: 4px;
+	box-shadow: 0 4px gray;
+	margin: 5px auto;}
+.button:hover {border-color: white; box-shadow: 0 4px white; font-weight: bold;}
+.button0 {
+	background-color: rgb(75, 75, 75);
+	outline: 3px;
+	color: white;
+	border-color: white;
+	border-radius: 4px;
+	box-shadow: 0 4px gray;}
+.button:active {transform: translateY(4px);}
+.button0:hover {box-shadow: 0 4px white; font-weight: bold;}}
+@media screen and (max-width: 480px) {
+	button {
+		font-size: 18px;
+		margin: 3px auto;}
+	.button {
+		background-color:rgb(34, 36, 28);
+		cursor: pointer;
+		outline: 3px;
+		border-color: gray;
+		color: white;
+		border-radius: 4px;
+		box-shadow: 0 4px gray;
+		margin: 5px auto;}
+	.button:hover {
+		border-color: white;
+		box-shadow: 0 4px white;}
+	.button0 {
+		background-color: rgb(75, 75, 75);
+		outline: 3px; color: white;
+		border-color: white;
+		border-radius: 4px; box-shadow: 0 4px gray;}}
+	.button0:hover {box-shadow: 0 4px white;}
+
+/* /buttons */
+
+@media screen and (min-width: 481px) {
+	img {
+		border:6px solid #000000;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;}}
+
+@media screen and (max-width: 480px) {
+	img {
+		border: 6px solid #000000;
+		border-radius: 10px;}}
+
+
+p::-moz-selection {background:gray;color:white;}
+p::-webkit-selection {background:grey;color:white;}
+p::-o-selection {background:gray;color:white;}
+p::selection {background:gray;color:white;} 

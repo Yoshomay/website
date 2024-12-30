@@ -1,0 +1,7 @@
+* Added some art pieces to /gallery (Gin, Worm, and Imp)
+* Added an ssl certificate so now you can go on Chromium based browsers
+* Added /others
+* Removed /face
+* Changed all mentions of Centari to his new username Falke
+* Added mentions to Samyo in /index (commented out)
+* Added /changelog/

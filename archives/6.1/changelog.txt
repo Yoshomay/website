@@ -1,0 +1,5 @@
+* Bug fixes
+    * Made Links 400px to prevent issues on chromium based browsers
+
+* Added snow to /myfursona
+* Added the actual mc skin file to /myfursona
