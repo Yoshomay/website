@@ -1,0 +1,101 @@
+body {
+  background-image: url("../images/background4.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-position: 35%;
+  }
+}
+
+.links {
+  max-width: 402px;
+  text-shadow: 5px 2px 4px black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+div {
+  margin: 0 auto;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+@supports not (-moz-animation: none) {
+  div {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+a {
+  color: white;
+  text-decoration-style: underline;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px auto;
+  color: lightgray;
+  padding: 3px;
+  outline: none;
+  border: solid black 0px;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+.button0, #defaultButton {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.button0:active, #defaultButton:active {
+  cursor: not-allowed;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+video {
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.ref {
+  border-style: solid;
+  border-color: black;
+}
+
+#settingsIcon {
+  padding: 5px;
+}
+#settingsIcon img {
+  margin: 0;
+}
+
+#bgByDefault {
+  display: block;
+}
+
+#themeSettingsCloseButton {
+  background-color: rgba(255, 255, 255, 0.05);
+}/*# sourceMappingURL=theme.css.map */

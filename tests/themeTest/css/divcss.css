@@ -1,0 +1,114 @@
+@media screen and (min-width: 1013px) {
+  .version {
+    position: fixed;
+    border-radius: 8px;
+    right: 1%;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    opacity: 30%;
+  }
+  .version:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease-in;
+  }
+  .version:active {
+    cursor: not-allowed;
+  }
+}
+
+.settingsIcon {
+  top: 2%;
+  left: 1%;
+  position: absolute;
+  padding: 4px;
+  z-index: 10;
+}
+
+.themeSettings {
+  width: 300px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+}
+.themeSettings hr {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .themeSettings {
+    width: 150px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+  }
+}
+
+@supports not (-moz-animation: none) {
+  .myLinksContainer {
+    background: none;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
+  .myLinksContainer .myLinks {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (min-width: 481px) {
+  .ref img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ref img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .artGridContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 85%;
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-gap: 1em;
+  }
+  @supports not (-moz-animation: none) {
+    .artGridContainer .col {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  .artGridContainer img, .artGridContainer iframe {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 481px) {
+  .artGridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 14px 0px 0 10px;
+    width: calc(100vw - 80px);
+    grid-gap: 1em;
+    margin: 0 auto;
+  }
+  .artGridContainer img, .artGridContainer iframe {
+    width: 160px;
+  }
+}
+.artGridContainer span {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.col {
+  align-self: start;
+  margin: 0 0 10px 0;
+}
+@media screen and (max-width: 480px) {
+  .col {
+    margin: 5 0 5 0 auto;
+  }
+}/*# sourceMappingURL=divcss.css.map */
