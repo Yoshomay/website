@@ -1,4 +1,5 @@
-* Added snow28
+* Added snow28 to /myfursona
+* Added hanutedharvest to /myfursona
 * Added Samyo popup in /art
 * Added Isometric Bedroom in /art
 * Added Isometric Bedroom popup in /art

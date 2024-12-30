@@ -138,10 +138,39 @@ pre {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .bottomAdContainer {
+midadcontainer {
+  display: block;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+@media screen and (min-width: 601px) {
+  midadcontainer {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  midadcontainer {
+    width: 85%;
+  }
+}
+
+bottomAdContainer {
+  background: none;
+  border: none;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  /*
+  color: blue;
+  background-color: red;
+  overflow: hidden;
+  //*/
+}
+@media screen and (min-width: 601px) {
+  bottomAdContainer {
     position: fixed;
-    bottom: 0px;
-    margin: 0 auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }/*# sourceMappingURL=divcss.css.map */
