@@ -15,7 +15,7 @@
 ::)   else git commit -m "%commitChanges%"
 
 : pushes them to the repo
-git push
+git push --force
 
 echo.
 
