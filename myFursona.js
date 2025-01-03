@@ -202,6 +202,12 @@ colCreator(snow25Div, 'images/yosho/snow25.png', 'images/yosho/lowres/snow25_low
     owo
     `);
 
+const snow_racismDiv = document.getElementById('snow_racism');
+colCreator(snow_racismDiv, 'images/yosho/snowy_racism.gif', 'images/yosho/snowy_racism.gif',`
+    Yosho version of <a href="https://tenor.com/view/racism-gif-25147153" target="_blank">this meme</a>
+    `);
+
+
 const snow26Div = document.getElementById('snow26');
 colCreator(snow26Div, 'images/yosho/snow26.png', 'images/yosho/lowres/snow26_lowres.webp',`
     Redraw of a previous piece
@@ -216,6 +222,12 @@ const snow28Div = document.getElementById('snow28');
 colCreator(snow28Div, 'images/yosho/snow28.png', 'images/yosho/lowres/snow28_lowres.webp',`
     Redraw of the christmas piece
     `);
+
+const snow29Div = document.getElementById('snow29');
+colCreator(snow29Div, 'images/yosho/snow29.png', 'images/yosho/lowres/snow29_lowres.webp',`
+    Nom qwq
+    `);
+
 
 
 //  v1rtualtrapp1
@@ -242,6 +254,11 @@ colCreator(v1rtualtrapp4Div, 'images/yosho/V1RTUALTRAPP4.png', 'images/yosho/low
 const v1rtualtrapp5Div = document.getElementById('nyxie');
 colCreator(v1rtualtrapp5Div, 'images/yosho/nyxie.png', 'images/yosho/lowres/nyxie_lowres.webp',`
     Ych by <a href="https://www.etsy.com/listing/1778678177/sweet-treat-ych" target="_blank">Nyxie</a> paid by snowy again lol.
+    `); 
+
+const nyxie2Div = document.getElementById('nyxie2');
+colCreator(nyxie2Div, 'images/yosho/nyxie2.png', 'images/yosho/lowres/nyxie2_lowres.webp',`
+    Snowy (rudely) grabbin yosho's cheecks, ych by <a target="_blank" href="https://www.etsy.com/listing/1724299481/squishy-cheekies-ych">Nyxie</a>
     `); 
 
 const hanutedharvestDiv = document.getElementById('hanutedharvest');
