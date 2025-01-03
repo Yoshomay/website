@@ -11,11 +11,13 @@
 
 : says whats changed
 ::if "%commitChanges%"=="" (
-    git commit -m "cant be bothered to enter what"
+echo on
+    @git commit -m "cant be bothered to enter what"
 ::)   else git commit -m "%commitChanges%"
 
 : pushes them to the repo
-git push --force
+@echo off
+git push 
 
 echo.
 
