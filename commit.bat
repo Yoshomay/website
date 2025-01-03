@@ -17,7 +17,7 @@ echo on
 
 : pushes them to the repo
 @echo off
-git push 
+git push --force
 
 echo.
 
