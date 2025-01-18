@@ -248,22 +248,22 @@ colCreator(snowyCrackDiv, 'images/yosho/snowyCrack.png', 'images/yosho/lowres/sn
 //  v1rtualtrapp1
 const v1rtualtrapp1Div = document.getElementById('v1rtualtrapp1');
 colCreator(v1rtualtrapp1Div, 'images/yosho/V1RTUALTRAPP1.png', 'images/yosho/lowres/V1RTUALTRAPP1_lowres.webp',`
-    Commision by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a>
+    Commission by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a>
     `);
 
 const v1rtualtrapp2Div = document.getElementById('v1rtualtrapp2');
 colCreator(v1rtualtrapp2Div, 'images/yosho/V1RTUALTRAPP2.png', 'images/yosho/lowres/V1RTUALTRAPP2_lowres.webp',`
-     Commision by <a href="https://www.etsy.com/listing/1585723012" target="_blank">V1RTUALTRAPP</a>, paid by Snowy
+     Commission by <a href="https://www.etsy.com/listing/1585723012" target="_blank">V1RTUALTRAPP</a>, paid by Snowy
     `);
 
 const v1rtualtrapp3Div = document.getElementById('v1rtualtrapp3');
 colCreator(v1rtualtrapp3Div, 'images/yosho/V1RTUALTRAPP3.png', 'images/yosho/lowres/V1RTUALTRAPP3_lowres.webp',`
-    Commision by <a href="https://www.etsy.com/listing/1588749552" target="_blank">V1RTUALTRAPP</a> #3
+    Commission by <a href="https://www.etsy.com/listing/1588749552" target="_blank">V1RTUALTRAPP</a> #3
     `);
 
 const v1rtualtrapp4Div = document.getElementById('v1rtualtrapp4');
 colCreator(v1rtualtrapp4Div, 'images/yosho/V1RTUALTRAPP4.png', 'images/yosho/lowres/V1RTUALTRAPP4_lowres.webp',`
-    Commision by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a> #4
+    Commission by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a> #4
     `);
 
 const v1rtualtrapp5Div = document.getElementById('nyxie');
@@ -278,12 +278,12 @@ colCreator(nyxie2Div, 'images/yosho/nyxie2.png', 'images/yosho/lowres/nyxie2_low
 
 const hanutedharvestDiv = document.getElementById('hanutedharvest');
 colCreator(hanutedharvestDiv, 'images/yosho/HanutedHarvest.png', 'images/yosho/lowres/HanutedHarvest_lowres.webp',`
-    Cuddle commision by  <a href="https://www.etsy.com/shop/HanutedHarvest" target="_blank">HanutedHarvest</a> paid by snowy.
+    Cuddle commission by  <a href="https://www.etsy.com/shop/HanutedHarvest" target="_blank">HanutedHarvest</a> paid by snowy.
     `); 
 
 const kyatDiv = document.getElementById('kyat');
 colCreator(kyat, 'images/yosho/kyat.png', 'images/yosho/lowres/kyat_lowres.webp',`
-    Commision (paid by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
+    Commission (paid by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
     `)
 
 //  others
