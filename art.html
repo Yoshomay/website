@@ -18,7 +18,7 @@
     <meta name="darkreader-lock">
     
     <meta name="darkreader-lock">
-</head><body id="bodyThing">
+</head><body id="bodyThing" onclick="closePopupMenu();">
 <div class="links">
     <b>Links</b>
     <br><br>
@@ -43,8 +43,8 @@
 
     <div class="col">
         (Click to expand)
-        <img src="images/renders/lowres/samyoBlep_lowres.webp" onclick="openPopupMenu('samyoPopup');" style="cursor: pointer;"><br>
-        Samyo
+        <img src="images/renders/lowres/samyoBlep_lowres.webp" onclick="openPopupMenu('samyo');" style="cursor: pointer;"><br>
+        <a href="https://www.twitter.com/samyofox" target="_blank">Samyo</a>
     </div>
 
     <div class="col">
@@ -87,7 +87,7 @@
     <div class="col">
         <pre style="margin: 0; padding: 0;">12/23/24  |  <a target="_blank" href="credits/isometric_bedroom.txt"><u>Credits</u></a></pre>
         (Click to expand)
-        <img src="images/renders/bedroom_isometric/lowres/night_1x1_lowres.webp" onclick="openPopupMenu('isometricBedroomPopup');" style="cursor: pointer;"><br>
+        <img src="images/renders/bedroom_isometric/lowres/night_1x1_lowres.webp" onclick="openPopupMenu('bedroomisometric');" style="cursor: pointer;"><br>
         Cozy Isometric bedroom. The bedroom isn't based on anything in particular 
         just a bedroom that I'd like to have. Inspired by the album art of 
         <a href="https://www.youtube.com/playlist?list=PLKe_jP9awexEHEb9D0kky-KSq2fqdQPwD" target="_blank">Floating Rooms - June LaLonde</a> and <a href="https://store.steampowered.com/app/1369320/Virtual_Cottage/" target="_blank">Virtual Cottage</a>.
@@ -234,11 +234,11 @@
 
 
 
-<div class="popup" id="samyoPopup">
+<div class="popup" id="samyo">
     <br><br><br>
     <div><a>Samyo</a> Renders</div><br><br>
 
-    <button style="position: absolute; top: 3%; right: 3%;" onclick="closePopupMenu('samyoPopup');">Close</button>
+    <button style="position: absolute; top: 3%; right: 3%;" onclick="closePopupMenu('samyo');">Close</button>
 
     <div class="artGridContainer">
 
@@ -274,11 +274,11 @@
 
 
 
-<div class="popup" id="isometricBedroomPopup" style="max-width: 1050;">
+<div class="popup" id="bedroomisometric" style="max-width: 1050;">
     <br><br><br>
     <div>Night versions</div><br><br>
 
-    <button style="position: absolute; top: 3%; right: 3%;" onclick="closePopupMenu('isometricBedroomPopup');">Close</button>
+    <button style="position: absolute; top: 3%; right: 3%;" onclick="closePopupMenu('bedroomisometric');">Close</button>
     <div class="artGridContainer libraryIsometric">
 
     <div class="col">
@@ -330,7 +330,14 @@
     </script>
     </bottomAdContainer>
 
-
+    <script>
+        window.onload = function() {
+            var urlHashtag = window.location.hash;
+            urlHashtag = urlHashtag.slice(1);
+            urlHashtag = urlHashtag.toLocaleLowerCase();
+            openPopupMenu(urlHashtag);
+        }
+    </script>
 
     
 <script src="theme.js"></script>

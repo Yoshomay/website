@@ -1,13 +1,7 @@
-* Added snow28 to /myfursona
-* Added hanutedharvest to /myfursona
-* Added Samyo popup in /art
-* Added Isometric Bedroom in /art
-* Added Isometric Bedroom popup in /art
-* Reordered renders in /art to be in the correct order
-* Added campsite gmod map to /art
-* Added jueves de racismo to /art
-* Added credits to renders that require credits in /art
-* Added /credits/
-* Added my bluesky to /mylinks
-* Made themes work on /404
-* Fixed lots of bugs with the grid in /myfursona and /art
+* Added bluesky to /mylinsks
+* Reorganized the twitter section of /mylinks
+* Added hash support for /art to automatically open popups
+* Updated my keyboard in about me on /index
+* Fixed the div on /404 being huge
+
+* Added snowyPooter, snowyStrangle, and snowyCrack to /myfursona

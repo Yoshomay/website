@@ -218,6 +218,16 @@ colCreator(snow27Div, 'images/yosho/snow27.png', 'images/yosho/lowres/snow27_low
     Redraw of a previous piece again
     `);
 
+const snowyPooterDiv = document.getElementById('snowyPooter');
+colCreator(snowyPooterDiv, 'images/yosho/snowyPooter.png', 'images/yosho/lowres/snowyPooter_lowres.webp',`
+    The two gays playing games together
+    `);
+
+const snowyStrangleDiv = document.getElementById('snowyStrangle');
+colCreator(snowyStrangleDiv, 'images/yosho/snowyStrangle.png', 'images/yosho/lowres/snowyStrangle_lowres.webp',`
+    Snowy getting what he deserves
+    `);
+
 const snow28Div = document.getElementById('snow28');
 colCreator(snow28Div, 'images/yosho/snow28.png', 'images/yosho/lowres/snow28_lowres.webp',`
     Redraw of the christmas piece
@@ -226,6 +236,11 @@ colCreator(snow28Div, 'images/yosho/snow28.png', 'images/yosho/lowres/snow28_low
 const snow29Div = document.getElementById('snow29');
 colCreator(snow29Div, 'images/yosho/snow29.png', 'images/yosho/lowres/snow29_lowres.webp',`
     Nom qwq
+    `);
+
+const snowyCrackDiv = document.getElementById('snowyCrack');
+colCreator(snowyCrackDiv, 'images/yosho/snowyCrack.png', 'images/yosho/lowres/snowyCrack_lowres.webp',`
+    Yosho died qwq
     `);
 
 
