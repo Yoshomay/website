@@ -241,8 +241,12 @@ function pressedNo() {
 
 function pressedYes() {
     preEndScreenWTFBoxDiv.style.display = 'none';
-    yesButtonButtonSize = yesButtonButtonSize + .5;
-    yesButtonButton.style.transform = `scale(${yesButtonButtonSize});`; 
+    //yesButtonButtonSize = yesButtonButtonSize + .5;
+    //yesButtonButton.style.transform = `scale(${yesButtonButtonSize});`; 
+    yesButtonButtonSize = yesButtonButtonSize + 50;
+    yesButtonButton.style.width = `${yesButtonButtonSize}%`; 
+    yesButtonButton.style.height = `${yesButtonButtonSize}%`; 
+    yesButtonButton.style.fontSize = `${yesButtonButtonSize}%`; 
     timesPressed++;
     timesPressedDiv.style.display = 'block';
     timesPressedDiv.innerHTML = `Times Pressed: ${timesPressed}/500`;
