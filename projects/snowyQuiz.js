@@ -1,6 +1,7 @@
 const titleScreenDiv = document.getElementById('titleScreen');
 const questionsDiv = document.getElementById('questions');
 const preEndScreenDiv = document.getElementById('preEndScreen');
+const preEndScreenDiv2 = document.getElementById('preEndScreen2');
 const endScreenDiv = document.getElementById('endScreen');
 const scoreSpan = document.getElementById('score');
 const answersDiv = document.getElementById('answers');
@@ -21,7 +22,7 @@ const gmodDiv = document.getElementById('gmod');
 const textBoxBox = document.getElementById('textBox');
 const textBoxBox2 = document.getElementById('textBox2');
 const secondToLastScreenDiv = document.getElementById('secondToLastScreen')
-var yesButtonButtonSize = 1;
+var yesButtonButtonSize = 100;
 var timesPressed = 0;
 var currentQuestion = 1;
 var currentCorrectAnswer;
@@ -226,12 +227,15 @@ function quizButtonPressed(input) {
 function triggerPreEndScreen() {
     questionsDiv.style.display = 'none';
     preEndScreenDiv.style.display = 'block';
+    preEndScreenDiv2.style.display = 'inline-flex';
     snowyStrangleDiv.style.display = 'none';
+    snowyPooterDiv.style.display = 'none';
     snowyChristmasDiv.style.display = 'none';
-    snowyStrangleDiv.style.display = 'none';
+    
     timesPressed = 0;
-    yesButtonButtonSize = 1;
-    yesButtonButton.style.transform = `scale(1);`; 
+    yesButtonButtonSize = 100;
+
+    //yesButtonButton.style.transform = `scale(1);`; 
 
 }
 
@@ -241,12 +245,9 @@ function pressedNo() {
 
 function pressedYes() {
     preEndScreenWTFBoxDiv.style.display = 'none';
-    //yesButtonButtonSize = yesButtonButtonSize + .5;
-    //yesButtonButton.style.transform = `scale(${yesButtonButtonSize});`; 
-    yesButtonButtonSize = yesButtonButtonSize + 50;
-    yesButtonButton.style.width = `${yesButtonButtonSize}%`; 
-    yesButtonButton.style.height = `${yesButtonButtonSize}%`; 
+    yesButtonButtonSize = yesButtonButtonSize + 20;
     yesButtonButton.style.fontSize = `${yesButtonButtonSize}%`; 
+    yesButtonButton.style.fontWeight= 'bold';
     timesPressed++;
     timesPressedDiv.style.display = 'block';
     timesPressedDiv.innerHTML = `Times Pressed: ${timesPressed}/500`;
@@ -258,6 +259,7 @@ function pressedYes() {
 
 function triggerSnowyStrangle() {
     preEndScreenDiv.style.display = 'none';
+    preEndScreenDiv2.style.display = 'none'
     snowyStrangleDiv.style.display = 'block';
     timesPressedDiv.style.display = 'none';
 }
@@ -281,7 +283,7 @@ function triggerGmod() {
 
 function checkInput() {
     if (textBoxBox.value == 'snowyIsAGayHomoLolHehe') {triggerSecondToLastScreen();}
-    else {textBoxBox.value == '';}
+    else {textBoxBox.value = '';}
 }
 
 function triggerSecondToLastScreen() {
@@ -291,12 +293,11 @@ function triggerSecondToLastScreen() {
 
 function checkInput2() {
     if (textBoxBox2.value == '731') {triggerEndScreen();}
-    else {textBoxBox2.value == '';}
+    else {textBoxBox2.value = '';}
 }
 
 
 function triggerEndScreen() {
-    preEndScreenDiv.style.display = 'none';
     endScreenDiv.style.display = 'block';
     secondToLastScreenDiv.style.display = 'none';
     document.getElementById('finalScore').innerHTML = `The quiz is over, your final score was ${score}`

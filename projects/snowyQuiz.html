@@ -51,12 +51,14 @@
 
 <!--  pre end screen  -->
 
-<div id="preEndScreen" style="display: none; position: relative; min-width: 265px; width: fit-content;"><br>
+<div id="preEndScreen" style="display: none; ">
 
-    Do you want to see your final score?<br><br>
-    <button onclick="pressedNo();;" id="noButton" style="min-width: 50px;">No</button>
-    <button onclick="pressedYes();;" id="yesButton" style="width: 50px;">Yes</button>
-
+    Do you want to see your final score?</div><br>
+    <div id="preEndScreen2" style="display: none; width: fit-content; height: auto; position: absolute; left: 47%;">
+    <button onclick="pressedNo();;" id="noButton" style="height: 16px; ">No</button>
+    <button onclick="pressedYes();;" id="yesButton" style="width: fit-content;">Yes</button></div>
+        
+    <br><br><br><br>
     <div id="preEndScreenWTFBox" style="display: none;">Wtf why?</div>
     
 </div>
@@ -91,18 +93,18 @@
 
 <!--  gmod  -->
 
-<div id="gmod" style="display: none; position: relative;"><br>
+<div id="gmod" style="display: none; position: relative; max-width: 500px;"><br>
 
     Oki, below is a text box. Enter the correct password to continue.<br>
-    To get the correct password, open up gmod and 1v1 me with crossbows, first to 5 wins. Win a round and I'll give you the password hehe<br><br>
+    To get the correct password, open up gmod and 1v1 me with crossbows, first to 3 wins. Win a round and I'll give you the password hehe<br><br>
     
     <input type="text" id="textBox"><button onclick="checkInput();">Submit</button>
 
 </div>
 
 
-<div id="secondToLastScreen" style="display: none; position: relative;"><br>
-
+<div id="secondToLastScreen" style="display: none; position: relative; max-width: 500px;"><br>
+ 
     Final thing for the quiz cus im lazy, how many days have we been together?<br>
     
     <input type="text" id="textBox2"><button onclick="checkInput2();">Submit</button>
