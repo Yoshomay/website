@@ -332,7 +332,7 @@ function triggerGmod() {
 }
 
 function checkInput() {
-    if (textBoxBox.value == 'snowyIsAGayHomoLolHehe') {triggerSecondToLastScreen();}
+    if (textBoxBox.value == 'Correct hehe') {triggerSecondToLastScreen();}
     else {textBoxBox.value = '';}
 }
 
