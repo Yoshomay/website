@@ -163,6 +163,51 @@ const question14 = {
 }
 
 const question15 = {
+    question: "When was the supeflat server made?",
+    ans1: "June 2023", 
+    ans2: "March 2023", 
+    ans3: "May 2023", 
+    ans4: "May 2024",
+    correctAns: 3
+}
+
+const question16 = {
+    question: "What did you edit hypixel fun pt2 in?",
+    ans1: "Davinci Resolve", 
+    ans2: "Sony Vegas", 
+    ans3: "Wondershare Filmora", 
+    ans4: "Clipchamp",
+    correctAns: 4
+}
+
+const question17 = {
+    question: "Why did we play terraria in the first place? (Ask in vc again)",
+    ans1: "2", 
+    ans2: "3", 
+    ans3: "4", 
+    ans4: "5",
+    correctAns: 2
+}
+
+const question18 = {
+    question: "How many people (that we know of) have been to our 0b base?",
+    ans1: "1", 
+    ans2: "2", 
+    ans3: "3", 
+    ans4: "4",
+    correctAns: 4
+}
+
+const question19 = {
+    question: "What was the first art of us together",
+    ans1: "Maid art", 
+    ans2: "Worm art", 
+    ans3: "Christmas one", 
+    ans4: "The one meow gif",
+    correctAns: 2
+}
+
+const question20 = {
     question: "And for the final question, to bring it back, what were we playing right before u asked me out?",
     ans1: "Terraria (obv)", 
     ans2: "Minecraft", 
@@ -220,7 +265,12 @@ function quizButtonPressed(input) {
     else if (currentQuestion == 13) {applyQuestions(question13);}
     else if (currentQuestion == 14) {applyQuestions(question14);}
     else if (currentQuestion == 15) {applyQuestions(question15);}
-    else if (currentQuestion == 16) {triggerPreEndScreen();}
+    else if (currentQuestion == 16) {applyQuestions(question16);}
+    else if (currentQuestion == 17) {applyQuestions(question17);}
+    else if (currentQuestion == 18) {applyQuestions(question18);}
+    else if (currentQuestion == 19) {applyQuestions(question19);}
+    else if (currentQuestion == 20) {applyQuestions(question20);}
+    else if (currentQuestion == 21) {triggerPreEndScreen();}
 
 }
 
@@ -250,9 +300,9 @@ function pressedYes() {
     yesButtonButton.style.fontWeight= 'bold';
     timesPressed++;
     timesPressedDiv.style.display = 'block';
-    timesPressedDiv.innerHTML = `Times Pressed: ${timesPressed}/500`;
+    timesPressedDiv.innerHTML = `Times Pressed: ${timesPressed}/250`;
 
-    if (timesPressed == 500) {triggerSnowyStrangle();}
+    if (timesPressed == 250) {triggerSnowyStrangle();}
 }
 
 
@@ -300,7 +350,7 @@ function checkInput2() {
 function triggerEndScreen() {
     endScreenDiv.style.display = 'block';
     secondToLastScreenDiv.style.display = 'none';
-    document.getElementById('finalScore').innerHTML = `The quiz is over, your final score was ${score}`
+    document.getElementById('finalScore').innerHTML = `The quiz is over, your final score was ${score}/20`
 }
 
 function triggerTitleScreen() {
