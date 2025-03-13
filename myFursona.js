@@ -243,6 +243,16 @@ colCreator(snowyCrackDiv, 'images/yosho/snowyCrack.png', 'images/yosho/lowres/sn
     Yosho died qwq
     `);
 
+const snowyValentinesDiv = document.getElementById('snowyValentines');
+colCreator(snowyValentinesDiv, 'images/yosho/snowyValentines.png', 'images/yosho/lowres/snowyValentines_lowres.webp',`
+    Valentines gift <3
+    `);
+
+const snowyKitchenLickDiv = document.getElementById('snowyKitchenLick');
+colCreator(snowyKitchenLickDiv, 'images/yosho/snowyKitchenLick.png', 'images/yosho/lowres/snowyKitchenLick_lowres.webp',`
+    Snowy lickin me :angi:
+    `);
+
 
 
 //  v1rtualtrapp1
@@ -284,6 +294,11 @@ colCreator(hanutedharvestDiv, 'images/yosho/HanutedHarvest.png', 'images/yosho/l
 const kyatDiv = document.getElementById('kyat');
 colCreator(kyat, 'images/yosho/kyat.png', 'images/yosho/lowres/kyat_lowres.webp',`
     Commission (paid by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
+    `)
+
+const kyat2Div = document.getElementById('kyat2');
+colCreator(kyat2, 'images/yosho/kyat2.png', 'images/yosho/lowres/kyat2_lowres.webp',`
+    Fish eye lens flushed yosho by <a href="https://twitter.com/kyat2_Nguyen" target="_blank">kyat</a>
     `)
 
 //  others
