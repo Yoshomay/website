@@ -187,6 +187,11 @@ colCreator(snow22Div, 'images/yosho/snow22.png', 'images/yosho/lowres/snow22_low
     Cuddles
     `);
 
+const holdingHandsDiv = document.getElementById('holdingHands');
+colCreator(holdingHandsDiv, 'images/yosho/holdingHands.png', 'images/yosho/lowres/holdingHands_lowres.webp',`
+    The two gay's being gay
+    `);    
+
 const snow23Div = document.getElementById('snow23');
 colCreator(snow23Div, 'images/yosho/snow23.png', 'images/yosho/lowres/snow23_lowres.webp',`
     Beam struggle from Dragon Ball Z
@@ -243,6 +248,20 @@ colCreator(snowyCrackDiv, 'images/yosho/snowyCrack.png', 'images/yosho/lowres/sn
     Yosho died qwq
     `);
 
+const snowyValentinesDiv = document.getElementById('snowyValentines');
+colCreator(snowyValentinesDiv, 'images/yosho/snowyValentines.png', 'images/yosho/lowres/snowyValentines_lowres.webp',`
+    Valentines gift <3
+    `);
+
+const snowyKitchenLickDiv = document.getElementById('snowyKitchenLick');
+colCreator(snowyKitchenLickDiv, 'images/yosho/snowyKitchenLick.png', 'images/yosho/lowres/snowyKitchenLick_lowres.webp',`
+    Snowy lickin me :angi:
+    `);
+
+const owo2Div = document.getElementById('owo2');
+colCreator(owo2Div, 'images/yosho/owo2.png', 'images/yosho/lowres/owo2_lowres.webp',`
+    owo (part 2)
+    `);
 
 
 //  v1rtualtrapp1
@@ -281,9 +300,19 @@ colCreator(hanutedharvestDiv, 'images/yosho/HanutedHarvest.png', 'images/yosho/l
     Cuddle commission by  <a href="https://www.etsy.com/shop/HanutedHarvest" target="_blank">HanutedHarvest</a> paid by snowy.
     `); 
 
+const sirsquidbeeDiv = document.getElementById('sirsquidbee');
+colCreator(sirsquidbeeDiv, 'images/yosho/sirsquidbee.png', 'images/yosho/lowres/sirsquidbee_lowres.webp',`
+    Divorce selfie!! o(≧∇≦o)<br>by <a target="_blank" href="https://ko-fi.com/sirsquidbee">sirsquidbee</a>  
+    `); 
+
 const kyatDiv = document.getElementById('kyat');
 colCreator(kyat, 'images/yosho/kyat.png', 'images/yosho/lowres/kyat_lowres.webp',`
     Commission (paid by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
+    `)
+
+const kyat2Div = document.getElementById('kyat2');
+colCreator(kyat2, 'images/yosho/kyat2.png', 'images/yosho/lowres/kyat2_lowres.webp',`
+    Fish eye lens flushed yosho by <a href="https://twitter.com/kyat2_Nguyen" target="_blank">kyat</a>
     `)
 
 //  others

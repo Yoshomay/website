@@ -135,6 +135,7 @@ const question11 = {
     correctAns: 3
 }
 
+/*
 const question12 = {
     question: "What was the first (main channel long form) video I made after being with u?",
     ans1: "Yoshi Fan Games", 
@@ -142,7 +143,17 @@ const question12 = {
     ans3: "No Jr. Troopa", 
     ans4: "Making Terraria look like 1.0",
     correctAns: 2
+}*/
+
+const question12 = {
+    question: "What was the second (main channel long form) video I made after being with u?",
+    ans1: "Yoshi Fan Games", 
+    ans2: "SMW Floor is lava", 
+    ans3: "No Jr. Troopa", 
+    ans4: "Making Terraria look like 1.0",
+    correctAns: 3
 }
+
 
 const question13 = {
     question: "What is my favorite album?",
@@ -284,6 +295,7 @@ function triggerPreEndScreen() {
     
     timesPressed = 0;
     yesButtonButtonSize = 100;
+    yesButtonButton.style.fontSize = `${yesButtonButtonSize}%`; 
 
     //yesButtonButton.style.transform = `scale(1);`; 
 
@@ -332,7 +344,7 @@ function triggerGmod() {
 }
 
 function checkInput() {
-    if (textBoxBox.value == 'snowyIsAGayHomoLolHehe') {triggerSecondToLastScreen();}
+    if (textBoxBox.value == 'Correct hehe') {triggerSecondToLastScreen();}
     else {textBoxBox.value = '';}
 }
 
