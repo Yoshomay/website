@@ -1,0 +1,5 @@
+* Removed ads across the entire site
+* Added owo2 to /myfursona
+* Added sirsquidbee to /myfursona
+* Added holdingHands to /myfursona
+* Updated sections of /index
