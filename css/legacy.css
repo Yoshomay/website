@@ -13,7 +13,7 @@ div {
   background-color: rgb(24, 26, 27);
   margin: 0 auto;
   border-radius: 7px;
-  padding: 5px;
+  padding: 12px;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -26,7 +26,7 @@ p {
 
 .links {
   max-width: 390px;
-  padding: 4px;
+  padding: 24px;
   text-shadow: 5px 2px 4px black;
   text-align: center;
 }
@@ -91,6 +91,7 @@ img {
 
 .artGridContainer {
   border: none;
+  background: none;
 }
 
 .settingsIcon {

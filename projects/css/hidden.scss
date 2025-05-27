@@ -1,17 +1,9 @@
-body {
-    background-color: rgb(42, 29, 75);
-    background-image: 
-    //linear-gradient(to bottom, #20123a, #947fd5),
-    url("../images/backgrounds/alpenglow.webp");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-}
+body {background-image: url(../images/yosho/snow28.png);
+      background-attachment: fixed;
+      background-size: cover;}
 
-.links {
-    background-color: rgb(45, 36, 91);
-    max-width: 402px;}
+
+.links {max-width: 402px;}
 
 
 div {
@@ -23,14 +15,17 @@ div {
     text-align: center;
     width: fit-content;
 
-    background-color: rgb(45, 36, 91);
+    background-image: url(../images/yosho/snow18.png);
+      background-size: cover;
 
     } 
 
 a {color:white; text-decoration-style: underline;}
 
 button {
-    background-color: transparent;
+    background-image: url(../images/yosho/snow25.png);
+    background-size: cover;
+
     border-radius: 4px;
     cursor: pointer;
     margin: 5px auto;
@@ -40,12 +35,14 @@ button {
     border: solid black 0px;
 
 &:hover {
-    background-color: rgb(62, 52, 100);;
+    background-color: darkgray;
     color: white;
+    padding: 3px;
+    font-weight: bold;
     }
 }
 
-.button0, #alpenglowButton {color: white; background-color:rgb(86, 76, 123);
+.button0 {color: white; background-image: url(../images/yosho/snow17.png);
                               &:active {cursor: not-allowed;}}
 
 img {
@@ -55,13 +52,10 @@ img {
     border-radius: 10px;
 }
 
-.artGridContainer {background-color: rgb(41, 31, 78);}
+.col {border-style: solid;
+      border-width: 1px;
+      border-color: darkgray;}
 
-.col {
-    border: solid 1px rgb(103, 93, 135);
-    background-color: rgb(45, 36, 91);}
-
-    #actualSettingsIcon {content:url(../images/settingsAlpenglow.png)}
 #themeSettingsCloseButton {background: none;}
 video {border-radius: 10px;}
 iframe {border-radius: 10px;}

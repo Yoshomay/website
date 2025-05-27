@@ -7,6 +7,7 @@ body {background-color: white;}
         border-style: solid;
         border: 2px;
         border-color: rgb(95, 153, 207);
+        padding-bottom: 25px;
 
         background-image: url(../images/backgrounds/oldRedditLogo.webp);
         background-position: bottom left 2%;
@@ -62,11 +63,11 @@ img {
 
 .artGridContainer {
     border: none;
-    background-color: white;
+    background-color: e2dbd2;
 }
 
 .col {background-color: white; 
-      border: none; padding: 1px;}
+      border: solid #336699 1px; padding: 1px;}
 
 #themeSettingsCloseButton {background: none;}
 #actualSettingsIcon {content:url(../images/settingsLight.png)}

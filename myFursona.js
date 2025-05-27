@@ -263,6 +263,12 @@ colCreator(owo2Div, 'images/yosho/owo2.png', 'images/yosho/lowres/owo2_lowres.we
     owo (part 2)
     `);
 
+const snowiDiv = document.getElementById('snowi');
+colCreator(snowiDiv, 'images/yosho/snowi.png', 'images/yosho/lowres/snowi_lowres.webp',`
+    The two gay's on a date,<br>
+    drawn by a <a target="_blank" href="https://bsky.app/profile/snowiwakgoreng.bsky.social">different snowi lol</a>
+    `);
+
 
 //  v1rtualtrapp1
 const v1rtualtrapp1Div = document.getElementById('v1rtualtrapp1');

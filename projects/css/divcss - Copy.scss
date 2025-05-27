@@ -45,17 +45,15 @@
   .myLinks {background-color: rgba(0, 0, 0, 0.1);}
 }}
 
-pre {font-family: inherit;}
+
 
 
 .ref {
-  @media screen and (min-width: 471px) {
-  max-width: 400px;
-  img{max-width:380px;}}
+  @media screen and (min-width: 481px) {
+  img {width: 400px;}}
   
-  @media screen and (max-width: 470px) {
-  width: 85%;
-  img{width: 100%;}}
+  @media screen and (max-width: 480px) {
+  img {width: 85%;}}
 }
 //  art gird
 
@@ -63,79 +61,37 @@ pre {font-family: inherit;}
   @media screen and (max-width: 480px) {  //  mobile
     @supports not (-moz-animation: none) {  //  chromium
       .col {background-color: rgba(0,0,0,0);}}
-      overflow: hidden;
     width: 90%;
     display: grid;
     grid-template-columns: 85%;
     grid-auto-rows: auto;
     justify-content: center;
-    padding: 1em;
+    grid-gap: 1em;
     img, iframe {width: 90%;}}
 
   @media screen and (min-width: 481px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    //padding: 14px 0 0 14px;
-    padding: 1em;
-    width: 95%;
-    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 14px 0px 0 10px;
+    width: calc(100vw - 80px);
+    grid-gap: 1em;
     margin: 0 auto;
     img, iframe {width: 160px}}
     span {width: fit-content; margin: 0 auto;}
 }
 
 .col {
-      align-self: center;
+      align-self: start;
       margin: 0 0 10px 0;
-      max-width: 250px;
       @media screen and (max-width: 480px) {
-      margin: 0 0 10px 0 auto;
+      margin: 5 0 5 0 auto;
     }}
 
-.popup {
-  position: fixed;
-  display: none;
-  margin: 0 auto;
-  width: 80%;
-  height: 90%;
-  top: 1%;
-  left: 10%;
-  overflow: auto;
 
-  z-index: 12;
-}
-
-.libraryIsometric {
-  @media screen and (min-width: 950px) {
-    grid-template-columns: repeat(3, 1fr); 
-    justify-content: center;}
-}
-
-
-
-
-midadcontainer {
-  @media screen and (min-width: 601px) {max-width: 600px;}
-  @media screen and (max-width: 600px) {width: 85%}
-  display: block;
-  margin: 0 auto;
-  backdrop-filter: blur(0px);
-}
-
-bottomAdContainer {
-  @media screen and (min-width: 601px) {
+.bottomAdContainer {
+  @media screen and (max-width: 500px) {
     position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);}
-
-  background: none;
-  border: none;
-  backdrop-filter: blur(0px);
-
-  /*
-  color: blue;
-  background-color: red;
-  overflow: hidden;
-  //*/
+    bottom: 0px;
+    margin: 0 auto;
+  }
 }

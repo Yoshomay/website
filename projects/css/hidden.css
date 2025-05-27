@@ -1,9 +1,7 @@
 body {
-  background-color: rgb(20, 22, 26);
-}
-
-.popup {
-  border-color: darkgray solid 5px;
+  background-image: url(../images/yosho/snow28.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .links {
@@ -19,7 +17,8 @@ div {
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: rgb(33, 37, 43);
+  background-image: url(../images/yosho/snow18.png);
+  background-size: cover;
 }
 
 a {
@@ -28,7 +27,8 @@ a {
 }
 
 button {
-  background-color: rgb(85, 85, 85);
+  background-image: url(../images/yosho/snow25.png);
+  background-size: cover;
   border-radius: 4px;
   cursor: pointer;
   margin: 5px auto;
@@ -44,11 +44,11 @@ button:hover {
   font-weight: bold;
 }
 
-.button0, #simpleDarkButton {
+.button0 {
   color: white;
-  background-color: darkgray;
+  background-image: url(../images/yosho/snow17.png);
 }
-.button0:active, #simpleDarkButton:active {
+.button0:active {
   cursor: not-allowed;
 }
 
@@ -87,4 +87,4 @@ iframe {
 
 .myLinks {
   border: solid white 1px;
-}/*# sourceMappingURL=simpleDark.css.map */
+}/*# sourceMappingURL=hidden.css.map */

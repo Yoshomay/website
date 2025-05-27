@@ -2,4 +2,9 @@
 * Added owo2 to /myfursona
 * Added sirsquidbee to /myfursona
 * Added holdingHands to /myfursona
+* Added snowi to /myfursona
 * Updated sections of /index
+* Made the legacy theme more accurate to how the site used to look in 4.x and 5.x by adjusting padding
+* Corrected the background color for the alpenglow theme to look correct
+* Fixed the reddit logo not being visible on the old reddit theme
+* Fixed my ref sheet on /myfursona so it properly scales on phones (i can finally use my website on my own phone lol, no wayyyy)
