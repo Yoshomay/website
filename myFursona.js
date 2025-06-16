@@ -2,7 +2,7 @@ function colCreator(divid, image, imageLowres, text) {
     divid.innerHTML = `
     <div class="col">
     <a target="_blank" href="${image}"><img src="${imageLowres}"></a>
-    ${text}
+    <span class="colText">${text}</span>
     </div>`}
 
 

@@ -27,7 +27,7 @@
 }
 
 .themeSettings {
-  width: 300px;
+  width: 200px;
   padding: 3px;
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@ pre {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 1em;
-    width: 95%;
+    width: 75%;
     grid-gap: 4em;
     margin: 0 auto;
   }
