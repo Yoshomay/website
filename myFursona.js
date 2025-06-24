@@ -1,20 +1,46 @@
-function colCreator(divid, image, imageLowres, text) {
-    divid.innerHTML = `
+function colCreator(id, text, date) {
+
+    if (id.endsWith('.gif')) {fileType = 'gif'; lowresFileType = 'gif'; id = id.slice(0, -4);}
+    else if (id.endsWith('.webm')) {fileType = 'webm'; lowresFileType = 'webm'; id = id.slice(0, -5);}
+    else {fileType = 'png'; lowresFileType = 'webp'}
+    
+
+    var idDiv = document.getElementById(id);
+    if (date == null) {date = ''; var pathToFile = 'images/yosho/'}
+    else if (date === 'bedroom') {date = ''; var pathToFile = 'images/renders/bedroomIsometric/';}
+    else {var pathToFile = 'images/renders/'}
+
+
+    if (fileType === 'webm') {idDiv.innerHTML = `
     <div class="col">
-    <a target="_blank" href="${image}"><img src="${imageLowres}"></a>
-    <span class="colText">${text}</span>
+        ${date}<br>
+        <video controls width="160px">
+            <source src="${pathToFile}lowres/${id}.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        ${text}
+        
     </div>`}
 
+    else {idDiv.innerHTML = `
+    <div class="col">
+        ${date}
+        <a target="_blank" href="${pathToFile}${id}.${fileType}"><img src="${pathToFile}lowres/${id}.${lowresFileType}"></a>
+        ${text}
+    </div>`}
+
+}
 
 
-const falke1Div = document.getElementById('falke1');
-colCreator(falke1Div, 'images/pfp.png', 'images/pfp.png',`
+if (document.getElementById('mySonaPage')) {
+colCreator('falke1',`
     This is my pfp by <a href="https://www.twitter.com/hyenapaine" target="_blank">@hyenapaine</a> on Twitter1
     `);
 
 
-const stickersDiv = document.getElementById('stickers');
-colCreator(stickersDiv, 'images/yosho/sticker.png', 'images/yosho/lowres/sticker_lowres.webp', `
+
+
+colCreator('stickers', `
     <a href="https://t.me/addstickers/yoshomay" target="_blank">Telegram ych stickerpack</a> by PulexArt 
     <a href="https://www.pulexart.com/store/p80/Pride_Stickers_2023.html" target="_blank">(1)</a> 
     <a href="https://www.pulexart.com/store/p97/Pride_Stickers_2024.html" target="_blank">(2)</a>
@@ -23,376 +49,507 @@ colCreator(stickersDiv, 'images/yosho/sticker.png', 'images/yosho/lowres/sticker
 
 
 //  falke 1-4
-const falke2Div = document.getElementById('falke2');
-colCreator(falke2Div, 'images/yosho/falke2.png', 'images/yosho/lowres/falke2_lowres.webp',`
+
+colCreator('falke2',`
     This is a bday present by Falke uwu
     `);
 
-const falke3Div = document.getElementById('falke3');
-colCreator(falke3Div, 'images/yosho/falke3.png', 'images/yosho/lowres/falke3_lowres.webp',`
-    Sketch by Falke <br>
-	<a href="https://twitter.com/Mischief_Domi" target="_blank">(the person I'm with in the image</a>)
+
+colCreator('falke3',`
+    Sketch by Falke
     `);
 
 
-const falke4Div = document.getElementById('falke4');
-colCreator(falke4Div, 'images/yosho/falke4.png', 'images/yosho/lowres/falke4_lowres.webp',`
+
+colCreator('falke4',`
 	Yosho hugging Samyo (by falke)
     `);
 
 
 // sin 1-4
-const sin1Div = document.getElementById('sin1');
-colCreator(sin1Div, 'images/yosho/sin1.png', 'images/yosho/lowres/sin1_lowres.webp',`
+
+colCreator('sin1',`
 	Gift art by <a href="https://twitter.com/Sinotus13" target="_blank">@Sinotus</a> on Twitter
     `);
 
-const sin2Div = document.getElementById('sin2');
-colCreator(sin2Div, 'images/yosho/sin2.png', 'images/yosho/lowres/sin2_lowres.webp',`
+
+colCreator('sin2',`
 	Shrug Yosho by Sin
     `);
     
-const sin3Div = document.getElementById('sin3');
-colCreator(sin3Div, 'images/yosho/sin3.png', 'images/yosho/lowres/sin3_lowres.webp',`
+
+colCreator('sin3',`
 	Maid Yosho owo, by Sin
     `);
 
-const sin4Div = document.getElementById('sin4');
-colCreator(sin4Div, 'images/yosho/sin4.png', 'images/yosho/lowres/sin4_lowres.webp',`
+
+colCreator('sin4',`
 	Bday art by Sin
     `);
 
 
 //  all of snowy (oh god)
 
-const snow1Div = document.getElementById('snow1');
-colCreator(snow1Div, 'images/yosho/snow1.png', 'images/yosho/lowres/snow1_lowres.webp',`
+
+colCreator('snow1',`
     Me chasing Snowy (artist) who's holding <a href="https://instagram.com/oh_mr.worm" target="_blank">Worm</a>.
 	No I'm not giving context.
     `);
 
-const snow2Div = document.getElementById('snow2');
-colCreator(snow2Div, 'images/yosho/snow2.png', 'images/yosho/lowres/snow2_lowres.webp',`
+
+colCreator('snow2',`
     no cute  by snowy
     `);
 
-const snow3Div = document.getElementById('snow3');
-colCreator(snow3Div, 'images/yosho/snow3.png', 'images/yosho/lowres/snow3_lowres.webp',`
+
+colCreator('snow3',`
     Yosho wearing thigh highs &#128563; by Snowy
     `);
 
-const snow4Div = document.getElementById('snow4');
-colCreator(snow4Div, 'images/yosho/snow4.png', 'images/yosho/lowres/snow4_lowres.webp',`
+
+colCreator('snow4',`
     Yosho telling <a href="https://ninjago.fandom.com/wiki/Chompy" target="_blank">Chompy</a> to stand down also by snowy
     `);
 
-const snow5Div = document.getElementById('snow5');
-colCreator(snow5Div, 'images/yosho/snow5.gif', 'images/yosho/snow5.gif',`
+
+colCreator('snow5.gif',`
     Yosho mad at Snowy for mewoing also by snowy
     `);
 
-const snow6Div = document.getElementById('snow6');
-colCreator(snow6Div, 'images/yosho/snow6.png', 'images/yosho/lowres/snow6_lowres.webp',`
+
+colCreator('snow6', `
     Yosho hugging zer also by snowy
     `);
 
-const snow7Div = document.getElementById('snow7');
-colCreator(snow7Div, 'images/yosho/snow7.png', 'images/yosho/lowres/snow7_lowres.webp',`
+
+colCreator('snow7',`
     Yosho bein a cute lil femboy also by snowy
     `);
 
-const snow8Div = document.getElementById('snow8');
-colCreator(snow8Div, 'images/yosho/snow8.png', 'images/yosho/lowres/snow8_lowres.webp',`
+
+colCreator('snow8',`
     Yosho stuck in the backrooms, drawn by <a href="https://snowy.epizy.com/" target="_blank">Snowy</a>
     `);
 
-const snow9Div = document.getElementById('snow9');
-colCreator(snow9Div, 'images/yosho/snow9.png', 'images/yosho/lowres/snow9_lowres.webp',`
+
+colCreator('snow9',`
     Christmas art of me and <a href="https://snowy.epizy.com/" target="_blank">Snowy</a>
     `);
 
-const snow10Div = document.getElementById('snow10');
-colCreator(snow10Div, 'images/yosho/snow10.png', 'images/yosho/lowres/snow10_lowres.webp',`
+
+colCreator('snow10',`
     Bday art by <a href="https://snowy.epizy.com/" target="_blank">Snowy</a>
     `);
 
-const snow11Div = document.getElementById('snow11');
-colCreator(snow11Div, 'images/yosho/snow11.png', 'images/yosho/lowres/snow11_lowres.webp',`
+
+colCreator('snow11',`
     Me getting 2<b>69</b> Twitter followers, by <a href="https://snowy.epizy.com/" target="_blank">Snowy</a>
     `);
 
-const snow12Div = document.getElementById('snow12');
-colCreator(snow12Div, 'images/yosho/snow12.png', 'images/yosho/lowres/snow12_lowres.webp',`
+
+colCreator('snow12',`
     King Yosho,  by <a href="https://snowy.epizy.com/" target="_blank">Snowy</a>
     `);
 
-const snow13Div = document.getElementById('snow13');
-colCreator(snow13Div, 'images/yosho/snow13.png', 'images/yosho/lowres/snow13_lowres.webp',`
+
+colCreator('snow13',`
     Maid Yosho and <a href="https://snowy.epizy.com/" target="_blank">Snowy</a> &#128563;
     `);
 
-const snow13_5Div = document.getElementById('snow13_5');
-colCreator(snow13_5Div, 'images/yosho/snow13_5.png', 'images/yosho/lowres/snow13_5_lowres.webp',`
+
+colCreator('snow13_5',`
     Yosho and Snowy outrunning the cops in gta
     `);
 
-const snow14Div = document.getElementById('snow14');
-colCreator(snow14Div, 'images/yosho/snow14.png', 'images/yosho/lowres/snow14_lowres.webp',`
+
+colCreator('snow14',`
     Hug
     `);
 
-const snow15Div = document.getElementById('snow15');
-colCreator(snow15Div, 'images/yosho/snow15.png', 'images/yosho/lowres/snow15_lowres.webp',`
+
+colCreator('snow15',`
     <br>Yosho doing the <a href="https://combineoverwiki.net/wiki/Category:Half-Life_promotional_artwork#/media/File:Gordon_HL1_promo.jpg" target="_blank">
         Half Life 1 promotional artwork</a> pose<br>
     `);
 
-const snowReal16Div = document.getElementById('snowReal16');
-colCreator(snowReal16Div, 'images/yosho/snowReal16.png', 'images/yosho/lowres/snowReal16_lowres.webp',`
+
+colCreator('snowReal16',`
     No thoughts canines
     `);
     
-const snow16Div = document.getElementById('snow16');
-colCreator(snow16Div, 'images/yosho/snow16.png', 'images/yosho/lowres/snow16_lowres.webp',`
+
+colCreator('snow16',`
     Snowy (rudely) booping Yosho
     `);
 
-const snow17Div = document.getElementById('snow17');
-colCreator(snow17Div, 'images/yosho/snow17.png', 'images/yosho/lowres/snow17_lowres.webp',`
+
+colCreator('snow17',`
     Sunset art
     `);
 
-const snow18Div = document.getElementById('snow18');
-colCreator(snow18Div, 'images/yosho/snow18.png', 'images/yosho/lowres/snow18_lowres.webp',`
+
+colCreator('snow18',`
     Drawover of a Minecraft screenshot
     `);
 
-const snow19Div = document.getElementById('snow19');
-colCreator(snow19Div, 'images/yosho/snow19.png', 'images/yosho/lowres/snow19_lowres.webp',`
+
+colCreator('snow19',`
     Redraw of the socks
     `);
 
-const snow20Div = document.getElementById('snow20');
-colCreator(snow20Div, 'images/yosho/snow20.png', 'images/yosho/lowres/snow20_lowres.webp',`
+
+colCreator('snow20',`
     He's secretly scared
     `);
 
-const snow21Div = document.getElementById('snow21');
-colCreator(snow21Div, 'images/yosho/snow21.png', 'images/yosho/lowres/snow21_lowres.webp',`
+
+colCreator('snow21',`
     Drawover of a Twitter thing from January
     `);
 
-const snow22Div = document.getElementById('snow22');
-colCreator(snow22Div, 'images/yosho/snow22.png', 'images/yosho/lowres/snow22_lowres.webp',`
+
+colCreator('snow22',`
     Cuddles
     `);
 
-const holdingHandsDiv = document.getElementById('holdingHands');
-colCreator(holdingHandsDiv, 'images/yosho/holdingHands.png', 'images/yosho/lowres/holdingHands_lowres.webp',`
+
+colCreator('holdingHands',`
     The two gay's being gay
     `);    
 
-const snow23Div = document.getElementById('snow23');
-colCreator(snow23Div, 'images/yosho/snow23.png', 'images/yosho/lowres/snow23_lowres.webp',`
+
+colCreator('snow23',`
     Beam struggle from Dragon Ball Z
     `);
 
-const snow24Div = document.getElementById('snow24');
-colCreator(snow24Div, 'images/yosho/snow24.png', 'images/yosho/lowres/snow24_lowres.webp',`
+    
+colCreator('snow24',`
     Jujutsu Kaisen drawover
     `);
 
-const snow25Div = document.getElementById('snow25');
-colCreator(snow25Div, 'images/yosho/snow25.png', 'images/yosho/lowres/snow25_lowres.webp',`
+
+colCreator('snow25',`
     owo
     `);
 
-const snow_racismDiv = document.getElementById('snow_racism');
-colCreator(snow_racismDiv, 'images/yosho/snowy_racism.gif', 'images/yosho/snowy_racism.gif',`
+
+colCreator('snowyRacism.gif',`
     Yosho version of <a href="https://tenor.com/view/racism-gif-25147153" target="_blank">this meme</a>
     `);
 
 
-const snow26Div = document.getElementById('snow26');
-colCreator(snow26Div, 'images/yosho/snow26.png', 'images/yosho/lowres/snow26_lowres.webp',`
+
+colCreator('snow26',`
     Redraw of a previous piece
     `);
 
-const snow27Div = document.getElementById('snow27');
-colCreator(snow27Div, 'images/yosho/snow27.png', 'images/yosho/lowres/snow27_lowres.webp',`
+
+colCreator('snow27',`
     Redraw of a previous piece again
     `);
 
-const snowyPooterDiv = document.getElementById('snowyPooter');
-colCreator(snowyPooterDiv, 'images/yosho/snowyPooter.png', 'images/yosho/lowres/snowyPooter_lowres.webp',`
+
+colCreator('snowyPooter',`
     The two gays playing games together
     `);
 
-const snowyStrangleDiv = document.getElementById('snowyStrangle');
-colCreator(snowyStrangleDiv, 'images/yosho/snowyStrangle.png', 'images/yosho/lowres/snowyStrangle_lowres.webp',`
+
+colCreator('snowyStrangle',`
     Snowy getting what he deserves
     `);
 
-const snow28Div = document.getElementById('snow28');
-colCreator(snow28Div, 'images/yosho/snow28.png', 'images/yosho/lowres/snow28_lowres.webp',`
+
+colCreator('snow28',`
     Redraw of the christmas piece
     `);
 
-const snow29Div = document.getElementById('snow29');
-colCreator(snow29Div, 'images/yosho/snow29.png', 'images/yosho/lowres/snow29_lowres.webp',`
+
+colCreator('snow29',`
     Nom qwq
     `);
 
-const snowyCrackDiv = document.getElementById('snowyCrack');
-colCreator(snowyCrackDiv, 'images/yosho/snowyCrack.png', 'images/yosho/lowres/snowyCrack_lowres.webp',`
+
+colCreator('snowyCrack',`
     Yosho died qwq
     `);
 
-const snowyValentinesDiv = document.getElementById('snowyValentines');
-colCreator(snowyValentinesDiv, 'images/yosho/snowyValentines.png', 'images/yosho/lowres/snowyValentines_lowres.webp',`
+
+colCreator('snowyValentines',`
     Valentines gift <3
     `);
 
-const snowyKitchenLickDiv = document.getElementById('snowyKitchenLick');
-colCreator(snowyKitchenLickDiv, 'images/yosho/snowyKitchenLick.png', 'images/yosho/lowres/snowyKitchenLick_lowres.webp',`
+
+colCreator('snowyKitchenLick',`
     Snowy lickin me :angi:
     `);
 
-const owo2Div = document.getElementById('owo2');
-colCreator(owo2Div, 'images/yosho/owo2.png', 'images/yosho/lowres/owo2_lowres.webp',`
+
+colCreator('owo2',`
     owo (part 2)
     `);
 
-const snowiDiv = document.getElementById('snowi');
-colCreator(snowiDiv, 'images/yosho/snowi.png', 'images/yosho/lowres/snowi_lowres.webp',`
+
+colCreator('snowi',`
     The two gay's on a date,<br>
     drawn by a <a target="_blank" href="https://bsky.app/profile/snowiwakgoreng.bsky.social">different snowi lol</a>
     `);
 
 
 //  v1rtualtrapp1
-const v1rtualtrapp1Div = document.getElementById('v1rtualtrapp1');
-colCreator(v1rtualtrapp1Div, 'images/yosho/V1RTUALTRAPP1.png', 'images/yosho/lowres/V1RTUALTRAPP1_lowres.webp',`
+
+colCreator('V1RTUALTRAPP1',`
     Commission by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a>
     `);
 
-const v1rtualtrapp2Div = document.getElementById('v1rtualtrapp2');
-colCreator(v1rtualtrapp2Div, 'images/yosho/V1RTUALTRAPP2.png', 'images/yosho/lowres/V1RTUALTRAPP2_lowres.webp',`
+
+colCreator('V1RTUALTRAPP2',`
      Commission by <a href="https://www.etsy.com/listing/1585723012" target="_blank">V1RTUALTRAPP</a>, paid by Snowy
     `);
 
-const v1rtualtrapp3Div = document.getElementById('v1rtualtrapp3');
-colCreator(v1rtualtrapp3Div, 'images/yosho/V1RTUALTRAPP3.png', 'images/yosho/lowres/V1RTUALTRAPP3_lowres.webp',`
+
+colCreator('V1RTUALTRAPP3',`
     Commission by <a href="https://www.etsy.com/listing/1588749552" target="_blank">V1RTUALTRAPP</a> #3
     `);
 
-const v1rtualtrapp4Div = document.getElementById('v1rtualtrapp4');
-colCreator(v1rtualtrapp4Div, 'images/yosho/V1RTUALTRAPP4.png', 'images/yosho/lowres/V1RTUALTRAPP4_lowres.webp',`
+
+colCreator('V1RTUALTRAPP4',`
     Commission by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a> #4
     `);
 
-const v1rtualtrapp5Div = document.getElementById('nyxie');
-colCreator(v1rtualtrapp5Div, 'images/yosho/nyxie.png', 'images/yosho/lowres/nyxie_lowres.webp',`
+
+colCreator('nyxie',`
     Ych by <a href="https://www.etsy.com/listing/1778678177/sweet-treat-ych" target="_blank">Nyxie</a> paid by snowy again lol.
     `); 
 
-const nyxie2Div = document.getElementById('nyxie2');
-colCreator(nyxie2Div, 'images/yosho/nyxie2.png', 'images/yosho/lowres/nyxie2_lowres.webp',`
+
+colCreator('nyxie2',`
     Snowy (rudely) grabbin yosho's cheecks, ych by <a target="_blank" href="https://www.etsy.com/listing/1724299481/squishy-cheekies-ych">Nyxie</a>
     `); 
 
-const hanutedharvestDiv = document.getElementById('hanutedharvest');
-colCreator(hanutedharvestDiv, 'images/yosho/HanutedHarvest.png', 'images/yosho/lowres/HanutedHarvest_lowres.webp',`
+
+colCreator('HanutedHarvest',`
     Cuddle commission by  <a href="https://www.etsy.com/shop/HanutedHarvest" target="_blank">HanutedHarvest</a> paid by snowy.
     `); 
 
-const sirsquidbeeDiv = document.getElementById('sirsquidbee');
-colCreator(sirsquidbeeDiv, 'images/yosho/sirsquidbee.png', 'images/yosho/lowres/sirsquidbee_lowres.webp',`
+
+colCreator('sirsquidbee',`
     Divorce selfie!! o(≧∇≦o)<br>by <a target="_blank" href="https://ko-fi.com/sirsquidbee">sirsquidbee</a>  
     `); 
 
-const kyatDiv = document.getElementById('kyat');
-colCreator(kyat, 'images/yosho/kyat.png', 'images/yosho/lowres/kyat_lowres.webp',`
+
+colCreator('kyat',`
     Commission (paid by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
     `)
 
-const kyat2Div = document.getElementById('kyat2');
-colCreator(kyat2, 'images/yosho/kyat2.png', 'images/yosho/lowres/kyat2_lowres.webp',`
+
+colCreator('kyat2',`
     Fish eye lens flushed yosho by <a href="https://twitter.com/kyat2_Nguyen" target="_blank">kyat</a>
     `)
 
 //  others
-const fbatcatDiv = document.getElementById('fbatcat');
-colCreator(fbatcat, 'images/yosho/fbatcat.png', 'images/yosho/lowres/fbatcat_lowres.webp',`
+
+colCreator('fbatcat',`
     Art by <a href="https://twitter.com/fbatcat" target="_blank">@FBatcat</a> on Twitter
     `)
 
-const grapvieeDiv = document.getElementById('grapviee');
-colCreator(grapviee, 'images/yosho/grapviee.png', 'images/yosho/lowres/grapviee_lowres.webp',`
+
+colCreator('grapviee',`
     Art by <a href="https://twitter.com/grapviee" target="_blank">@Grapviee</a> on Twitter
     `)
 
-const virdDiv = document.getElementById('vird');
-colCreator(vird, 'images/yosho/vird.png', 'images/yosho/lowres/vird_lowres.webp',`
+
+colCreator('vird',`
      Birthday art by <a href="https://twitter.com/virdthebird" target="_blank">@Virdthebird</a> on Twitter
     `)
 
-const soriDiv = document.getElementById('sori');
-colCreator(sori, 'images/yosho/sori.png', 'images/yosho/lowres/sori_lowres.webp',`
+
+colCreator('sori',`
      Raffle art by <a href="https://twitter.com/SoriFurry" target="_blank">@SoriFurry</a> on Twitter
     `)
 
-const noahDiv = document.getElementById('noah');
-colCreator(noah, 'images/yosho/noah.png', 'images/yosho/lowres/noah_lowres.webp',`
+
+colCreator('noah',`
     This was a joke by 
 	<a href="https://twitter.com/NoahFluffyFolf" target="_blank">@NoahFluffyFolf</a><s> though he got
 	yosho's body color wrong smh</s>
     `)
 
-const wyvroDiv = document.getElementById('wyvro');
-colCreator(wyvro, 'images/yosho/wyvro.png', 'images/yosho/lowres/wyvro_lowres.webp',`
+
+colCreator('wyvro',`
      Fan art by <a href="https://twitter.com/wyvro/status/1308214372997554176" target="_blank">@Wyvro</a> on Twitter
     `)
 
-const fluffyworksDiv = document.getElementById('fluffyworks');
-colCreator(fluffyworks, 'images/yosho/fluffyworks.png', 'images/yosho/lowres/fluffyworks_lowres.webp',`
+
+colCreator('fluffyworks',`
      This was also a joke by <a href="https://www.twitter.com/fluffyworks" target="_blank">@fluffyworks</a> on Twitter
     `)
 
-const frigidDiv = document.getElementById('frigid');
-colCreator(frigid, 'images/yosho/frigid.png', 'images/yosho/lowres/frigid_lowres.webp',`
+
+colCreator('frigid',`
     Secret sona art by <a href="https://www.reddit.com/user/Frigid_NotJustCold1" target="_blank">Fridgid Not Just Cold</a><br>
 	<s>But he wrote Yoshimay not Yoshomay big smh</s>
     `)
 
-const ginDiv = document.getElementById('gin');
-colCreator(gin, 'images/yosho/gin.png', 'images/yosho/lowres/gin_lowres.webp',`
+
+colCreator('gin',`
     Art by <a href="https://www.instagram.com/sleepiegin/" target="_blank">Gin</a><br>
 	<s><a title="dw im not actually mad">he also got Yosho's colors wrong smh</a></s>
     `)
 
-const peeps1Div = document.getElementById('peeps1');
-colCreator(peeps1, 'images/yosho/peeps1.png', 'images/yosho/lowres/peeps1_lowres.webp',`
+
+colCreator('peeps1',`
 Yosho in the mouth of the gun uh oh, by <a href="https://bunnxiibunpuns.carrd.co/" target="_blank">Peeps</a>
     `)
 
-const peeps2Div = document.getElementById('peeps2');
-colCreator(peeps2, 'images/yosho/peeps2.png', 'images/yosho/lowres/peeps2_lowres.webp',`
+
+colCreator('peeps2',`
 Yosho nsfw owo, by Peeps again
     `)
 
-const toxinHyenaDiv = document.getElementById('toxinHyena');
-colCreator(toxinHyena, 'images/yosho/toxinHyena.png', 'images/yosho/lowres/toxinHyena_lowres.webp',`
+
+colCreator('toxinHyena',`
 Free commission by <a href="https://www.reddit.com/user/Toxin-Hyena/comments/p1m4mr/free_commission_for_utestsubject5kk/" target="_blank">u/Toxin-Hyena</a> on Reddit
     `)
 
-const wormDiv = document.getElementById('worm');
-colCreator(worm, 'images/yosho/worm.png', 'images/yosho/lowres/worm_lowres.webp',`
+
+colCreator('worm',`
  I was <s>Objectified</s> turned into a 2 headed worm by 
 		<a href="https://instagram.com/oh_mr.worm" target="_blank">Mr. Worm</a>
     `)
 
-const unnamedDiv = document.getElementById('unnamed');
-colCreator(unnamed, 'images/yosho/unnamed.png', 'images/yosho/lowres/unnamed_lowres.webp',`
+
+colCreator('unnamed',`
     Me and a friend, created by said friend. 
     `)
+}
+
+
+/*     art page     */
+
+
+if (document.getElementById('isArtPage')) {
+
+    
+colCreator('juevesDeRacismo.gif', `
+    Jueves De Racismo Zeraora. Zeraroa version <a href="https://tenor.com/view/racism-gif-25147153" target="_blank">this meme</a>
+    `, '8/11/24');
+
+colCreator('wendellCloseUp', `
+    Close up render of <a href="https://fortnite.fandom.com/wiki/Wendell" target="_blank">Wendell</a>'s nose
+    `, '10/7/23');
+
+colCreator('worm.webm', `
+    <a href="https://instagram.com/oh_mr.worm" target="_blank">Mr. Worm</a><br>
+    `, '1/16/22');
+
+
+
+//   scenes
+
+
+colCreator('steve.webm', `
+    Cursed Steve animation, inspired by a lot of similar renders on <a href="https://www.reddit.com/r/PhoenixSC/" target="_blank">r/PhoenixSC</a>
+    `, '7/31/23');
+
+colCreator('upstairs', `
+    2nd floor from Mario 64 (Rendered with Cycles)
+    `, '7/8/23');
+
+colCreator('library', `
+    Isometric library following <a href="https://www.youtube.com/watch?v=yCHT23A6aJA" target="_blank">3DGreenhorn's isometric bedroom tutorial</a> (Rendered with Cycles)
+    `, '2/19/23');
+
+colCreator('peachsCastleBackrooms', `
+    Mario 64 backrooms, inspired by <a href="https://www.youtube.com/watch?v=s5H0KHM2mTw" target="_blank">Breaking the Barrier</a> (rendered in Cycles)
+    `, '11/5/22');
+
+colCreator('interior1', `
+    My first attempt of making a<br>
+    photorealistic render on my own.<br>(rendered with Cycles)
+    `, '4/2/22');
+
+colCreator('switch', `
+    It's a switch. (rendered with Eevee)
+    `, '3/3/22');
+
+colCreator('yoshoWorm', `
+    YoshoWorm (rendered with Eevee)
+    `, '2/8/22');
+
+colCreator('doughnut.webm', `
+    Of course it started with a doughnut, tutorial by <a href="https://www.youtube.com/watch?v=nIoXOplUvAw" target="_blank">
+    Blender Guru</a>.(rendered with Cycles)
+    `, '2/8/22');
+
+
+//    others
+
+
+colCreator('ytthumb', `
+    Someone on r/blender made a node 3d, so I made one of my <a href="https://www.youtube.com/watch?v=tcvFbYEDL_s" target="_blank">
+    Youtube Videos</a> 3d. (Cycles)
+    `, '<pre style="margin: 0; padding: 0;">4/17/23  |  <a target="_blank" href="credits/ytthumb.txt"><u>Credits</u></a></pre>');
+
+colCreator('earth', `
+    Low poly Earth, following <a href="https://www.youtube.com/watch?v=8FXJJDFAL6o" target="_blank">Polygon<br>
+    Runaway's tutorial.</a><br>
+    `, '6/3/22');
+
+colCreator('discord', `
+    (new) Discord logo
+    `, '2/28/22');
+
+colCreator('anvil', `
+    Anvil following <a href="https://www.youtube.com/watch?v=yi87Dap_WOc&t" target="_blank">Blender Guru's</a> tutorial<br>
+    `, '3/29/22');
+
+colCreator('chess', `
+    I modeled all the chess pieces and a
+    board. The render it's self I got bored
+    of half way in ¯\\_(ツ)_/¯
+    `, '<pre style="margin: 0; padding: 0;">2/19/22  |  <a target="_blank" href="credits/none.txt"><u>Credits</u></a></pre>');
+
+
+//     samyo popup
+
+
+colCreator('samyoBlep', `
+    Blep
+    `, '6/9/23');
+
+colCreator('samyoWendellHug', `
+    Samyo hugging <a href="https://fortnite.fandom.com/wiki/Wendell" target="_blank">Wendell</a>
+    `, '5/23/23');
+
+colCreator('samyoField', `
+    <a href="images/renders/ogsamyo.png" target="_blank">Remastering</a> of a render by Samyo of Samyo laying in a field. 
+    <a href="https://download.blender.org/demo/geometry-nodes/fields/flower_scattering.blend" target="_blank">(Based on "Flowers Scattering"</a> by Blender Studio.) (Rendered with Cycles)
+    `, '5/23/23');
+
+
+//     bedroom isometric
+
+colCreator('night_1x1', `
+    1x1
+    `, 'bedroom');
+
+colCreator('night_16x9', `
+    16x9 wallpaper version
+    `, 'bedroom');
+
+colCreator('night_9x16', `
+    9x16 wallpaper version
+    `, 'bedroom');
+
+colCreator('day_1x1', `
+    1x1 alternate daytime version
+    `, 'bedroom');
+
+colCreator('day_16x9', `
+    16x9 wallpaper day
+    `, 'bedroom');
+
+colCreator('day_9x16', `
+    9x16 wallpaper day
+    `, 'bedroom');
+}

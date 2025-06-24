@@ -2,7 +2,7 @@ body {
   background-color: rgb(20, 22, 26);
   background-attachment: fixed;
   background-size: cover;
-  background-image: url(../images/backgrounds/goldsrc.png);
+  background-image: url(../images/backgrounds/goldsrc.webp);
 }
 
 .popup {
@@ -83,7 +83,7 @@ img {
   font-weight: bold;
   font-size: large;
   text-shadow: black 1px 1px 2px;
-  transition: text-shadow 0.75s ease-out;
+  transition: text-shadow 0.15s ease-out;
 }
 #themeSettings button:hover {
   text-shadow: rgb(255, 255, 0) 0 0 10px;

@@ -18,6 +18,18 @@
   }
 }
 
+.discordembedd {
+  max-width: 250px;
+  opacity: 100%;
+}
+@media screen and (min-width: 1182px) {
+  .discordembedd {
+    position: absolute;
+    top: 7%;
+    right: 1%;
+  }
+}
+
 .settingsIcon {
   top: 2%;
   left: 1%;
@@ -98,13 +110,15 @@ pre {
 @media screen and (min-width: 481px) {
   .artGridContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    resize: horizontal;
+    overflow: auto;
     padding: 1em;
     width: 75%;
     grid-gap: 4em;
     margin: 0 auto;
   }
-  .artGridContainer img, .artGridContainer iframe {
+  .artGridContainer img {
     width: 160px;
   }
 }
@@ -116,13 +130,16 @@ pre {
 
 .col {
   align-self: center;
-  margin: 0 0 10px 0;
   max-width: 250px;
 }
 @media screen and (max-width: 480px) {
   .col {
-    margin: 0 0 10px 0 auto;
+    margin: 0 0 20px 0;
   }
+}
+.col iframe {
+  max-width: 250px;
+  margin: 0;
 }
 
 .popup {

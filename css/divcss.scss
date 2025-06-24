@@ -13,6 +13,15 @@
   &:active {cursor: not-allowed;}}
 }
 
+.discordembedd {
+  max-width: 250px;
+  opacity: 100%;
+    @media screen and (min-width: 1182px) {
+  position: absolute;
+  top: 7%;
+  right: 1%;
+  }
+}
 
 .settingsIcon {
   top: 2%;
@@ -72,25 +81,27 @@ pre {font-family: inherit;}
     padding: 1em;
     img, iframe {width: 90%;}}
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 481px) {  //  pc
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     //padding: 14px 0 0 14px;
+    resize: horizontal;
+    overflow: auto;
     padding: 1em;
     width: 75%;
     grid-gap: 4em;
     margin: 0 auto;
-    img, iframe {width: 160px}}
+    img {width: 160px}}
     span {width: fit-content; margin: 0 auto;}
 }
 
 .col {
       align-self: center;
-      margin: 0 0 10px 0;
       max-width: 250px;
       @media screen and (max-width: 480px) {
-      margin: 0 0 10px 0 auto;
-    }}
+      margin: 0 0 20px 0;}
+  
+      iframe {max-width: 250px; margin: 0;}}
 
 .popup {
   position: fixed;
