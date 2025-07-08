@@ -9,4 +9,6 @@ The js sucks im well aware i suck at js lol. I also use sass instead of css so t
 TODO:
 Make the popups on /art be more legible and take up less of the screen
 
-Add more themes (https://www.yoshomay.com/css/themeIdeas)
+Make the theme still work on 404 pages in directories that aren't the top level (eg yoshomay.com/aa/aaa)
+
+Add more themes (https://www.yoshomay.com/css/themeIdeas.txt)
