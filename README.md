@@ -9,4 +9,4 @@ The js sucks im well aware i suck at js lol. I also use sass instead of css so t
 TODO:
 Make the popups on /art be more legible and take up less of the screen
 
-Add more themes (Zorin OS Dark, maybe more ¯\_(ツ)_/¯)
+Add more themes (https://www.yoshomay.com/css/themeIdeas)
