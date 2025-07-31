@@ -13,21 +13,21 @@ themeMenuGoesHere.innerHTML = `
 <div class="themeSettings" id="themeSettings" style="display: none;">
     <br>Select which theme you want to use<br><br>
     <hr>
-    <button id="defaultButton" onclick="themeChange('css/theme.css');">MatterhornDB</button><br>
-    <button id="palmBeachButton" onclick="themeChange('css/palmBeach.css')">Palm Beach</button><br>
-    <button id="legacyButton" onclick="themeChange('css/legacy.css')">Legacy</button><br>
-    <button id="simpleLightButton" onclick="themeChange('css/simpleLight.css')">Simple Light</button><br>
-    <button id="simpleDarkButton" onclick="themeChange('css/simpleDark.css')">Simple Dark</button><br>
-    <button id="alpenglowButton" onclick="themeChange('css/alpenglow.css')">Alpenglow</button><br>
-    <button id="blenderButton" onclick="themeChange('css/blender.css')">Blender</button><br>
-    <button id="oldRedditButton" onclick="themeChange('css/oldReddit.css')">Old Reddit</button><br>
-    <button id="twitterButton" onclick="themeChange('css/twitter.css')">Twitter</button><br>
-    <button id="youtubeButton" onclick="themeChange('css/youtube.css')">YouTube</button><br>
-    <button id="sourceButton" onclick="themeChange('css/source.css')">Source</button><br>
-    <button id="goldSRCButton" onclick="themeChange('css/goldSRC.css')">GoldSRC</button><br>
-    <button id="zorinLightButton" onclick="themeChange('css/zorinLight.css')">Zorin OS Light</button><br>
-    <button id="randomButton" onclick="themeChange('css/random.css'); location.reload();">Random</button><br>
-    <button id="noneButton" onclick="themeChange('css/none.css')">None</button><br>
+    <button id="defaultButton" onclick="themeChange('/css/theme.css');">MatterhornDB</button><br>
+    <button id="palmBeachButton" onclick="themeChange('/css/palmBeach.css')">Palm Beach</button><br>
+    <button id="legacyButton" onclick="themeChange('/css/legacy.css')">Legacy</button><br>
+    <button id="simpleLightButton" onclick="themeChange('/css/simpleLight.css')">Simple Light</button><br>
+    <button id="simpleDarkButton" onclick="themeChange('/css/simpleDark.css')">Simple Dark</button><br>
+    <button id="alpenglowButton" onclick="themeChange('/css/alpenglow.css')">Alpenglow</button><br>
+    <button id="blenderButton" onclick="themeChange('/css/blender.css')">Blender</button><br>
+    <button id="oldRedditButton" onclick="themeChange('/css/oldReddit.css')">Old Reddit</button><br>
+    <button id="twitterButton" onclick="themeChange('/css/twitter.css')">Twitter</button><br>
+    <button id="youtubeButton" onclick="themeChange('/css/youtube.css')">YouTube</button><br>
+    <button id="sourceButton" onclick="themeChange('/css/source.css')">Source</button><br>
+    <button id="goldSRCButton" onclick="themeChange('/css/goldSRC.css')">GoldSRC</button><br>
+    <button id="zorinLightButton" onclick="themeChange('/css/zorinLight.css')">Zorin OS Light</button><br>
+    <button id="randomButton" onclick="themeChange('/css/random.css'); location.reload();">Random</button><br>
+    <button id="noneButton" onclick="themeChange('/css/none.css')">None</button><br>
 
     
     <br>
