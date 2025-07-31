@@ -6,7 +6,7 @@ let themeMenuGoesHere = document.getElementById("themeMenuGoesHere1");
 // ading html
 settingsIconGoesHere.innerHTML = `
 <div class="settingsIcon" id="settingsIcon" onclick="settingsIconClicked();">
-    <img src="images/settings.png" width="15px" id="actualSettingsIcon">
+    <img src="/images/settings.png" width="15px" id="actualSettingsIcon">
 </div><br>`
 
 themeMenuGoesHere.innerHTML = `
