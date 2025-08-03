@@ -60,6 +60,11 @@ img {
     border-radius: 10px;
 }
 
+.popup {
+    background-image: url("../images/backgrounds/blender.webp");
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .artGridContainer {
     background-color: rgb(38, 38, 38); 
@@ -90,6 +95,10 @@ img {
 }
 
 .settingsIcon {border: none;}
+
+#popupDarkBG {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
 
 #linksText {
     display: none;

@@ -43,7 +43,16 @@ p {color:white; text-align: center;}
 		border-radius: 10px;}
 
 	.col {border: none; img {border: none;}}
-	.artGridContainer {border: none; background: none;}
+	.artGridContainer {
+		border: none; background: none;
+		display:block;
+
+	.col {
+		max-width: 280px;
+		margin-bottom: 50px;
+		img {margin-bottom: 40px;
+			 max-width: 280px;}}
+	}
 
 	.settingsIcon {
 		padding: 2px;
@@ -51,6 +60,15 @@ p {color:white; text-align: center;}
 	.themeSettings {
 		text-align: center;
 		align-items: center;}
+
+.popup {
+    background-image: url("../images/backgrounds/legacy.webp");
+    background-repeat: repeat;
+}
+
+#popupDarkBG {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
 
 p::-moz-selection {background:gray;color:white;}
 p::-webkit-selection {background:grey;color:white;}

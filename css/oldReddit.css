@@ -74,6 +74,10 @@ img {
   padding: 1px;
 }
 
+#popupDarkBG {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 #themeSettingsCloseButton {
   background: none;
 }

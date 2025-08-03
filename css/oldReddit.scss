@@ -66,6 +66,10 @@ img {
 .col {background-color: white; 
       border: solid #336699 1px; padding: 1px;}
 
+#popupDarkBG {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
 #themeSettingsCloseButton {background: none;}
 #actualSettingsIcon {content:url(../images/settingsLight.png)}
 #themeSettings {background-color: rgb(206, 227, 248);}

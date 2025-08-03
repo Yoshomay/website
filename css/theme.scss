@@ -59,6 +59,21 @@ img {
     border-radius: 10px;
 }
 
+.popup {
+    background-image: url("../images/backgrounds/matterhornDB.webp");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#popupCloseButton {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px; border-radius: 10px;
+}
+
+#popupDarkBG {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
 video {border-radius: 10px;}
 iframe {border-radius: 10px;}
 #settingsIcon {padding: 5px;

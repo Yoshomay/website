@@ -49,6 +49,10 @@ img {
     border-radius: 10px;
 }
 
+#popupDarkBG {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
 #themeSettingsCloseButton {background: none;}
 #actualSettingsIcon {content:url(../images/settingsLight.png)}
 video {border-radius: 10px;}

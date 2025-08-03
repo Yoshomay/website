@@ -1,7 +1,6 @@
 <!DOCTYPE html><html><head><title>Art</title>
-    <link rel="icon" href="images/tabIcon.png">
-    <link rel="stylesheet" href="css/theme.css" id="themeLink">
-    <link rel="stylesheet" href="css/divcss.css">
+    <link rel="stylesheet" href="/css/divcss.css">
+    <link rel="stylesheet" href="/css/theme.css" id="themeLink">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +12,7 @@
     <meta property="og:url" content="https://www.yoshomay.com/art.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Yoshomay" />
-    <link rel="icon" href="images/tabIcon.png">
+    <link rel="icon" href="/images/tabIcon.png">
     <meta name="darkreader-lock">
     
     <meta name="darkreader-lock">
@@ -21,11 +20,11 @@
 <div class="links">
     <span id="linksText"><b>Links</b>
     <br><br></span>
-    <a href="index.html"><button>Homepage</button></a>
-    <a href="myfursona.html"><button>My Fursona</button></a>
+    <a href="/index.html"><button>Homepage</button></a>
+    <a href="/myfursona.html"><button>My Fursona</button></a>
     <button class="button0">Art</button>
-    <a href="mylinks.html"><button>My Links</button></a>
-    <a href="projects/index.html"><button>Projects/</button></a>
+    <a href="/mylinks.html"><button>My Links</button></a>
+    <a href="/projects/index.html"><button>Projects/</button></a>
     </div><br><br>
 
     <br><span id="themeMenuGoesHere1"></span>
@@ -62,9 +61,9 @@
     <div class="artGridContainer">
 
     <div class="col">
-        <pre style="margin: 0; padding: 0;">12/23/24  |  <a target="_blank" href="credits/isometric_bedroom.txt"><u>Credits</u></a></pre>
+        <pre style="margin: 0; padding: 0;">12/23/24  |  <a target="_blank" href="/credits/isometric_bedroom.txt"><u>Credits</u></a></pre>
         (Click to expand)
-        <img src="images/renders/bedroomIsometric/lowres/night_1x1.webp" onclick="openPopupMenu('bedroomisometric');" style="cursor: pointer;"><br>
+        <img src="/images/renders/bedroomIsometric/lowres/night_1x1.webp" onclick="openPopupMenu('bedroomisometric');" style="cursor: pointer;"><br>
         Cozy Isometric bedroom. The bedroom isn't based on anything in particular 
         just a bedroom that I'd like to have. Inspired by the album art of 
         <a href="https://www.youtube.com/playlist?list=PLKe_jP9awexEHEb9D0kky-KSq2fqdQPwD" target="_blank">Floating Rooms - June LaLonde</a> and <a href="https://store.steampowered.com/app/1369320/Virtual_Cottage/" target="_blank">Virtual Cottage</a>.
@@ -101,21 +100,21 @@
     <div class="artGridContainer">
 
     <div class="col">
-    <pre style="margin: 0; padding: 0;">9/27/24  |  <a target="_blank" href="credits/steam.txt"><u>Credits</u></a></pre>
-    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3339084626"><img src="images/gm_campsite.webp"></a>
+    <pre style="margin: 0; padding: 0;">9/27/24  |  <a target="_blank" href="/credits/steam.txt"><u>Credits</u></a></pre>
+    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3339084626"><img src="/images/gm_campsite.webp"></a>
     Just a campsite map, made to learn creating outdoor areas. 
     </div>
 
     <div class="col">
-    <pre style="margin: 0; padding: 0;">1/30/24  |  <a target="_blank" href="credits/steam.txt"><u>Credits</u></a></pre>
-    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3150351631"><img src="images/the_waiting_room.webp"></a>
+    <pre style="margin: 0; padding: 0;">1/30/24  |  <a target="_blank" href="/credits/steam.txt"><u>Credits</u></a></pre>
+    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3150351631"><img src="/images/the_waiting_room.webp"></a>
     A map based on one of my dreams
     </div>
     
 
     <div class="col">
     12/3/23
-    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3103763501"><img src="images/1stmap.webp"></a>
+    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3103763501"><img src="/images/1stmap.webp"></a>
     My first map, mostly just a test map
     </div>
     
@@ -128,7 +127,7 @@
     <br><br><br>
     <div><a>Samyo</a> Renders</div><br><br>
 
-    <button style="position: absolute; top: 3%; right: 3%;" onclick="closePopupMenu();">Close</button>
+    <button style="position: absolute; top: 3%; right: 3%; font-size: 125%;" onclick="closePopupMenu();" id="popupCloseButton">Close</button>
 
     <div class="artGridContainer">
 
@@ -147,7 +146,7 @@
     <br><br><br>
     <div>Night versions</div><br><br>
 
-    <button style="position: absolute; top: 3%; right: 3%;" onclick="closePopupMenu();">Close</button>
+    <button style="position: absolute; top: 3%; right: 3%; font-size: 125%;" onclick="closePopupMenu();" id="popupCloseButton">Close</button>
     <div class="artGridContainer libraryIsometric">
 
     <span id="night_1x1"></span>
@@ -160,15 +159,16 @@
 
 
 
-    </div>
+    </div></div>
 
 
 
     <br><br><br><br>
 
+<div style="cursor: pointer;" id="popupDarkBG" onclick="closePopupMenu();"></div>
 
 <span id="isArtPage"></span>
-<script src="theme.js"></script>
-<script src="myFursona.js"></script>
-<script src="misc.js"></script>
+<script src="/theme.js"></script>
+<script src="/myFursona.js"></script>
+<script src="/misc.js"></script>
 </body></html>

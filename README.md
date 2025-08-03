@@ -7,10 +7,4 @@ The js sucks im well aware i suck at js lol. I also use sass instead of css so t
 
 
 TODO:
-Make the popups on /art be more legible and take up less of the screen
-
-Make the theme still work on 404 pages in directories that aren't the top level (eg yoshomay.com/aa/aaa)
-
-make the myfursona grid not be a grid when using the legacy theme (like how it used to look like in 5.x)
-
 Add more themes (https://www.yoshomay.com/css/themeIdeas.txt)

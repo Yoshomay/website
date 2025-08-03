@@ -29,6 +29,10 @@ img {
   margin-right: auto;
 }
 
+#popupDarkBG {
+  background-color: white;
+}
+
 #actualSettingsIcon {
   content: url(../images/settingsLight.png);
 }

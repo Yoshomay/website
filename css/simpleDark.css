@@ -65,6 +65,10 @@ img {
   border-color: darkgray;
 }
 
+#popupDarkBG {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 #themeSettingsCloseButton {
   background: none;
 }

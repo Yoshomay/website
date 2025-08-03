@@ -97,8 +97,8 @@ iframe {
   width: 150px;
   padding: 7px;
   border-radius: 7px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 #themeSettings button:hover {
   background-color: #e4e8ed;
@@ -116,4 +116,8 @@ iframe {
 .links .button0 {
   background: linear-gradient(to right, #029be9, #22c5fd);
   color: #DDF3FF;
+}
+
+#popupDarkBG {
+  background-color: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=zorinLight.css.map */

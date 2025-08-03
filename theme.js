@@ -26,6 +26,7 @@ themeMenuGoesHere.innerHTML = `
     <button id="sourceButton" onclick="themeChange('/css/source.css')">Source</button><br>
     <button id="goldSRCButton" onclick="themeChange('/css/goldSRC.css')">GoldSRC</button><br>
     <button id="zorinLightButton" onclick="themeChange('/css/zorinLight.css')">Zorin OS Light</button><br>
+    <button id="zorinDarkButton" onclick="themeChange('/css/zorinDark.css')">Zorin OS Dark</button><br>
     <button id="randomButton" onclick="themeChange('/css/random.css'); location.reload();">Random</button><br>
     <button id="noneButton" onclick="themeChange('/css/none.css')">None</button><br>
 
@@ -48,20 +49,20 @@ if (theme == 'css/random.css') {
     var randomNumber = Math.floor(Math.random() * 13) + 1;
     console.log(randomNumber);
 
-    if (randomNumber == 1) {themeLink.href = 'css/theme.css';}
-    if (randomNumber == 2) {themeLink.href = 'css/palmBeach.css';}
-    if (randomNumber == 3) {themeLink.href = 'css/legacy.css';}
-    if (randomNumber == 4) {themeLink.href ='css/simpleLight.css';}
-    if (randomNumber == 5) {themeLink.href ='css/simpleDark.css';}
-    if (randomNumber == 6) {themeLink.href ='css/alpenglow.css';}
-    if (randomNumber == 7) {themeLink.href ='css/blender.css';}
-    if (randomNumber == 8) {themeLink.href ='css/oldReddit.css';}
-    if (randomNumber == 9) {themeLink.href ='css/twitter.css';}
-    if (randomNumber == 10) {themeLink.href ='css/youtube.css';}
-    if (randomNumber == 11) {themeLink.href ='css/source.css';}
-    if (randomNumber == 12) {themeLink.href ='css/goldSRC.css';}
-    if (randomNumber == 13) {themeLink.href ='css/zorinLight.css';}
-
+    if (randomNumber == 1) {themeLink.href = '/css/theme.css';}
+    if (randomNumber == 2) {themeLink.href = '/css/palmBeach.css';}
+    if (randomNumber == 3) {themeLink.href = '/css/legacy.css';}
+    if (randomNumber == 4) {themeLink.href ='/css/simpleLight.css';}
+    if (randomNumber == 5) {themeLink.href ='/css/simpleDark.css';}
+    if (randomNumber == 6) {themeLink.href ='/css/alpenglow.css';}
+    if (randomNumber == 7) {themeLink.href ='/css/blender.css';}
+    if (randomNumber == 8) {themeLink.href ='/css/oldReddit.css';}
+    if (randomNumber == 9) {themeLink.href ='/css/twitter.css';}
+    if (randomNumber == 10) {themeLink.href ='/css/youtube.css';}
+    if (randomNumber == 11) {themeLink.href ='/css/source.css';}
+    if (randomNumber == 12) {themeLink.href ='/css/goldSRC.css';}
+    if (randomNumber == 13) {themeLink.href ='/css/zorinLight.css';}
+    if (randomNumber == 14) {themeLink.href ='/css/zorinDark.css';}
     
     console.log("the random theme is "+randomNumber);
 }

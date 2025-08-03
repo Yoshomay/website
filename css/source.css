@@ -104,4 +104,8 @@ iframe {
 }
 #themeSettings .button0 {
   color: white;
+}
+
+#popupDarkBG {
+  background-color: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=source.css.map */

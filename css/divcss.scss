@@ -70,22 +70,22 @@ pre {font-family: inherit;}
 
 .artGridContainer {
   @media screen and (max-width: 480px) {  //  mobile
-    @supports not (-moz-animation: none) {  //  chromium
-      .col {background-color: rgba(0,0,0,0);}}
-      overflow: hidden;
+    overflow: hidden;
     width: 90%;
     display: grid;
     grid-template-columns: 85%;
     grid-auto-rows: auto;
     justify-content: center;
     padding: 1em;
-    img, iframe {width: 90%;}}
+    img, iframe {width: 90%;}
+    @supports not (-moz-animation: none) {  //  chromium
+      .col {background-color: rgba(0,0,0,0);}}
+}
 
   @media screen and (min-width: 481px) {  //  pc
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     //padding: 14px 0 0 14px;
-    resize: horizontal;
     overflow: auto;
     padding: 1em;
     width: 75%;
@@ -122,31 +122,13 @@ pre {font-family: inherit;}
     justify-content: center;}
 }
 
-
-
-
-midadcontainer {
-  @media screen and (min-width: 601px) {max-width: 600px;}
-  @media screen and (max-width: 600px) {width: 85%}
-  display: block;
-  margin: 0 auto;
-  backdrop-filter: blur(0px);
-}
-
-bottomAdContainer {
-  @media screen and (min-width: 601px) {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);}
-
-  background: none;
-  border: none;
-  backdrop-filter: blur(0px);
-
-  /*
-  color: blue;
-  background-color: red;
-  overflow: hidden;
-  //*/
+#popupDarkBG {
+  display: none; 
+  z-index:9; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+  position: fixed; 
+  //backdrop-filter: blur(6px);
 }

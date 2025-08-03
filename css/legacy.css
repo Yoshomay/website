@@ -92,6 +92,15 @@ img {
 .artGridContainer {
   border: none;
   background: none;
+  display: block;
+}
+.artGridContainer .col {
+  max-width: 280px;
+  margin-bottom: 50px;
+}
+.artGridContainer .col img {
+  margin-bottom: 40px;
+  max-width: 280px;
 }
 
 .settingsIcon {
@@ -105,6 +114,15 @@ img {
 .themeSettings {
   text-align: center;
   align-items: center;
+}
+
+.popup {
+  background-image: url("../images/backgrounds/legacy.webp");
+  background-repeat: repeat;
+}
+
+#popupDarkBG {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 p::-moz-selection {

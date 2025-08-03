@@ -6,9 +6,9 @@ function colCreator(id, text, date) {
     
 
     var idDiv = document.getElementById(id);
-    if (date == null) {date = ''; var pathToFile = 'images/yosho/'}
-    else if (date === 'bedroom') {date = ''; var pathToFile = 'images/renders/bedroomIsometric/';}
-    else {var pathToFile = 'images/renders/'}
+    if (date == null) {date = ''; var pathToFile = '/images/yosho/'}
+    else if (date === 'bedroom') {date = ''; var pathToFile = '/images/renders/bedroomIsometric/';}
+    else {var pathToFile = '/images/renders/'}
 
 
     if (fileType === 'webm') {idDiv.innerHTML = `
@@ -288,13 +288,16 @@ colCreator('owo2',`
     owo (part 2)
     `);
 
+colCreator('snowyBoiling.gif',`
+    Boiling yosho, drawn with <a href="https://wigglypaint.net/" target="_blank">wigglypaint.net/</a>
+    `);
+
 
 colCreator('snowi',`
     The two gay's on a date,<br>
     drawn by a <a target="_blank" href="https://bsky.app/profile/snowiwakgoreng.bsky.social">different snowi lol</a>
     `);
-
-
+    
 //  v1rtualtrapp1
 
 colCreator('V1RTUALTRAPP1',`

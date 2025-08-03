@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(30, 37, 41);
+}
+
+.links {
+  max-width: 402px;
+}
+
+div {
+  margin: 0 auto;
+  border-radius: 8px;
+  color: #b9e1f5;
+  text-align: center;
+  padding: 15px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #171d20;
+}
+
+a {
+  color: #687f8b;
+  text-decoration-style: underline;
+}
+
+button {
+  background-color: rgb(42, 52, 57);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px auto;
+  color: #8eacbc;
+  padding: 3px;
+  outline: none;
+  border: solid black 0px;
+  transition: background-color 0.25s;
+}
+button:hover {
+  background-color: #2a3338;
+  padding: 3px;
+}
+
+.button0 {
+  background-color: #bde6fb;
+  color: #485961;
+}
+.button0:active {
+  cursor: not-allowed;
+}
+.button0:hover {
+  background-color: #bde6fb;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.col {
+  background-color: #2b363b;
+  border-radius: 14px;
+}
+
+#themeSettings {
+  border-right: solid 1px #e4e8ee;
+  background-color: #1e2529;
+}
+#themeSettings button {
+  text-align: left;
+  width: 150px;
+  padding: 7px;
+  border-radius: 7px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-color: #1e2529;
+}
+#themeSettings button:hover {
+  background-color: #2a3338;
+}
+#themeSettings #zorinDarkButton {
+  background-color: #bde6fb;
+  color: rgb(72, 89, 97);
+}
+#themeSettings #zorinDarkButton:active {
+  cursor: not-allowed;
+}
+#themeSettings #zorinDarkButton:hover {
+  background-color: #bde6fb;
+}
+
+#themeSettingsCloseButton {
+  background: none;
+}
+
+#actualSettingsIcon {
+  content: url(../images/settings.png);
+}
+
+video {
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+#bgByDefault {
+  display: none;
+}
+
+#themeSettingsCloseButton {
+  background-color: gray;
+}
+
+#popupDarkBG {
+  background-color: rgba(0, 0, 0, 0.4);
+}/*# sourceMappingURL=zorinDark.css.map */
