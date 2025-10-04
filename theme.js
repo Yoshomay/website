@@ -1,6 +1,6 @@
 const themeLink = document.getElementById("themeLink")
 
- let settingsIconGoesHere = document.getElementById("settingsIconGoesHere1");
+let settingsIconGoesHere = document.getElementById("settingsIconGoesHere1");
 let themeMenuGoesHere = document.getElementById("themeMenuGoesHere1");
 
 // ading html
@@ -40,9 +40,12 @@ const settingsIcon = document.getElementById("settingsIcon");
 const themeSettings = document.getElementById("themeSettings")
 
 //  set the theme if cookie has one
+try {
 var theme = document.cookie.split('; ').find(row => row.startsWith('theme=')).split('=')[1];
-if (theme == null) {themeLink.href = 'css/theme.css';
+if (theme == null) { // well this code well never run cus this isnt how ur supposed to do it but im lazy and this works sooo /shrug
 }else {themeLink.href = theme;}
+
+}catch {}
 
 // code for the random theme option
 if (theme == 'css/random.css') {
@@ -69,14 +72,17 @@ if (theme == 'css/random.css') {
 
 
 //  settings icon / menu
+try {
 let settingsIconIsClicked = document.cookie.split('; ').find(row => row.startsWith('settingsIconIsClicked=')).split('=')[1];
-
+} catch {}
 function settingsIconClicked() {
     settingsIcon.style.display = "none";
     themeSettings.style.display = "block"; 
     document.cookie = `settingsIconIsClicked=${1}; path=/; max-age=${60 * 60 * 24 * 365 * 10}`;
 }
+try {
 if (settingsIconIsClicked == 1) {settingsIconClicked();}
+} catch {}
 
 function closeThemeSettings() {
     settingsIcon.style.display = 'block'

@@ -1,0 +1,147 @@
+<!DOCTYPE html><head><title>Book Box</title>
+    <link rel="icon" href="/images/tabIcon.png">
+    <link rel="stylesheet" href="/css/theme.css" id="themeLink">
+    <link rel="stylesheet" href="/css/divcss.css" id="themeLink">
+    <meta name="darkreader-lock">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>
+    
+
+<div class="links">
+     
+    <span onclick="linksCollapse('linksLinks');" class="arrow" id="linksLinksArrow">&gt;</span>
+    <span id="linksText"><b>Links</b><br></span>
+    <span id="linksLinks">
+
+    <a href="index.html"><button>Homepage</button></a>
+    <a href="../index.html"><button>Back</button></a><hr></span>
+   
+    <span onclick="linksCollapse('linksJSStuff');" class="arrow" id="linksJSStuffArrow">&gt;</span>
+    <b>JavaScript Projects:</b><br>
+    <span id="linksJSStuff">
+    <a href="calculator.html"><button>Calculator</button></a>
+    <a href="DBQuiz.html"><button>DB Quiz</button></a>
+    <button class="button0">Book Box</button>
+    <a href="inputs.html"><button>Inputs</button></a><hr></span>
+
+    <span onclick="linksCollapse('linksRomHacks');" class="arrow" id="linksRomHacksArrow">&gt;</span>
+    <b>Rom Hacks:</b><br>
+    <span id="linksRomHacks">
+    <a href="smwBackwards.html"><button>SMW Backwards</button></a>
+    <a href="wtwNotCreepy.html"><button>WDW Not Creepy</button></a>
+    <a href="smwFloorIsLava.html"><button>SMW Floor Is Lava</button></a></span>
+
+    
+    </div><br>
+    
+    <span id="themeMenuGoesHere1"></span>
+    <span id="settingsIconGoesHere1"></span>
+
+    <div class="pagesContainer">
+    <div style="max-width: 500px; margin-bottom: 10px;" class="col">
+        In Minecraft Java <a href="https://minecraft.wiki/w/Java_Edition_20w14%E2%88%9E" target="_blank">20w14∞</a>, 
+        the <a href="https://minecraft.wiki/w/Box_of_Infinite_Books" target="_blank">Box of Infinite Books</a> (book_box) was added,
+        and with this calculator you can predict the name of the book you'll get and all of it's pages.<br><br>
+
+        Book's contents generated with the help of a slightly modified version of the <a href="https://github.com/raybellis/java-random" target="_blank">java-random</a> npm package by raybellis.<!--<br><br>
+
+        WARNING: Unlike java, javascript's left shift operator only supports up to 32 bits, so if the block is
+        more than 2,147,483,648 blocks out things may not work.--></div>
+
+
+    <div class="col">
+        What are the block's coordinates?<br>
+        <span style="text-align: right; display: inline-block;">
+        X: <input type="number" style="max-width: 100px; word-break: break-all;" id="xCoordsInput"><br>
+        Y: <input type="number" style="max-width: 100px; word-break: break-all;" id="yCoordsInput"><br>
+        Z: <input type="number" style="max-width: 100px; word-break: break-all;" id="zCoordsInput"><br>
+        </span><br><br>
+
+        <a href="images/minecraftLibrary/bookDirection.webp" target="_blank">Which direction do the books face?</a><br>
+        <span style="text-align: left; display: inline-block;">
+        <label><input type="radio" name="rotation" value="0">North</label><br>
+        <label><input type="radio" name="rotation" value="1">East</label><br>
+        <label><input type="radio" name="rotation" value="2">South</label><br>
+        <label><input type="radio" name="rotation" value="3">West</label><br>
+        </span>
+
+
+        <script>
+            const xCoords = document.getElementById('xCoordsInput');
+            const yCoords = document.getElementById('yCoordsInput');
+            const zCoords = document.getElementById('zCoordsInput');
+        </script><br>
+        </div>
+
+        </div><br><br>
+        <div>
+                <button onclick="calculateBook(xCoords.value, yCoords.value, zCoords.value,);">Calculate the book</button><br>
+
+        The book's name is: <br><span id="theBooksName">______________</span>
+        </div><br>
+
+        <div class="pagesContainer">
+        <div class="col">Page 1: <br><span id="page1"> </span></div>
+        <div class="col">Page 2: <br><span id="page2"> </span></div>
+        <div class="col">Page 3: <br><span id="page3"> </span></div>
+        <div class="col">Page 4: <br><span id="page4"> </span></div>
+        <div class="col">Page 5: <br><span id="page5"> </span></div>
+        <div class="col">Page 6: <br><span id="page6"> </span></div>
+        <div class="col">Page 7: <br><span id="page7"> </span></div>        
+        <div class="col">Page 8: <br><span id="page8"> </span></div>
+        <div class="col">Page 9: <br><span id="page9"> </span></div>
+        <div class="col">Page 10:<br><span id="page10"></span></div>
+        <div class="col">Page 11:<br><span id="page11"></span></div>
+        <div class="col">Page 12:<br><span id="page12"></span></div>
+        <div class="col">Page 13:<br><span id="page13"></span></div>
+        <div class="col">Page 14:<br><span id="page14"></span></div>
+        <div class="col">Page 15:<br><span id="page15"></span></div>
+        <div class="col">Page 16:<br><span id="page16"></span></div>
+        </div>
+
+    </div>
+
+<style>
+    @media screen and (min-width: 650px) {  /*  pc  */
+.pagesContainer {
+    width: 600px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.col {
+    min-width: 250px;
+    min-height: 175px;
+    margin-bottom: 15px;
+}}
+
+
+@media screen and (max-width: 649px) {  /*  mobile  */
+.pagesContainer {
+    width: 90%;
+    overflow-wrap: break-word;
+    padding: 10px;
+}
+.col {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 100px;
+    margin-bottom: 15px;
+}   
+
+}
+
+.arrow {
+     cursor: pointer; display: inline-block; user-select: none;}
+</style>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script> 
+    <script src="java-random.js"></script>
+    <script src="bookBox.js"></script>
+    <script src="../theme.js"></script>
+    <script src="../misc.js"></script>
+</body></html>

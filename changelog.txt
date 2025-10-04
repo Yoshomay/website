@@ -1,9 +1,4 @@
-* Made the css files and theme.js load in using absolute paths not relative paths (/css/theme.css instead of css/theme.css), so that way 404 pages like yoshomay.com/asdf/asdf will now display correctly.
-* Made the grids on /myfursona and /art not be grids when using the Legacy theme (to be accurate to how it was back then pre 6.0)
-* Actually fixed the youtube embedds on /myfursona
-* Made the popups on /art have the current theme's background, and everything behind it transparent to make it more legible from the main page
-* Made the popups on /art closeable by clicking the background
-* Removed the resize handles from the /art and /myfursona grids
-* Added Zorin OS Dark Theme
-* Made the theme menu not be so low down on the goldsrc theme
-* Added snowyBoiling to /myfursona
+* Removed the hoverable why? after saying i use zorin os on /index
+
+Bug fixes:
+* Added a linebreak after my ram in /index
