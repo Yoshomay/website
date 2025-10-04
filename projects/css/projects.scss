@@ -1,0 +1,29 @@
+@media screen and (min-width: 453px) {
+.romHacksImageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    padding: 1em;
+    width: 75%;
+    grid-gap: 2em;
+    margin: 0 auto;
+
+iframe {max-width: 350px; height: 196px;}
+img {max-width: 320px;}
+}}
+
+@media screen and (max-width: 452px) {
+.romHacksImageContainer {
+    display: grid;
+    grid-template-columns: 85%;
+    justify-content: center;
+    padding: 1em;
+
+iframe {max-width: 350px; height: 196px;}
+img {width: 90%;}
+}}
+
+
+.arrow {
+    cursor: pointer;
+    display: inline-block; 
+    user-select: none;}
