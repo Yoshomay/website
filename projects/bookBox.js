@@ -45,7 +45,7 @@ function calculateBookName(xCoords, yCoords, zCoords) {
 
     // figuring out what the third and 4th value are
     const rotationValue = document.querySelector('input[name="rotation"]:checked');
-    if (!rotationValue) {alert("WARNING: You didn't select a rotation value."); return;}
+    if (!rotationValue) {alert("WARNING: You didn't select a rotation value."); throw new Error("no rotation value");}
     block.rotation = Number(rotationValue.value);
 
     console.log(`rotation: ${block.rotation}`);
