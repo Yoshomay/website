@@ -1,71 +1,100 @@
-function calculateBook(xCoords, yCoords, zCoords) {
 console.clear();
-var characters = [' ', ',', '.', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-var chunkX;
-var chunkZ;
-var inChunkX;
-var inChunkZ;
-var fourthValue;
-var rotation;
+const characters = [' ', ',', '.', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+let block = {};
 
-xCoords = Number(xCoords);
-yCoords = Number(yCoords);
-zCoords = Number(zCoords);
+
+function clearEverything() {
+    document.getElementById("theBooksName").textContent = '______________';
+    for (let pageNum = 1; pageNum < 17; pageNum++) {
+        document.getElementById("page" + pageNum).textContent = '';
+    }
+    console.clear();}
+
+function checkForError(condition, warning, consoleErrorText) {
+    if (condition) {
+        if (!confirm(warning)) {
+            clearEverything();
+            throw new Error(consoleErrorText);}
+    }
+}
+    
 
 function calculateBookName(xCoords, yCoords, zCoords) {
 
+    block.x = Number(xCoords);
+    block.y = Number(yCoords);
+    block.z = Number(zCoords);
 
-
-
-    console.log('   ');
-    console.log('coords: ' + xCoords + ',' + yCoords + ',' + zCoords);
+    console.log(`coords: ${block.x}, ${block.y}, ${block.z}`);
 
     // figuring out which chunk this is inside of
-    chunkX = Math.floor(xCoords/16);
-    chunkZ = Math.floor(zCoords/16);
+    block.chunkX = Math.floor(block.x/16);
+    block.chunkZ = Math.floor(block.z/16);
 
-    console.log('chunkX = ' + chunkX);
-    console.log('chunkZ = ' + chunkZ);
+    console.log(`chunkX: ${block.chunkX}`);
+    console.log(`chunkZ: ${block.chunkZ}`);
 
     
-    // figuring out where inside the chunk the block is
-    if (xCoords < 0) {
-        inChunkX = Math.abs(xCoords); 
-        inChunkX = inChunkX%16; 
-        inChunkX = 16 - inChunkX; 
-    }
-    else {
-        inChunkX = xCoords%16;}
+    // figuring out the localx and localz
+    block.localX = block.x & 0xF;
+    block.localZ = block.z & 0xF;
 
-
-    if (zCoords < 0) {
-        inChunkZ = Math.abs(zCoords); //20
-        inChunkZ = inChunkZ%16; //4
-        inChunkZ = 16 - inChunkZ; // 12
-    }
-    else {
-        inChunkZ = zCoords%16;}
-
-    console.log('inChunkX = ' + inChunkX);
-    console.log('inChunkZ = ' + inChunkZ);
+    console.log(`localX: ${block.localX}`);
+    console.log(`localZ: ${block.localZ}`);
 
 
     // figuring out what the third and 4th value are
-    rotation = document.querySelector('input[name="rotation"]:checked').value;
-    console.log('rotation = ' + rotation);
+    const rotationValue = document.querySelector('input[name="rotation"]:checked');
+    if (!rotationValue) {alert("WARNING: You didn't select a rotation value."); return;}
+    block.rotation = Number(rotationValue.value);
 
-    if      (rotation == 0) {fourthValue = 15 - inChunkX;}  // north
-    else if (rotation == 1) {fourthValue = 15 - inChunkZ;}  // east
-    else if (rotation == 2) {fourthValue = inChunkX;}       // south
-    else if (rotation == 3) {fourthValue = inChunkZ;}       // west
-    else    (fourthValue = 'error');
-            rotation = Number(rotation);
+    console.log(`rotation: ${block.rotation}`);
+
+    switch (block.rotation) {
+        case 0: block.fourthValue = 15 - block.localX; break;  // north
+        case 1: block.fourthValue = 15 - block.localZ; break;  //  east 
+        case 2: block.fourthValue = block.localX; break;  // south
+        case 3: block.fourthValue = block.localZ; break;  //  west
+
+        default:
+        alert("ERROR");
+        clearEverything();
+        throw new Error("Issue in rotation value");
+    }
 
 
-    var finalBookName = chunkX +'/'+ chunkZ +'/'+ rotation +'/'+ fourthValue +'/'+ yCoords;
-    console.log('the book name is: ' + finalBookName);
 
-    document.getElementById('theBooksName').innerHTML = finalBookName;
+    //  error checking
+    checkForError(block.x > 29999983 || block.z > 29999983, 
+        "WARNING: Your block is past the world border, this will generate an impossible book. Continue?", 
+        "block outside world border")
+        
+    checkForError(block.y < 0, 
+        "WARNING: Your block is under the world, this will generate an impossible book. Continue?", 
+        "block.y < 0")
+
+    checkForError(block.y > 255, 
+        "WARNING: Your block is higher than y=255, this will generate an impossible book. Continue?", 
+        "block.y > 255") 
+
+
+    checkForError(
+        ((block.rotation == 0 || block.rotation == 2) && (block.localX == 0 || block.localX == 15)) ||
+        ((block.rotation == 1 || block.rotation == 3) && (block.localZ == 0 || block.localZ == 15)),
+        "WARNING: The block runs parallel to the chunk border, while bordering the chunk border. " +
+            "This will result in the block not outputting a book in game. " +
+            "This is due to a bug in the snapshot. Continue?",
+        "Block is parallel to and borders the chunk border"
+    );
+
+
+
+
+    block.name = `${block.chunkX}/${block.chunkZ}/${block.rotation}/${block.fourthValue}/${block.y}`
+    console.log(`the book name is:  ${block.name}`);
+
+    document.getElementById('theBooksName').textContent = block.name;
+
 }
 
 
@@ -75,48 +104,22 @@ function calculateBookName(xCoords, yCoords, zCoords) {
 function floorMod(a, b) {return ((a % b) + b) % b;}
 function calculateBookContents() {
 
-            //rn these are Math.seedrandom(seed), but once i get java randomness itll just be Random(seed);
-            /*Math.seedrandom(chunkX);
-            var chunkXRandom = Math.floor(Math.random()* 10);
-            console.log('chunkXRandom = ' + chunkXRandom);
+            //  setting up randomness for later
+            let chunkXRandom = new JavaRandom(block.chunkX);
+            let chunkZRandom = new JavaRandom(block.chunkZ);
+            let pseudoRandomNumber = new JavaRandom((block.fourthValue << 8) + (block.y << 4) + block.rotation);
 
-            Math.seedrandom(chunkZ);
-            var chunkZRandom = Math.floor(Math.random()* 10);
-            console.log('chunkZRandom = ' + chunkZRandom)
 
-            Math.seedrandom((fourthValue << 8) + (yCoords << 4) + rotation);
-            var psuedoRandomNumber = Math.floor(Math.random()* 10);
+    for (let loopCount = 1; loopCount < 17; loopCount++) {  //  creating page contents until 16 pages has been made
+        let pageContents = '';
+        for (let loopCount2 = 0; loopCount2 < 128; loopCount2++) {  //  creating a random character for the pages
             
-            console.log('psuedoRandomNumber = ' + psuedoRandomNumber)*/
-
-            var chunkXRandom = new JavaRandom(chunkX);
-            var chunkZRandom = new JavaRandom(chunkZ);
-            var psuedoInputNum = (fourthValue << 8) + (yCoords << 4) + rotation;
-            var psuedoRandomNumber = new JavaRandom(psuedoInputNum);
-            //console.log(psuedoRandomNumber.nextInt());
-
-
-    for (var loopCount = 1; loopCount < 17; loopCount++) {  //  creating page contents until 16 pages has been made
-        var pageContents = '';
-        for (var loopCount2 = 0; loopCount2 < 128; loopCount2++) {  //  creating a random character for the pages
+            let indexNumber = ((chunkXRandom.nextInt() + chunkZRandom.nextInt()) | 0);
+            indexNumber = ((indexNumber + -pseudoRandomNumber.nextInt()) | 0);    
             
-            var indexNumber = ((chunkXRandom.nextInt() + chunkZRandom.nextInt()) | 0);
-            indexNumber = ((indexNumber + -psuedoRandomNumber.nextInt()) | 0); 
-            //var indexNumber = Math.floor(Math.random()* 10);  //  for random non seeded index number
-   
-            
-            pageContents = pageContents + characters[(floorMod(indexNumber, characters.length))];
-            //console.log(pageContents);
+            pageContents += characters[(floorMod(indexNumber, characters.length))];
         }
-        document.getElementById('page' + loopCount).innerHTML = pageContents;
-        //console.log(''); console.log('the final page is:' + pageContents)
-    }
+        document.getElementById('page' + loopCount).textContent = pageContents;
+        }
 
-}
-
-//  java random seed = 332 = -1086229774 | js's -1086229774 
-//  java random seed = 0 =   -1155484576 | js's -1155484576
-
-calculateBookName(xCoords, yCoords, zCoords);
-calculateBookContents();
 }
