@@ -2,6 +2,7 @@ const themeLink = document.getElementById("themeLink")
 
 let settingsIconGoesHere = document.getElementById("settingsIconGoesHere1");
 let themeMenuGoesHere = document.getElementById("themeMenuGoesHere1");
+let settingsIconIsClicked
 
 // ading html
 settingsIconGoesHere.innerHTML = `
@@ -73,7 +74,7 @@ if (theme == 'css/random.css') {
 
 //  settings icon / menu
 try {
-let settingsIconIsClicked = document.cookie.split('; ').find(row => row.startsWith('settingsIconIsClicked=')).split('=')[1];
+settingsIconIsClicked = document.cookie.split('; ').find(row => row.startsWith('settingsIconIsClicked=')).split('=')[1];
 } catch {}
 function settingsIconClicked() {
     settingsIcon.style.display = "none";

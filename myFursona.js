@@ -1,3 +1,4 @@
+let pathToFile;
 function colCreator(id, text, date) {
 
     if (id.endsWith('.gif')) {fileType = 'gif'; lowresFileType = 'gif'; id = id.slice(0, -4);}
@@ -5,10 +6,10 @@ function colCreator(id, text, date) {
     else {fileType = 'png'; lowresFileType = 'webp'}
     
 
-    var idDiv = document.getElementById(id);
-    if (date == null) {date = ''; var pathToFile = '/images/yosho/'}
-    else if (date === 'bedroom') {date = ''; var pathToFile = '/images/renders/bedroomIsometric/';}
-    else {var pathToFile = '/images/renders/'}
+    let idDiv = document.getElementById(id);
+    if (date == null) {date = ''; pathToFile = '/images/yosho/'}
+    else if (date === 'bedroom') {date = ''; pathToFile = '/images/renders/bedroomIsometric/';}
+    else {pathToFile = '/images/renders/'}
 
 
     if (fileType === 'webm') {idDiv.innerHTML = `
@@ -32,7 +33,7 @@ function colCreator(id, text, date) {
 }
 
 
-if (document.getElementById('mySonaPage')) {
+if (document.getElementById('falke1')) {
 colCreator('falke1',`
     This is my pfp by <a href="https://www.twitter.com/hyenapaine" target="_blank">@hyenapaine</a> on Twitter1
     `);
@@ -430,7 +431,7 @@ colCreator('unnamed',`
 /*     art page     */
 
 
-if (document.getElementById('isArtPage')) {
+if (document.getElementById('juevesDeRacismo')) {
 
     
 colCreator('juevesDeRacismo.gif', `

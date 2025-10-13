@@ -1,6 +1,6 @@
-var currentCalc = "";
-const resultBoxSpan = document.getElementById("resultBox");
-resultBoxSpan.innerHTML = '0';
+let currentCalc = "";
+const resultBox = document.getElementById("resultBox");
+resultBox.textContent = '0';
 
 
 function pressedCalcButton(input) {
@@ -25,15 +25,15 @@ try {
 
     if (input == 'result') {
         currentCalc = eval(currentCalc);
-        currentCalc = currentCalc + ''}
+        currentCalc += ''}
 
 
     console.log(currentCalc);
-    resultBoxSpan.innerHTML = currentCalc;
+    resultBox.textContent = currentCalc;
 
     if (currentCalc == "") {
-        resultBoxSpan.innerHTML = '0';}
+        resultBox.textContent = '0';}
 } catch (error) {
     currentCalc = "";
-    resultBoxSpan.innerHTML = 'ERROR';
+    resultBox.textContent = 'ERROR';
 }}

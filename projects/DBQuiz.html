@@ -1,7 +1,8 @@
 <!DOCTYPE html><head><title>DB Quiz</title>
     <link rel="icon" href="/images/tabIcon.png">
-    <link rel="stylesheet" href="/css/theme.css" id="themeLink">
-    <link rel="stylesheet" href="/css/divcss.css" id="themeLink">
+    <link rel="stylesheet" href="../css/theme.css" id="themeLink">
+    <link rel="stylesheet" href="../css/divcss.css">
+    <link rel="stylesheet" href="css/projects.css">
     <meta name="darkreader-lock">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>
@@ -9,13 +10,30 @@
 
 <div class="links">
      
-    <span id="linksText"><b>Links</b>
-    <br><br></span>
+    <span onclick="linksCollapse('linksLinks');" class="arrow" id="linksLinksArrow">&gt;</span>
+    <span id="linksText"><b>Links</b><br></span>
+    <span id="linksLinks">
+
     <a href="index.html"><button>Homepage</button></a>
+    <a href="../index.html"><button>Back</button></a><hr></span>
+   
+    <span onclick="linksCollapse('linksJSStuff');" class="arrow" id="linksJSStuffArrow">&gt;</span>
+    <b>JavaScript Projects:</b><br>
+    <span id="linksJSStuff">
     <a href="calculator.html"><button>Calculator</button></a>
     <button class="button0">DB Quiz</button>
-    <a href="../index.html"><button>Back</button></a>
-    </div>
+    <a href="bookBox.html"><button>Book Box</button></a><hr></span>
+
+    <span onclick="linksCollapse('linksRomHacks');" class="arrow" id="linksRomHacksArrow">&gt;</span>
+    <b>Rom Hacks:</b><br>
+    <span id="linksRomHacks">
+    <button class="button0">SMW Backwards</button>
+    <button class="button0">WDW Not Creepy</button>
+    <button class="button0">SMW Floor Is Lava</button></span>
+
+    
+    </div><br>
+
     
     <br><span id="themeMenuGoesHere1"></span>
     <span id="settingsIconGoesHere1"></span>
@@ -53,7 +71,7 @@
         <span id="finalScore">Error</span><br><br>
         <button onclick="gameStart();">Try again</button><br>
         <button onclick="seeAnswers();">See the answers</button><br>
-        <a href="https://yoshomay.epizy.com/stuffforvideos/how_may_i_take_your_order.png" target="_blank"><button>Talk to customer support</button></a><br>
+        <a href="images/how_may_i_take_your_order.png" target="_blank"><button>Talk to customer support</button></a><br>
         <button onclick="triggerTitleScreen();">Go to the Title Screen</button>
     </div>
 
@@ -77,6 +95,7 @@
 
 
     <script src="/theme.js"></script>
+    <script src="../misc.js"></script>
     <script src="DBQuiz.js"></script>
     
     <br><br><br>

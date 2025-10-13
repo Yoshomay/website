@@ -1,3 +1,4 @@
+// if you're reading this code, im sorry lol. this was my first actual thing in js and its yandre dev levels of bad lol
 const titleScreenDiv = document.getElementById('titleScreen');
 const questionsDiv = document.getElementById('questions');
 const endScreenDiv = document.getElementById('endScreen');
