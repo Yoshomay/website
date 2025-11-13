@@ -1,0 +1,171 @@
+@media screen and (min-width: 1013px) {
+  .version {
+    position: fixed;
+    border-radius: 8px;
+    right: 1%;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    opacity: 30%;
+  }
+  .version:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease-in;
+  }
+  .version:active {
+    cursor: not-allowed;
+  }
+}
+
+.discordembedd {
+  max-width: 250px;
+  opacity: 100%;
+}
+@media screen and (min-width: 1182px) {
+  .discordembedd {
+    position: absolute;
+    top: 7%;
+    right: 1%;
+  }
+}
+
+.settingsIcon {
+  top: 2%;
+  left: 1%;
+  position: absolute;
+  padding: 4px;
+  z-index: 10;
+}
+
+.themeSettings {
+  width: 200px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+}
+.themeSettings hr {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .themeSettings {
+    width: 150px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+  }
+}
+
+@supports not (-moz-animation: none) {
+  .myLinksContainer {
+    background: none;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
+  .myLinksContainer .myLinks {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+pre {
+  font-family: inherit;
+}
+
+@media screen and (min-width: 471px) {
+  .ref {
+    max-width: 400px;
+  }
+  .ref img {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .ref {
+    width: 85%;
+  }
+  .ref img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .artGridContainer {
+    overflow: hidden;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 85%;
+    grid-auto-rows: auto;
+    justify-content: center;
+    padding: 1em;
+  }
+  .artGridContainer img, .artGridContainer iframe {
+    width: 90%;
+  }
+  @supports not (-moz-animation: none) {
+    .artGridContainer .col {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
+@media screen and (min-width: 481px) {
+  .artGridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    overflow: auto;
+    padding: 1em;
+    width: 75%;
+    grid-gap: 4em;
+    margin: 0 auto;
+  }
+  .artGridContainer img {
+    width: 160px;
+  }
+}
+.artGridContainer span {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.col {
+  align-self: center;
+  max-width: 250px;
+}
+@media screen and (max-width: 480px) {
+  .col {
+    margin: 0 0 20px 0;
+  }
+}
+.col iframe {
+  max-width: 250px;
+  margin: 0;
+}
+
+.popup {
+  position: fixed;
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+  height: 90%;
+  top: 1%;
+  left: 10%;
+  overflow: auto;
+  z-index: 12;
+}
+
+@media screen and (min-width: 950px) {
+  .libraryIsometric {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+
+#popupDarkBG {
+  display: none;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}/*# sourceMappingURL=divcss.css.map */
