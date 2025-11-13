@@ -335,6 +335,10 @@ colCreator('HanutedHarvest',`
     Cuddle commission by  <a href="https://www.etsy.com/shop/HanutedHarvest" target="_blank">HanutedHarvest</a> paid by snowy.
     `); 
 
+colCreator('leaannepeach', `
+    Yosho celebration, by <a target="_blank" href="https://www.etsy.com/people/leaannepeach">Maisie Peach</a>
+    `);
+
 
 colCreator('sirsquidbee',`
     Divorce selfie!! o(≧∇≦o)<br>by <a target="_blank" href="https://ko-fi.com/sirsquidbee">sirsquidbee</a>  
