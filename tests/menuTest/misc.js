@@ -77,8 +77,7 @@ function createButton(buttonText, link) {
     linksContainer.appendChild(button);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
+//  run on page load start
     linksText.textContent = "Links";
     linksText.id = 'linksText';
     linksText.style = 'font-weight: bold;';
@@ -92,4 +91,5 @@ document.addEventListener("DOMContentLoaded", () => {
     createButton("Art", "art.html");
     createButton("My Links", "mylinks.html");
     createButton("Projects/", "projects/index.html");
-});
+;
+//  run on page load end
