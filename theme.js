@@ -94,8 +94,8 @@ function closeThemeSettings() {
 
 //  theme changing
 function themeChange(newTheme) {
-    document.cookie = `theme=${newTheme}; path=/; max-age=${60 * 60 * 24 * 365 * 10}`;
     themeLink.href = newTheme;
+    document.cookie = `theme=${newTheme}; path=/; max-age=${60 * 60 * 24 * 365 * 10}`;
 }
 
 
