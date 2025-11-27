@@ -8,8 +8,9 @@ let path = window.location.pathname;
 path = path.split("/").pop();
 
 
-var currentPopup;
+let currentPopup;
 
+//  popup menu start
 function openPopupMenu(popupName) {
     if (popupName != 'samyo' && popupName != 'bedroomisometric') {return;}
 
@@ -86,10 +87,23 @@ function createButton(buttonText, link) {
     linksContainer.appendChild(document.createElement("br"));
     linksContainer.appendChild(document.createElement("br"));
 
+if (document.getElementById("projects")) {
+    createButton("", "");
+}
+
+    else {
     createButton("Homepage", "index.html");
     createButton("My Fursona", "myfursona.html");
     createButton("Art", "art.html");
     createButton("My Links", "mylinks.html");
     createButton("Projects/", "projects/index.html");
-;
+}
+
+    linksContainer.after(linksContainer.appendChild(document.createElement("br")));
+    linksContainer.after(linksContainer.appendChild(document.createElement("br")));
+
+    for (let i = 0; i < 3; i++) {  //  unrelated but put br's at the bottom of the page
+        document.getElementsByTagName("html")[0].appendChild(document.createElement("br"));}
+
+
 //  run on page load end

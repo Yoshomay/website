@@ -18,12 +18,12 @@
   }
 }
 
-.discordembedd {
+.discordEmbedd {
   max-width: 250px;
   opacity: 100%;
 }
 @media screen and (min-width: 1182px) {
-  .discordembedd {
+  .discordEmbedd {
     position: absolute;
     top: 7%;
     right: 1%;
@@ -57,6 +57,10 @@
   }
 }
 
+.myLinks {
+  line-height: 140%;
+}
+
 @supports not (-moz-animation: none) {
   .myLinksContainer {
     background: none;
@@ -67,6 +71,14 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
+.links {
+  margin: 0 auto 20px;
+}
+
+#linksText {
+  display: block;
+}
+
 pre {
   font-family: inherit;
 }
@@ -144,11 +156,10 @@ pre {
 .popup {
   position: fixed;
   display: none;
-  margin: 0 auto;
-  width: 80%;
-  height: 90%;
-  top: 1%;
-  left: 10%;
+  inset: 0;
+  width: 85%;
+  height: 85%;
+  top: 5%;
   overflow: auto;
   z-index: 12;
 }
@@ -161,8 +172,10 @@ pre {
 }
 
 #popupDarkBG {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   display: none;
-  z-index: 9;
+  z-index: 11;
   width: 100%;
   height: 100%;
   top: 0;
