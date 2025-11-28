@@ -7,3 +7,4 @@ The js sucks im well aware i suck at js lol. I also use sass instead of css so t
 
 
 TODO:
+* Fix the top links on the 404 page
