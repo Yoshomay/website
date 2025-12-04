@@ -9,6 +9,7 @@ function colCreator(id, text, date) {
     let idDiv = document.getElementById(id);
     if (date == null) {date = ''; pathToFile = '/images/yosho/'}
     else if (date === 'bedroom') {date = ''; pathToFile = '/images/renders/bedroomIsometric/';}
+    else if (date === 'bedroom_new') {date = ''; pathToFile = '/images/renders/bedroomIsometricNew/'}
     else {pathToFile = '/images/renders/'}
 
 
@@ -536,6 +537,32 @@ colCreator('samyoField', `
 
 
 //     bedroom isometric
+colCreator('night_1x1_new', `
+    1x1
+    `, 'bedroom_new');
+
+colCreator('night_16x9_new', `
+    16x9 wallpaper version
+    `, 'bedroom_new');
+
+colCreator('night_9x16_new', `
+    9x16 wallpaper version
+    `, 'bedroom_new');
+
+colCreator('day_1x1_new', `
+    1x1 alternate daytime version
+    `, 'bedroom_new');
+
+colCreator('day_16x9_new', `
+    16x9 wallpaper day
+    `, 'bedroom_new');
+
+colCreator('day_9x16_new', `
+    9x16 wallpaper day
+    `, 'bedroom_new');
+
+
+
 
 colCreator('night_1x1', `
     1x1

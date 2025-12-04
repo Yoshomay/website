@@ -1,9 +1,1 @@
-* Made the links menu and the br's at the bottom of the page all be loaded in dynamically using /misc.js
-* Reformatted the head section and added embeds properly to every page
-* Cleaned up the popup code
-* Fixed popups going off screen and not being centered on mobile
-* Made the popup background blur on all themes
-* Made the theme menu behind the popups background
-* Reformatted and updated my links page
-* Rewrote most of the theme.js file to make it not terrible
-* Added readCookie() and setCookie() to make reading and setting cookies far easier (makes me more likely to use them in the future for more things)
+* Added bedroomIsometricNew to /art
