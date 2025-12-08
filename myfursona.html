@@ -54,10 +54,10 @@
     <span id="falke2"></span>
     <span id="falke3"></span>
 
-    <div class="col">
+    <!--<div class="col">
 		<iframe src="https://www.youtube.com/embed/lm043yx6fqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
     Animation by Falke
-    </div>
+    </div>-->
 
     <span id="falke4"></span>
     
@@ -133,8 +133,9 @@
 
 
 <script>
+    let imageState = 0;
 	function changeImage(id, img1, img2) {
-	  var image = document.getElementById(id);
+	  let image = document.getElementById(id);
 	  if (imageState == 0) {  //  front view
 		  imageState = 1;
 		  image.src = img2;
@@ -145,14 +146,14 @@
 </script>
 
 	<div style="max-width: 190px;" class="col">
-    <a id="imp"><img src="/images/yosho/lowres/imp1-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg1', 'images/yosho/lowres/imp1-1.webp', 'images/yosho/lowres/imp1-2.webp');" id="impImg1"></a>
+    <a><img src="/images/yosho/lowres/imp1-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg1', 'images/yosho/lowres/imp1-1.webp', 'images/yosho/lowres/imp1-2.webp');" id="impImg1"></a>
 	<span style="cursor: not-allowed; font-size: 75%;">Click to switch view</span><br>
     Minecraft skin of Yosho v2 by <a href="https://www.instagram.com/impersonalpersona/" target="_blank">Impersonal Persona</a>
 		<a href="/images/yosho/imp.png" target="_blank" alt="download"><button>Download</button></a>
     </div>
 
 	<div style="max-width: 190px;" class="col">
-    <a id="imp"><img src="/images/yosho/lowres/imp2-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg2', 'images/yosho/lowres/imp2-1.webp', 'images/yosho/lowres/imp2-2.webp');" id="impImg2"></a>
+    <a><img src="/images/yosho/lowres/imp2-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg2', 'images/yosho/lowres/imp2-1.webp', 'images/yosho/lowres/imp2-2.webp');" id="impImg2"></a>
 	<span style="cursor: not-allowed; font-size: 75%;">Click to switch view</span><br>
     Minecraft skin of Yosho v3 by <a href="https://www.instagram.com/impersonalpersona/" target="_blank">Impersonal Persona</a>, updated by me
 		<a href="/images/yosho/imp2.png" target="_blank" alt="download"><button>Download</button></a>
