@@ -133,27 +133,46 @@
 
 
 <script>
-    let imageState = 0;
-	function changeImage(id, img1, img2) {
-	  let image = document.getElementById(id);
-	  if (imageState == 0) {  //  front view
-		  imageState = 1;
-		  image.src = img2;
-	} else if (imageState == 1) {  //  back view
-		  imageState = 0;
-		  image.src = img1;
-	}}	
+    let folderPath = 'images/yosho/lowres/';
+    let imp1State = 0;
+    let imp2State = 0;
+
+    function changeImage(id) {
+        let image = document.getElementById(id);
+        
+        switch (true) {
+        case (id == 'impImg1' && imp1State == 0):
+            imp1State = 1; 
+            image.src = `${folderPath}imp1-2.webp`
+            break;
+
+        case (id == 'impImg1' && imp1State == 1):
+            imp1State = 0;
+            image.src = `${folderPath}imp1-1.webp`
+            break;
+
+        case (id == 'impImg2' && imp2State == 0):
+            imp2State = 1; 
+            image.src = `${folderPath}imp2-2.webp`
+            break;
+
+        case (id == 'impImg2' && imp2State == 1):
+            imp2State = 0;
+            image.src = `${folderPath}imp2-1.webp`
+            break;
+        }
+    }
 </script>
 
 	<div style="max-width: 190px;" class="col">
-    <a><img src="/images/yosho/lowres/imp1-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg1', 'images/yosho/lowres/imp1-1.webp', 'images/yosho/lowres/imp1-2.webp');" id="impImg1"></a>
+    <a><img src="/images/yosho/lowres/imp1-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg1')" id="impImg1"></a>
 	<span style="cursor: not-allowed; font-size: 75%;">Click to switch view</span><br>
     Minecraft skin of Yosho v2 by <a href="https://www.instagram.com/impersonalpersona/" target="_blank">Impersonal Persona</a>
 		<a href="/images/yosho/imp.png" target="_blank" alt="download"><button>Download</button></a>
     </div>
 
 	<div style="max-width: 190px;" class="col">
-    <a><img src="/images/yosho/lowres/imp2-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg2', 'images/yosho/lowres/imp2-1.webp', 'images/yosho/lowres/imp2-2.webp');" id="impImg2"></a>
+    <a><img src="/images/yosho/lowres/imp2-1.webp" style="width: 160px; cursor: pointer;" onclick="changeImage('impImg2');" id="impImg2"></a>
 	<span style="cursor: not-allowed; font-size: 75%;">Click to switch view</span><br>
     Minecraft skin of Yosho v3 by <a href="https://www.instagram.com/impersonalpersona/" target="_blank">Impersonal Persona</a>, updated by me
 		<a href="/images/yosho/imp2.png" target="_blank" alt="download"><button>Download</button></a>
