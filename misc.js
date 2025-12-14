@@ -144,6 +144,7 @@ if (document.getElementById("isProjects")) {
     createButton("Calculator", "calculator.html", linksJSStuffSpan);
     createButton("DB Quiz", "DBQuiz.html", linksJSStuffSpan);
     createButton("Book Box", "bookBox.html", linksJSStuffSpan);
+    createButton("FGP Timer", "fgptimer.html", linksJSStuffSpan)
     linksContainer.appendChild(linksJSStuffSpan)
     createR("hr", 'linksJSStuffHR');
 

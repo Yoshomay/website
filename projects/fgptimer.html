@@ -1,0 +1,104 @@
+<!DOCTYPE html><head><title>Projects</title>
+
+    <link rel="icon" href="/images/tabIcon.png">
+    <link rel="stylesheet" href="/css/divcss.css">
+    <link rel="stylesheet" href="/css/theme.css" id="themeLink">
+    <span id="isProjects"></span>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="darkreader-lock">
+
+    <meta property="og:title" content="Projects" />
+    <meta property="og:description" content="A timer to keep track of camera flips for the FNaF 3 Aggressive Nightmare strategy, fgp. " />
+    <meta property="og:image" content="https://www.yoshomay.com/images/tabIcon.png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:url" content="https://www.yoshomay.com/projects/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Yoshomay" />
+    </head><body>
+
+        
+<div class="links"></div>
+    
+    <span id="themeMenuGoesHere1"></span>
+    <span id="settingsIconGoesHere1"></span>
+
+    <br><div>
+        Desktop version available on my <a href="https://www.github.com/yoshomay/fgptimer" target="_blank">github</a>
+    </div><br><br>
+
+    <div id="topContainer">
+      <span>
+        How many seconds should the timer go for?<br><br>
+        <input type="number" value="9" step="1" id="durationInput">
+        <span style="display: inline-block;">
+          <button id="confirmBTN">Confirm</button>
+          <button id="stopBTN">Stop</button>
+        </span>
+      </span>
+  </div><br><br>
+  
+
+    <div id="secondsContainer">
+      <span id="seconds" style="font-weight: bold;"><u>&nbsp;&nbsp;</u></span>
+      seconds remaining...
+    </div>
+
+
+    <script>
+const secondsSpan = document.getElementById('seconds');
+const durationInput = document.getElementById('durationInput');
+
+let duration;
+let i;
+let timer = null;
+
+function setColor() {
+    if      (i == 3) secondsSpan.style.color = 'yellow';
+    else if (i == 2) secondsSpan.style.color = 'orange';
+    else if (i == 1) secondsSpan.style.color = 'red';
+}
+
+document.getElementById('confirmBTN').addEventListener("click", () => {
+    if (['', '0', '1'].includes(durationInput.value)) {alert('Please use a number greater than 1'); return}
+    duration = Number(durationInput.value);
+
+    clearInterval(timer);
+    secondsSpan.style.color = 'white';
+
+    i = duration;
+    secondsSpan.textContent = `${duration}`;
+    setColor();
+    i--;
+
+    timer = setInterval(() => {
+        if (i == duration) secondsSpan.style.color = 'white';
+        secondsSpan.textContent = `${i}`;
+        setColor();
+
+        i--;
+        if (i < 1) {i = duration;}
+    }, 1000);
+});
+
+document.getElementById('stopBTN').addEventListener("click", () => {
+    if (!timer) return;
+    clearInterval(timer);
+    timer = null;
+    secondsSpan.innerHTML = `<u>&nbsp;&nbsp;</u>`;
+    secondsSpan.style.color = 'white';
+})
+
+durationInput.addEventListener('input', () => {
+  durationInput.value = durationInput.value.replace(/[^0-9-]/g, '');
+});
+    </script>
+
+
+
+  
+    <script src="../misc.js"></script>
+    <script src="../theme.js" defer></script>
+</body>
+</html>
