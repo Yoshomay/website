@@ -345,14 +345,22 @@ colCreator('sirsquidbee',`
     Divorce selfie!! o(≧∇≦o)<br>by <a target="_blank" href="https://ko-fi.com/sirsquidbee">sirsquidbee</a>  
     `); 
 
+colCreator('skunkify', `
+    Link Yosho, by <a href="" target="_blank">skunkify</a>, commed by snowy
+    `);
+
 
 colCreator('kyat',`
-    Commission (paid by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
+    Commission (commed by snowy) by <a href="https://twitter.com/Kyat_Nguyen" target="_blank">Kyat</a>
     `)
 
 
 colCreator('kyat2',`
     Fish eye lens flushed yosho by <a href="https://twitter.com/kyat2_Nguyen" target="_blank">kyat</a>
+    `)
+
+colCreator('chalk',`
+    Yosho snowy hug by fellow cuber <a href="https://bsky.app/profile/chalkolate.bsky.social" target="_blank">Chalk</a>
     `)
 
 //  others
