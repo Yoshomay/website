@@ -303,32 +303,32 @@ colCreator('snowi',`
 //  v1rtualtrapp1
 
 colCreator('V1RTUALTRAPP1',`
-    Commission by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a>
+    Commission by <a href="https://www.etsy.com/shop/V1RTUALTRAPP" target="_blank">V1RTUALTRAPP</a>
     `);
 
 
 colCreator('V1RTUALTRAPP2',`
-     Commission by <a href="https://www.etsy.com/listing/1585723012" target="_blank">V1RTUALTRAPP</a>, paid by Snowy
+     Commission by <a href="https://www.etsy.com/shop/V1RTUALTRAPP" target="_blank">V1RTUALTRAPP</a>, paid by Snowy
     `);
 
 
 colCreator('V1RTUALTRAPP3',`
-    Commission by <a href="https://www.etsy.com/listing/1588749552" target="_blank">V1RTUALTRAPP</a> #3
+    Commission by <a href="https://www.etsy.com/shop/V1RTUALTRAPP" target="_blank">V1RTUALTRAPP</a> #3
     `);
 
 
 colCreator('V1RTUALTRAPP4',`
-    Commission by <a href="https://www.etsy.com/listing/1627367588" target="_blank">V1RTUALTRAPP</a> #4
+    Commission by <a href="https://www.etsy.com/shop/V1RTUALTRAPP" target="_blank">V1RTUALTRAPP</a> #4
     `);
 
 
 colCreator('nyxie',`
-    Ych by <a href="https://www.etsy.com/listing/1778678177/sweet-treat-ych" target="_blank">Nyxie</a> paid by snowy again lol.
+    Ych by <a href="https://www.etsy.com/shop/NyxieDraws" target="_blank">Nyxie</a> paid by snowy again lol.
     `); 
 
 
 colCreator('nyxie2',`
-    Snowy (rudely) grabbin yosho's cheecks, ych by <a target="_blank" href="https://www.etsy.com/listing/1724299481/squishy-cheekies-ych">Nyxie</a>
+    Snowy (rudely) grabbin yosho's cheecks, ych by <a target="_blank" href="https://www.etsy.com/shop/NyxieDraws">Nyxie</a>
     `); 
 
 
@@ -347,6 +347,14 @@ colCreator('sirsquidbee',`
 
 colCreator('skunkify', `
     Link Yosho, by <a href="" target="_blank">skunkify</a>, commed by snowy
+    `);
+
+colCreator('jack', `
+    Huggg, by <a href="https://www.etsy.com/shop/JackofsometradesArt" target="_blank">JackofsometradesArt</a>
+    `);
+
+colCreator('reeky',`
+    Windows xp paint yosho (with an innaccurate title bar), commed by snowy, by <a href="https://www.tiktok.com/@the_reeky?_r=1&_t=ZP-93StVZU8Xba" target="_blank">the_reeky</a>
     `);
 
 
