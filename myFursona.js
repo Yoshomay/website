@@ -472,6 +472,10 @@ colCreator('worm.webm', `
 //   scenes
 
 
+colCreator('2ds.webm', `
+    Toony styled new 2ds xl, semi following <a href="https://www.youtube.com/watch?v=Elx4CWDpZcQ" target="_blank">this tutorial</a> by PIXXO 3D
+    `, '4/13/26')
+
 colCreator('steve.webm', `
     Cursed Steve animation, inspired by a lot of similar renders on <a href="https://www.reddit.com/r/PhoenixSC/" target="_blank">r/PhoenixSC</a>
     `, '7/31/23');
