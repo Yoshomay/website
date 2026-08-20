@@ -481,20 +481,20 @@ colCreator('steve.webm', `
     `, '7/31/23');
 
 colCreator('upstairs', `
-    2nd floor from Mario 64 (Rendered with Cycles)
+    2nd floor from Mario 64
     `, '7/8/23');
 
 colCreator('library', `
-    Isometric library following <a href="https://www.youtube.com/watch?v=yCHT23A6aJA" target="_blank">3DGreenhorn's isometric bedroom tutorial</a> (Rendered with Cycles)
+    Isometric library following <a href="https://www.youtube.com/watch?v=yCHT23A6aJA" target="_blank">3DGreenhorn's isometric bedroom tutorial</a>
     `, '2/19/23');
 
 colCreator('peachsCastleBackrooms', `
-    Mario 64 backrooms, inspired by <a href="https://www.youtube.com/watch?v=s5H0KHM2mTw" target="_blank">Breaking the Barrier</a> (rendered in Cycles)
+    Mario 64 backrooms, inspired by <a href="https://www.youtube.com/watch?v=s5H0KHM2mTw" target="_blank">Breaking the Barrier</a>
     `, '11/5/22');
 
 colCreator('interior1', `
     My first attempt of making a<br>
-    photorealistic render on my own.<br>(rendered with Cycles)
+    photorealistic render on my own.<br>
     `, '4/2/22');
 
 colCreator('switch', `
@@ -507,16 +507,22 @@ colCreator('yoshoWorm', `
 
 colCreator('doughnut.webm', `
     Of course it started with a doughnut, tutorial by <a href="https://www.youtube.com/watch?v=nIoXOplUvAw" target="_blank">
-    Blender Guru</a>.(rendered with Cycles)
+    Blender Guru</a>.
     `, '2/8/22');
 
 
 //    others
 
+colCreator('swords', `
+    2d Swords, <a href="images/renders/swords_sketch.png" target="_blank"> original sketch</a> by <a href="https://www.twitter.com/@Sinotus13" target="_blank">Sinotus</a>
+
+    `, '<pre style="margin: 0; padding: 0;">7/26/26</pre>'
+)
+
 
 colCreator('ytthumb', `
     Someone on r/blender made a node 3d, so I made one of my <a href="https://www.youtube.com/watch?v=tcvFbYEDL_s" target="_blank">
-    Youtube Videos</a> 3d. (Cycles)
+    Youtube Videos</a> 3d. 
     `, '<pre style="margin: 0; padding: 0;">4/17/23  |  <a target="_blank" href="credits/ytthumb.txt"><u>Credits</u></a></pre>');
 
 colCreator('earth', `
@@ -524,13 +530,13 @@ colCreator('earth', `
     Runaway's tutorial.</a><br>
     `, '6/3/22');
 
-colCreator('discord', `
+/*colCreator('discord', `
     (new) Discord logo
     `, '2/28/22');
 
 colCreator('anvil', `
     Anvil following <a href="https://www.youtube.com/watch?v=yi87Dap_WOc&t" target="_blank">Blender Guru's</a> tutorial<br>
-    `, '3/29/22');
+    `, '3/29/22');*/
 
 colCreator('chess', `
     I modeled all the chess pieces and a
@@ -552,7 +558,7 @@ colCreator('samyoWendellHug', `
 
 colCreator('samyoField', `
     <a href="images/renders/ogsamyo.png" target="_blank">Remastering</a> of a render by Samyo of Samyo laying in a field. 
-    <a href="https://download.blender.org/demo/geometry-nodes/fields/flower_scattering.blend" target="_blank">(Based on "Flowers Scattering"</a> by Blender Studio.) (Rendered with Cycles)
+    <a href="https://download.blender.org/demo/geometry-nodes/fields/flower_scattering.blend" target="_blank">(Based on "Flowers Scattering"</a> by Blender Studio.)
     `, '5/23/23');
 
 

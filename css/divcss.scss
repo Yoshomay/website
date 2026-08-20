@@ -80,7 +80,8 @@ pre {font-family: inherit;}
     grid-auto-rows: auto;
     justify-content: center;
     padding: 1em;
-    img, iframe {width: 90%;}
+    img {width: 90%;}
+    .youtubeiframe {width: 90%; }
     @supports not (-moz-animation: none) {  //  chromium
       .col {background-color: rgba(0,0,0,0);}}
 }
