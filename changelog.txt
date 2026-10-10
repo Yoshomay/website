@@ -1,4 +1,1 @@
-* Added minecraftAnimation and kyat3 to /myfursona
-* Added minecraftAnimation to /art
-* Added snowyBone to /art
-* Added swords to /art
+* added sin5 to /myfursona

@@ -89,6 +89,10 @@ colCreator('sin4',`
 	Bday art by Sin
     `);
 
+colCreator('sin5',`
+    Yipee yosho, by sin
+    `);
+
 
 //  all of snowy (oh god)
 
