@@ -151,17 +151,17 @@ if (document.getElementById("isProjects")) {
 /////////////////////////////////////////////////////////////////////////
 
     createArrow('linksRomHacks')
-    createLinksText("Rom Hacks (under construction):");
+    createLinksText("Rom Hacks:");
     createR("br", "linksRomHacksBR");
 
     let linksRomHacksSpan = document.createElement("span");
     linksRomHacksSpan.id = "linksRomHacks";
 
-    createButton("How To Play", path, linksRomHacksSpan);
-    createButton("SMW Backwards", path, linksRomHacksSpan);
-    createButton("WDW Not Creepy", path, linksRomHacksSpan);
-    createButton("April Fools 2022", path, linksRomHacksSpan);
-    createButton("SMW Floor is Lava", path, linksRomHacksSpan);
+    createButton("How To Play", 'howToPlay.html', linksRomHacksSpan);
+    createButton("SMW Backwards", 'smwBackwards.html', linksRomHacksSpan);
+    createButton("WDW Not Creepy", 'wdwNotCreepy.html', linksRomHacksSpan);
+    createButton("April Fools 2022", 'aprilFools2022.html', linksRomHacksSpan);
+    createButton("Super Lava World", "superLavaWorld.html", linksRomHacksSpan);
     linksContainer.appendChild(linksRomHacksSpan);
 
 /////////////////////////////////////////////////////////////////////////

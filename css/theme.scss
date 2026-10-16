@@ -57,6 +57,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .popup {
@@ -75,7 +76,7 @@ img {
 }
 
 video {border-radius: 10px;}
-iframe {border-radius: 10px;}
+iframe {border-radius: 10px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);}
 #settingsIcon {padding: 5px;
                img {margin: 0;}}
 

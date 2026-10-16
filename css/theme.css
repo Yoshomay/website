@@ -25,8 +25,7 @@ div {
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
@@ -70,6 +69,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .popup {
@@ -94,6 +94,7 @@ video {
 
 iframe {
   border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #settingsIcon {
