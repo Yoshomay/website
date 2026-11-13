@@ -68,7 +68,7 @@ function calculateBookName(xCoords, yCoords, zCoords) {
 
 
     //  error checking
-    checkForError(block.x > 29999983 || block.z > 29999983, 
+    checkForError(block.x > 29999983 || block.z > 29999983 || block.x < -29999983 || block.z < -29999983, 
         "WARNING: Your block is past the world border, this will generate an impossible book. Continue?", 
         "block outside world border")
         

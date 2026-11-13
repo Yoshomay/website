@@ -16,6 +16,7 @@
         else currentImage = change;
 
         document.getElementById('gameScreenshots').src = 'images/romHacks/' + image + currentImage + '.webp';
+        document.getElementById('screenshotA').href = 'images/romHacks/' + image + currentImage + '.webp';
 
         currentNumber = document.getElementById('screenshotHolder').children[2].children[currentImage];
         currentNumber.style.fontSize = '130%'; currentNumber.style.fontWeight = "bold"; currentNumber.style.textDecoration = 'underline';
@@ -25,7 +26,7 @@
 function createScreenshots(page, screenshotCount) {
 
 let toInsert = `
-    <img src="images/romHacks/${page}1.webp" id="gameScreenshots" width="350px"><br>
+    <a href="images/romHacks/${page}1.webp" target="_blank" id="screenshotA"><img src="images/romHacks/${page}1.webp" id="gameScreenshots" width="350px"></a><br>
     <span id="screenshotSelector" style="text-decoration: none; cursor: pointer; user-select: none;">
 
         <a onclick="changeImage('-', '${page}', ${screenshotCount})" style="font-size: 80%"> < </a>

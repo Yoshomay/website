@@ -107,8 +107,8 @@ if (!document.getElementById('isProjects')) {
 function createArrow(name) {
     const arrow = document.createElement("span");
     arrow.class = "arrow";
-    arrow.textContent = ">"
-    arrow.style = 'cursor: pointer; display: inline-block; margin: 0 5px 0 0; user-select: none;'
+    arrow.textContent = ">";
+    arrow.style = 'cursor: pointer; display: inline-block; margin: 0 5px 0 0; user-select: none;';
     arrow.id = `${name}Arrow`;
     arrow.onclick = () => linksCollapse(name);
     linksContainer.appendChild(arrow);
@@ -161,7 +161,8 @@ if (document.getElementById("isProjects")) {
     createButton("SMW Backwards", 'smwBackwards.html', linksRomHacksSpan);
     createButton("WDW Not Creepy", 'wdwNotCreepy.html', linksRomHacksSpan);
     createButton("April Fools 2022", 'aprilFools2022.html', linksRomHacksSpan);
-    createButton("Super Lava World", "superLavaWorld.html", linksRomHacksSpan);
+    createButton("Super Lava World", 'superLavaWorld.html', linksRomHacksSpan);
+    createButton("Super Mario Bros. World", 'superMarioBrosWorld.html', linksRomHacksSpan);
     linksContainer.appendChild(linksRomHacksSpan);
 
 /////////////////////////////////////////////////////////////////////////
